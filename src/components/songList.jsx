@@ -11,8 +11,8 @@ class SongList extends Component {
       },
       {
         id: 2,
-        songName: "Baga Giné",
-        song: "Dun Gun do go Ta Pa Dun Gun do go Ta Pa Dun Gun do go",
+        songName: "Modern hip pop",
+        song: "Gun do go do Pa x x do Gun x Gun x do Pa x x",
       },
       {
         id: 3,
