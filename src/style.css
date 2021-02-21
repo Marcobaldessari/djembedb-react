@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+  font-family: 'Poppins', sans-serif;
+}
+.song-card {
+  position: relative;
+  margin: 0 auto;
+  display: block;
+  width: 100%;
+  max-width: 640px;
+  height: 172px;
+}
+.song-card .song-name {
+  position: relative;
+  top: 40px;
+  left: 24px;
+  font-size: 20px;
+}
+.song-card .btn-play {
+  position: absolute;
+  top: 37px;
+  right: 16px;
+  height: 24px;
+  width: 74px;
+  background: #ff5d8e;
+  color: #fff;
+  border-radius: 40px;
+  border: none;
+}
+.song-card .notation-frame {
+  position: absolute;
+  display: block;
+  top: 74px;
+  width: 100%;
+  height: 88px;
+  background: #f7f7f7;
+}
+@media (max-width: 639px) {
+  .song-card .notation-frame {
+    border-radius: 0;
+  }
+}
+@media (min-width: 640px) {
+  .song-card .notation-frame {
+    border-radius: 10px;
+  }
+}
