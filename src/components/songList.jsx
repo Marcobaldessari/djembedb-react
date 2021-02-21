@@ -6,8 +6,8 @@ class SongList extends Component {
     songs: [
       {
         id: 1,
-        songName: "Abondan",
-        song: "Dun Gun do go Ta Pa Dun Gun do go Ta Pa Dun Gun do go",
+        songName: "Bala Kulandyan",
+        song: "Pa x x Ta Pa x go do Pa x x Ta Pa x go do",
       },
       {
         id: 2,

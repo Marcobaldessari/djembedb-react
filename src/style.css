@@ -112,10 +112,10 @@ a {
   margin: 0 auto;
 }
 .song-card .Dun {
-  top: 20%;
+  top: 66%;
 }
 .song-card .Gun {
-  top: 20%;
+  top: 66%;
 }
 .song-card .do {
   top: 42%;
@@ -124,8 +124,11 @@ a {
   top: 42%;
 }
 .song-card .Ta {
-  top: 66%;
+  top: 20%;
 }
 .song-card .Pa {
-  top: 66%;
+  top: 20%;
+}
+.song-card .x {
+  display: none;
 }
