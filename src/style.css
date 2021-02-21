@@ -52,7 +52,10 @@ a {
 }
 .song-card .notation-frame {
   position: absolute;
-  display: block;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[16];
+  grid-template-columns: repeat(16, 1fr);
   top: 74px;
   width: 100%;
   height: 88px;
@@ -67,4 +70,62 @@ a {
   .song-card .notation-frame {
     border-radius: 10px;
   }
+}
+.song-card .notation-note {
+  position: relative;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
+  width: 100%;
+  height: 100%;
+}
+.song-card .notation-horizontal-line {
+  position: absolute;
+  height: 1px;
+  width: 100%;
+  background: #000;
+  top: 50%;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
+}
+.song-card .notation-vertical-line {
+  position: absolute;
+  height: 50%;
+  width: 1px;
+  top: 25%;
+  left: 50%;
+  background: #000;
+}
+.song-card .notation-note-circle {
+  position: relative;
+  width: 15px;
+  height: 15px;
+  border-radius: 50px;
+  background: #000;
+  margin: 0 auto;
+}
+.song-card .Dun {
+  top: 20%;
+}
+.song-card .Gun {
+  top: 20%;
+}
+.song-card .do {
+  top: 42%;
+}
+.song-card .go {
+  top: 42%;
+}
+.song-card .Ta {
+  top: 66%;
+}
+.song-card .Pa {
+  top: 66%;
 }

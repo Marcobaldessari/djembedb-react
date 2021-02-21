@@ -20,7 +20,11 @@ class SongCard extends Component {
       <div className="song-card">
         <h2 className="song-name">{this.state.songName}</h2>
         <ButtonPlaySmall onClick={this.playPause}></ButtonPlaySmall>
-        <NotationFrame></NotationFrame>
+        <NotationFrame
+          //   key={song.id}
+          //   songName={song.songName}
+          song={this.props.song}
+        ></NotationFrame>
       </div>
     );
   }

@@ -1,27 +1,23 @@
 import React, { Component } from "react";
 import NotationNote from "./notationNote";
+var uniqid = require("uniqid");
 
 class NotationFrame extends Component {
   state = {
     song: this.props.song,
-    notes: "",
+    // notes: this.props.song.match(/.{1,2}/g),
+    notes: this.props.song.split(" "),
   };
 
-  //   var notes;
   render() {
     return (
       <div className="notation-frame">
-        <p>{this.getNote()}</p>
         {this.state.notes.map((i) => (
-          <NotationNote key={i} note={i} />
+          <NotationNote key={uniqid()} note={i} />
         ))}
       </div>
     );
   }
-
-  getNote = () => {
-    this.state.notes = this.props.song.match(/.{1,2}/g);
-  };
 }
 
 export default NotationFrame;
