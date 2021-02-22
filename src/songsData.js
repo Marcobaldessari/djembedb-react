@@ -7,7 +7,7 @@ export const SongsData = [
     {
       id: 2,
       songName: "Modern hip pop",
-      song: "Gun do go do Pa x x do Gun x Gun x do Pa x x",
+      song: "Gun do go do Pa x x do Gun x Gun x x do Pa x",
     },
     {
       id: 3,
