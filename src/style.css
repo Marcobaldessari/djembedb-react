@@ -144,6 +144,8 @@ a {
   border-radius: 50px;
   background: #000;
   margin: 0 auto;
+  -webkit-box-shadow: 0 0 1px 0px #fff inset;
+  box-shadow: 0 0 1px 0px #fff inset;
 }
 .song-card .notation-note-circle.active {
   background: #ff5d8e;

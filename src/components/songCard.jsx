@@ -17,7 +17,9 @@ class SongCard extends Component {
         <h2 className="song-name">{this.state.songName}</h2>
         <button
           className={"btn btn-play paused"}
-          onClick={this.props.OnPlayPause}
+          onClick={() => {
+            this.props.OnPlayPause(this.props.songId);
+          }}
         >
           PLAY
         </button>
@@ -29,6 +31,8 @@ class SongCard extends Component {
               key={uniqid()}
               note={i}
               noteIndex={index}
+              songId={this.props.songId}
+              songPlaying={this.props.songPlaying}
             />
           ))}
         </div>

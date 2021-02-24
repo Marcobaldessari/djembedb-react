@@ -19,7 +19,10 @@ class NotationNote extends Component {
 
   getNoteClasses() {
     let classes = "notation-note-circle " + this.state.note;
-    if (this.state.noteIndex == this.props.step) {
+    if (
+      this.props.songId == this.props.songPlaying &&
+      this.state.noteIndex == this.props.step
+    ) {
       classes += " active";
     }
     // classes += this.props.noteIndex === this.state.step ? " active" : "";
