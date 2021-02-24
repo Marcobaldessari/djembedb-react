@@ -12,9 +12,16 @@ mobile()
         {block}
 
 // Color tokens
-$pink = #FF5D8E
+$main-color = #FF5D8E
 $grey-bg = #F7F7F7
-$black = #000
+$text-color = #000
+$bg = #fff
+
+// // Dark theme
+// $main-color = #FF5D8E
+// $grey-bg = #1c1c1c
+// $text-color = #fff
+// $bg = #222
 
 // Normalize
 *
@@ -31,6 +38,7 @@ html, body
     height 100%
     width 100%
     overflow-x hidden
+    background-color $bg
 
 h1
 h2
@@ -41,6 +49,7 @@ h6
 p
 a
     font-family: 'Poppins', sans-serif;
+    color $text-color
     // &::selection
     //     background-color #F3F3F3
     //     color $blue
@@ -70,7 +79,7 @@ a
         right 16px
         height 24px
         width 74px
-        background $pink
+        background $main-color
         color white
         border-radius 40px
         border none
@@ -95,13 +104,13 @@ a
             left: 0;
             right: 0;
             border-radius: 5px;
-            border: 2px solid $pink;
+            border: 2px solid $main-color;
         +tablet()
             border-radius 0
         +desktop()
             border-radius 10px
 
-         .highlighted
+        .highlighted
             background: #FAF0F3;
             :after
                 content: '';
@@ -112,7 +121,7 @@ a
                 left: 0;
                 right: 0;
                 border-radius: 5px;
-                border: 2px solid $pink;
+                border: 2px solid $main-color;
 
 
     .notation-note
@@ -126,7 +135,7 @@ a
         position absolute
         height 1px
         width 100%
-        background $black
+        background $text-color
         top 50%
         align-items center
         align-self center
@@ -137,7 +146,9 @@ a
         width 4%
         top 25%
         left 48%
-        background $black
+        background $text-color
+        &.active
+            background $main-color
 
 
     .notation-note-circle
@@ -145,8 +156,10 @@ a
         width 15px
         height 15px
         border-radius 50px
-        background $black
+        background $text-color
         margin 0 auto
+        &.active
+            background $main-color
 
     .Dun
         top 66%

@@ -14,6 +14,7 @@ body {
   height: 100%;
   width: 100%;
   overflow-x: hidden;
+  background-color: #fff;
 }
 h1,
 h2,
@@ -24,6 +25,7 @@ h6,
 p,
 a {
   font-family: 'Poppins', sans-serif;
+  color: #000;
 }
 .song-card {
   position: relative;
@@ -132,6 +134,9 @@ a {
   left: 48%;
   background: #000;
 }
+.song-card .notation-vertical-line.active {
+  background: #ff5d8e;
+}
 .song-card .notation-note-circle {
   position: relative;
   width: 15px;
@@ -139,6 +144,9 @@ a {
   border-radius: 50px;
   background: #000;
   margin: 0 auto;
+}
+.song-card .notation-note-circle.active {
+  background: #ff5d8e;
 }
 .song-card .Dun {
   top: 66%;

@@ -3,6 +3,11 @@ export const SongsData = [
       id: 1,
       songName: "Bala Kulandyan",
       song: "Pa x x Ta Pa x go do Pa x x Ta Pa x go do",
+      song3: [
+        ["Pa x x Ta Pa x go do"]
+        ["Pa x x Ta Pa x go do"]
+      ]
+      ,
     },
     {
       id: 2,

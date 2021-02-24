@@ -1,9 +1,10 @@
 import React, { Component } from "react";
 
-<div></div>;
 class NotationNote extends Component {
   state = {
     note: this.props.note,
+    step: this.props.step,
+    noteIndex: this.props.noteIndex,
   };
 
   render() {
@@ -18,6 +19,10 @@ class NotationNote extends Component {
 
   getNoteClasses() {
     let classes = "notation-note-circle " + this.state.note;
+    if (this.state.noteIndex == this.props.step) {
+      classes += " active";
+    }
+    // classes += this.props.noteIndex === this.state.step ? " active" : "";
     return classes;
   }
 }
