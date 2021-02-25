@@ -31,6 +31,7 @@ class SongCard extends Component {
               noteIndex={index}
               songId={this.props.songId}
               songPlaying={this.props.songPlaying}
+              playing={this.props.playing}
             />
           ))}
         </div>
