@@ -1,35 +1,27 @@
 import React, { Component, Fragment } from "react";
-import SongCard from "./songCard";
 import { SongsData } from "../songsData";
-import useSound from "use-sound";
+import SongCard from "./songCard";
+import UIfx from "uifx";
+import bassAudio from "../sounds/fxBass.mp3";
+import toneAudio from "../sounds/fxTone.mp3";
+import slapAudio from "../sounds/fxSlap.mp3";
+
 var uniqid = require("uniqid");
+const bass = new UIfx(bassAudio);
+const tone = new UIfx(toneAudio);
+const slap = new UIfx(slapAudio);
 
 class App extends Component {
   state = {
     SongsData: SongsData,
     playing: false,
     step: 0,
-
-    tempo: 60.0,
     bpm: 120.0,
     step: 0,
-    steps: 16,
-    currentNote: 0,
-    nextNoteTime: 0.0, // when the next note is due.
-    notesInQueue: [],
-    lastNoteDrawn: 3,
-    AudioContext: window.AudioContext || window.webkitAudioContext,
-    audioCtx: new AudioContext(),
-    playing: false,
   };
 
-  // constructor(props) {
-  //   super(props);
-  //   this.playPause = this.playPause.bind(this);
-  // }
-
   handlePlayPause = (songId) => {
-    if (this.state.playing) {
+    if (this.state.playing && this.state.songPlaying == songId) {
       clearInterval(this.interval);
       this.setState(() => ({
         playing: false,
@@ -37,47 +29,45 @@ class App extends Component {
       return;
     }
 
+    clearInterval(this.interval);
+
     this.setState(() => ({
       playing: true,
       songPlaying: songId,
+      step: -1,
     }));
-    // const { bpm, notes, type, release, delay } = this.state;
 
     this.interval = setInterval(() => {
       this.setState(
         (state) => ({
-          step: state.step < state.steps - 1 ? state.step + 1 : 0,
+          step:
+            state.step < SongsData[songId].song.split(" ").length - 1
+              ? state.step + 1
+              : 0,
         }),
         () => {
-          // console.log(this.state.step);
-          // if () {
-          // }
-
-          const fxBass = document.getElementsByClassName("fxBass")[0];
-          const fxTone = document.getElementsByClassName("fxTone")[0];
-          const fxSlap = document.getElementsByClassName("fxSlap")[0];
           switch (
             this.state.SongsData[songId].song.split(" ")[this.state.step]
           ) {
             case "x":
               break;
             case "Gun":
-              fxBass.play();
+              bass.play();
               break;
             case "Dun":
-              fxBass.play();
+              bass.play();
               break;
             case "go":
-              fxTone.play();
+              tone.play();
               break;
             case "do":
-              fxTone.play();
+              tone.play();
               break;
             case "Pa":
-              fxSlap.play();
+              slap.play();
               break;
             case "Ta":
-              fxSlap.play();
+              slap.play();
               break;
           }
         }

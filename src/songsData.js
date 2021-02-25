@@ -16,8 +16,8 @@ export const SongsData = [
     },
     {
       id: 2,
-      songName: "Modern hip pop",
-      song: "Ta Ta Ta Ta Ta Ta Ta Ta Ta Ta Ta Ta Ta Ta Ta Ta",
+      songName: "Djansa",
+      song: "Pa Ta x Ta Pa x do go Ta x Gun x Ta Dun go do",
     },
     // {
     //   id: 3,
