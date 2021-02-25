@@ -2,22 +2,32 @@ export const SongsData = [
     {
       id: 0,
       songName: "Bala Kulandyan",
-      song: "Pa x x Ta Pa x go do Pa x x Ta Pa x go do",
-      songAlternative: [
-        ["Pa x x Ta Pa x go do"]
-        ["Pa x x Ta Pa x go do"]
+      song: "Pa xx xx Ta Pa xx go do Pa xx xx Ta Pa xx go do",
+      song2: [
+        ["Pa xx xx Ta Pa xx go do"]
+        ["Pa xx xx Ta Pa xx go do"]
       ]
       ,
     },
     {
       id: 1,
-      songName: "Modern hip pop",
-      song: "x Gun x x Pa x x Gun x Gun x do Pa x x x",
+      songName: "Modern beat",
+      song: "xx Gun xx xx Pa xx xx Gun xx Gun xx do Pa xx xx xx",
+      song2: [
+        "xx Gun xx xx Pa xx xx Gun",
+        "xx Gun xx do Pa xx xx xx"
+      ]
+      ,
     },
     {
       id: 2,
       songName: "Djansa",
-      song: "Pa Ta x Ta Pa x do go Ta x Gun x Ta Dun go do",
+      song: "Pa Ta xx Ta Pa xx do go Ta xx Gun xx Ta Dun go do",
+      song2: [
+        ["Pa Ta xx Ta Pa xx do go"]
+        ["Ta xx Gun xx Ta Dun go do"]
+      ]
+      ,
     },
     // {
     //   id: 3,
@@ -37,12 +47,12 @@ export const SongsData = [
     // {
     //   id: 6,
     //   songName: "Bala Kulandyan",
-    //   song: "Pa x x Ta Pa x go do Pa x x Ta Pa x go do",
+    //   song: "Pa xx xx Ta Pa xx go do Pa xx xx Ta Pa xx go do",
     // },
     // {
     //   id: 7,
     //   songName: "Modern hip pop",
-    //   song: "Gun do go do Pa x x do Gun x Gun x do Pa x x",
+    //   song: "Gun do go do Pa xx xx do Gun xx Gun xx do Pa xx xx",
     // },
     // {
     //   id: 8,

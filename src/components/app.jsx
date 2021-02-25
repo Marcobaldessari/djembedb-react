@@ -2,12 +2,12 @@ import React, { Component, Fragment } from "react";
 import { SongsData } from "../songsData";
 import SongCard from "./songCard";
 import UIfx from "uifx";
-import gunAudio from "../sounds/gun.wav";
-import dunAudio from "../sounds/dun.wav";
-import goAudio from "../sounds/go.wav";
-import doAudio from "../sounds/do.wav";
-import paAudio from "../sounds/pa.wav";
-import taAudio from "../sounds/ta.wav";
+import gunAudio from "../sounds/gun.mp3";
+import dunAudio from "../sounds/dun.mp3";
+import goAudio from "../sounds/go.mp3";
+import doAudio from "../sounds/do.mp3";
+import paAudio from "../sounds/pa.mp3";
+import taAudio from "../sounds/ta.mp3";
 
 var uniqid = require("uniqid");
 const gun = new UIfx(gunAudio);
@@ -43,7 +43,12 @@ class App extends Component {
       step: -1,
     }));
 
-    const song = this.state.SongsData[songId].song.split(" ");
+    const notes = this.state.SongsData[songId].song.split(" ");
+    let song2 = "";
+    this.state.SongsData[songId].song2.forEach(
+      (element) => (song2 += " " + element)
+    );
+    console.log(song2);
 
     this.interval = setInterval(() => {
       this.setState(
@@ -54,9 +59,7 @@ class App extends Component {
               : 0,
         }),
         () => {
-          switch (song[this.state.step]) {
-            case "x":
-              break;
+          switch (notes[this.state.step]) {
             case "Gun":
               gun.play();
               break;
@@ -75,6 +78,8 @@ class App extends Component {
             case "Ta":
               ta.play();
               break;
+            default:
+              break;
           }
         }
       );
@@ -91,6 +96,7 @@ class App extends Component {
             step={this.state.step}
             songName={song.songName}
             song={song.song}
+            song2={song.song2}
             OnPlayPause={this.handlePlayPause}
             songPlaying={this.state.songPlaying}
             playing={this.state.playing}
