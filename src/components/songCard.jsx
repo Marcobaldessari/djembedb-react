@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import ButtonPlaySmall from "./buttonPlaySmall";
 import NotationNote from "./notationNote";
 var uniqid = require("uniqid");
 
@@ -23,7 +22,6 @@ class SongCard extends Component {
         >
           PLAY
         </button>
-        {/* <ButtonPlaySmall onClick={this.props.OnPlayPause}></ButtonPlaySmall> */}
         <div className="notation-frame">
           {this.state.notes.map((i, index) => (
             <NotationNote
