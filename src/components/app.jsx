@@ -87,6 +87,7 @@ class App extends Component {
             song={song.song}
             OnPlayPause={this.handlePlayPause}
             songPlaying={this.state.songPlaying}
+            playing={this.state.playing}
           />
         ))}
       </div>

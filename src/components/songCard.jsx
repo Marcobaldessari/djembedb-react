@@ -22,7 +22,7 @@ class SongCard extends Component {
         >
           PLAY
         </button>
-        <div className="notation-frame">
+        <div className={this.getNotationFrameClasses()}>
           {this.state.notes.map((i, index) => (
             <NotationNote
               step={this.props.step}
@@ -37,6 +37,14 @@ class SongCard extends Component {
       </div>
     );
   }
+  getNotationFrameClasses = () => {
+    let classes = "notation-frame";
+    classes +=
+      this.props.playing && this.props.songPlaying === this.props.songId
+        ? " active"
+        : "";
+    return classes;
+  };
 }
 
 export default SongCard;
