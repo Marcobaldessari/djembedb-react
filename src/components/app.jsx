@@ -2,14 +2,20 @@ import React, { Component, Fragment } from "react";
 import { SongsData } from "../songsData";
 import SongCard from "./songCard";
 import UIfx from "uifx";
-import bassAudio from "../sounds/fxBass.mp3";
-import toneAudio from "../sounds/fxTone.mp3";
-import slapAudio from "../sounds/fxSlap.mp3";
+import gunAudio from "../sounds/gun.wav";
+import dunAudio from "../sounds/dun.wav";
+import goAudio from "../sounds/go.wav";
+import doAudio from "../sounds/do.wav";
+import paAudio from "../sounds/pa.wav";
+import taAudio from "../sounds/ta.wav";
 
 var uniqid = require("uniqid");
-const bass = new UIfx(bassAudio);
-const tone = new UIfx(toneAudio);
-const slap = new UIfx(slapAudio);
+const gun = new UIfx(gunAudio);
+const dun = new UIfx(dunAudio);
+const go = new UIfx(goAudio);
+const d0 = new UIfx(doAudio);
+const pa = new UIfx(paAudio);
+const ta = new UIfx(taAudio);
 
 class App extends Component {
   state = {
@@ -52,22 +58,22 @@ class App extends Component {
             case "x":
               break;
             case "Gun":
-              bass.play();
+              gun.play();
               break;
             case "Dun":
-              bass.play();
+              dun.play();
               break;
             case "go":
-              tone.play();
+              go.play();
               break;
             case "do":
-              tone.play();
+              d0.play();
               break;
             case "Pa":
-              slap.play();
+              pa.play();
               break;
             case "Ta":
-              slap.play();
+              ta.play();
               break;
           }
         }
