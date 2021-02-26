@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from "react";
+import React, { Component, Fragment, useState, useRef, useEffect } from "react";
 import { SongsData } from "../songsData";
 import SongCard from "./songCard";
 import UIfx from "uifx";
@@ -8,6 +8,7 @@ import goAudio from "../sounds/go.mp3";
 import doAudio from "../sounds/do.mp3";
 import paAudio from "../sounds/pa.mp3";
 import taAudio from "../sounds/ta.mp3";
+import gsap from "gsap";
 
 var uniqid = require("uniqid");
 const gun = new UIfx(gunAudio);
@@ -22,9 +23,11 @@ class App extends Component {
     SongsData: SongsData,
     playing: false,
     step: 0,
-    bpm: 120.0,
+    bpm: 150.0,
     step: 0,
   };
+
+  // const [rotate, setRotate] = useState(false);
 
   handlePlayPause = (songId) => {
     if (this.state.playing && this.state.songPlaying == songId) {
@@ -40,7 +43,7 @@ class App extends Component {
     this.setState(() => ({
       playing: true,
       songPlaying: songId,
-      step: -1,
+      step: 0,
     }));
 
     const notes = this.state.SongsData[songId].song.split(" ");
@@ -48,7 +51,7 @@ class App extends Component {
     this.state.SongsData[songId].song2.forEach(
       (element) => (song2 += " " + element)
     );
-    console.log(song2);
+    // console.log(song2);
 
     this.interval = setInterval(() => {
       this.setState(
@@ -60,7 +63,7 @@ class App extends Component {
         }),
         () => {}
       );
-      this.animateNote(this.state.songPlaying, this.state.step);
+      // this.animateNote(this.state.songPlaying, this.state.step);
       this.playNoteSound(notes[this.state.step]);
     }, (60 * 1000) / this.state.bpm / 2);
   };
@@ -85,9 +88,25 @@ class App extends Component {
     );
   }
 
+  componentDidUpdate() {
+    this.animateNote(this.state.songPlaying, this.state.step);
+  }
+
   animateNote(songPlaying, step) {
-    console.log("animate Note!");
-    let id = "note-" + songPlaying + "-" + step;
+    this.state.animatedNoteId = "note-" + songPlaying + "-" + step;
+    let animatedNoteIdHashtag = "#" + this.state.animatedNoteId;
+
+    var tl = gsap.timeline();
+    tl.to(animatedNoteIdHashtag, {
+      scale: 1.5,
+      duration: 0.1,
+      ease: "power2.out",
+    });
+    tl.to(animatedNoteIdHashtag, {
+      scale: 1,
+      duration: 0.1,
+      ease: "power2.in",
+    });
   }
 
   playNoteSound(note) {
