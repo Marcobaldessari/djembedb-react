@@ -3,7 +3,6 @@ import React, { Component } from "react";
 class NotationNote extends Component {
   state = {
     note: this.props.note,
-    step: this.props.step,
     noteIndex: this.props.noteIndex,
   };
 
