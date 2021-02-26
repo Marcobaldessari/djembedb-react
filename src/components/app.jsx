@@ -58,31 +58,10 @@ class App extends Component {
               ? state.step + 1
               : 0,
         }),
-        () => {
-          switch (notes[this.state.step]) {
-            case "Gun":
-              gun.play();
-              break;
-            case "Dun":
-              dun.play();
-              break;
-            case "go":
-              go.play();
-              break;
-            case "do":
-              d0.play();
-              break;
-            case "Pa":
-              pa.play();
-              break;
-            case "Ta":
-              ta.play();
-              break;
-            default:
-              break;
-          }
-        }
+        () => {}
       );
+      this.animateNote(this.state.songPlaying, this.state.step);
+      this.playNoteSound(notes[this.state.step]);
     }, (60 * 1000) / this.state.bpm / 2);
   };
 
@@ -104,6 +83,36 @@ class App extends Component {
         ))}
       </div>
     );
+  }
+
+  animateNote(songPlaying, step) {
+    console.log("animate Note!");
+    let id = "note-" + songPlaying + "-" + step;
+  }
+
+  playNoteSound(note) {
+    switch (note) {
+      case "Gun":
+        gun.play();
+        break;
+      case "Dun":
+        dun.play();
+        break;
+      case "go":
+        go.play();
+        break;
+      case "do":
+        d0.play();
+        break;
+      case "Pa":
+        pa.play();
+        break;
+      case "Ta":
+        ta.play();
+        break;
+      default:
+        break;
+    }
   }
 }
 
