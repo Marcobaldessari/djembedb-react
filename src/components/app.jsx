@@ -11,12 +11,12 @@ import taAudio from "../sounds/ta.mp3";
 import gsap from "gsap";
 
 var uniqid = require("uniqid");
-const gun = new UIfx(gunAudio);
-const dun = new UIfx(dunAudio);
-const go = new UIfx(goAudio);
-const d0 = new UIfx(doAudio);
-const pa = new UIfx(paAudio);
-const ta = new UIfx(taAudio);
+const gun = new UIfx(gunAudio),
+  dun = new UIfx(dunAudio),
+  go = new UIfx(goAudio),
+  d0 = new UIfx(doAudio),
+  pa = new UIfx(paAudio),
+  ta = new UIfx(taAudio);
 
 class App extends Component {
   state = {
@@ -68,10 +68,10 @@ class App extends Component {
   render() {
     return (
       <div className={"songList"}>
-        {SongsData.map((song) => (
+        {SongsData.map((song, index) => (
           <SongCard
             key={uniqid()}
-            songId={song.id}
+            songId={index}
             songName={song.songName}
             song={song.song}
             song2={song.song2}
