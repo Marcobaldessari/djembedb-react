@@ -32,9 +32,12 @@ $bg = #fff
 
 *,
 *::after,
-*::before {
+*::before 
 	box-sizing: border-box;
-}
+    
+
+*:focus 
+    outline none
 
 html, body
     height 100%
@@ -86,6 +89,8 @@ a
         color white
         border-radius 40px
         border none
+        
+
 
     .notation-frame
         position absolute
