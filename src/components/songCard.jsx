@@ -13,15 +13,20 @@ class SongCard extends Component {
     return (
       <div className="song-card">
         <h2 className="song-name">{this.state.songName}</h2>
-        <button
+        {/* <button
           className={"btn btn-play paused"}
           onClick={() => {
             this.props.OnPlayPause(this.props.songId);
           }}
         >
           PLAY
-        </button>
-        <div className={this.getNotationFrameClasses()}>
+        </button> */}
+        <div
+          className={this.getNotationFrameClasses()}
+          onClick={() => {
+            this.props.OnPlayPause(this.props.songId);
+          }}
+        >
           {this.state.notes.map((i, index) => (
             <NotationNote
               key={uniqid()}

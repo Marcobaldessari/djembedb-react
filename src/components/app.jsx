@@ -86,12 +86,12 @@ class App extends Component {
     var tl = gsap.timeline();
     tl.to(animatedNoteIdHashtag, {
       scale: 1.5,
-      duration: 0.1,
+      duration: 0.05,
       // ease: "power2.out",
     });
     tl.to(animatedNoteIdHashtag, {
       scale: 1,
-      duration: 0.1,
+      duration: 0.2,
       // ease: "power2.in",
     });
   }
