@@ -4,7 +4,6 @@ var uniqid = require("uniqid");
 
 class SongCard extends Component {
   state = {
-    step: this.props.step,
     songName: this.props.songName,
     song: this.props.song,
     notes: this.props.song.split(" "),
@@ -25,13 +24,10 @@ class SongCard extends Component {
         <div className={this.getNotationFrameClasses()}>
           {this.state.notes.map((i, index) => (
             <NotationNote
-              step={this.props.step}
               key={uniqid()}
               note={i}
               noteIndex={index}
               songId={this.props.songId}
-              songPlaying={this.props.songPlaying}
-              playing={this.props.playing}
             />
           ))}
         </div>

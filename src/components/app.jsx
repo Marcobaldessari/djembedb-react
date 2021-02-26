@@ -23,7 +23,7 @@ class App extends Component {
     SongsData: SongsData,
     playing: false,
     step: 0,
-    bpm: 150.0,
+    bpm: 120.0,
     step: 0,
   };
 
@@ -75,7 +75,6 @@ class App extends Component {
           <SongCard
             key={uniqid()}
             songId={song.id}
-            step={this.state.step}
             songName={song.songName}
             song={song.song}
             song2={song.song2}
@@ -100,12 +99,12 @@ class App extends Component {
     tl.to(animatedNoteIdHashtag, {
       scale: 1.5,
       duration: 0.1,
-      ease: "power2.out",
+      // ease: "power2.out",
     });
     tl.to(animatedNoteIdHashtag, {
       scale: 1,
       duration: 0.1,
-      ease: "power2.in",
+      // ease: "power2.in",
     });
   }
 

@@ -21,14 +21,6 @@ class NotationNote extends Component {
 
   getNoteClasses() {
     let classes = "notation-note-circle " + this.state.note;
-
-    classes +=
-      this.props.playing &&
-      this.props.songId === this.props.songPlaying &&
-      this.state.noteIndex === this.props.step
-        ? " active"
-        : "";
-
     return classes;
   }
 
