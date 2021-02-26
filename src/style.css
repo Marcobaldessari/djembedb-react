@@ -160,12 +160,6 @@ a {
   background: #000;
   margin: 0 auto;
 }
-.song-card .notation-note-circle.active {
-  background: $black;
-  -webkit-transition: 0.1s all;
-  -o-transition: 0.1s all;
-  transition: 0.1s all;
-}
 .song-card .Dun {
   top: 66%;
 }
@@ -179,10 +173,25 @@ a {
   top: 42%;
 }
 .song-card .Ta {
-  top: 20%;
+  top: 18%;
 }
 .song-card .Pa {
-  top: 20%;
+  top: 18%;
+}
+.song-card .Ca {
+  top: 18%;
+  background: none;
+  border: 2px solid #000;
+}
+.song-card .Ca::after {
+  content: "";
+  width: 3px;
+  height: 3px;
+  left: 4px;
+  top: 4px;
+  position: absolute;
+  background: #000;
+  border-radius: 50px;
 }
 .song-card .xx {
   display: none;

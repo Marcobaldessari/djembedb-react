@@ -170,9 +170,6 @@ a
         background $text-color
         margin 0 auto
         // box-shadow: 0 0 1px 0px white inset
-        &.active
-            background $black
-            transition .1s all
 
     .Dun
         top 66%
@@ -183,9 +180,22 @@ a
     .go
         top 42%
     .Ta
-        top 20%
+        top 18%
     .Pa
-        top 20%
+        top 18%
+    .Ca
+        top 18%
+        background none
+        border 2px solid $text-color
+        &::after
+            content ""
+            width 3px
+            height 3px
+            left 4px
+            top 4px
+            position absolute
+            background $text-color
+            border-radius 50px
     .xx
         display none
 

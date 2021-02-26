@@ -8,6 +8,7 @@ import goAudio from "../sounds/go.mp3";
 import doAudio from "../sounds/do.mp3";
 import paAudio from "../sounds/pa.mp3";
 import taAudio from "../sounds/ta.mp3";
+import caAudio from "../sounds/ca.mp3";
 import gsap from "gsap";
 
 var uniqid = require("uniqid");
@@ -16,7 +17,8 @@ const gun = new UIfx(gunAudio),
   go = new UIfx(goAudio),
   d0 = new UIfx(doAudio),
   pa = new UIfx(paAudio),
-  ta = new UIfx(taAudio);
+  ta = new UIfx(taAudio),
+  ca = new UIfx(caAudio);
 
 class App extends Component {
   state = {
@@ -113,6 +115,9 @@ class App extends Component {
         break;
       case "Ta":
         ta.play();
+        break;
+      case "Ca":
+        ca.play();
         break;
       default:
         break;

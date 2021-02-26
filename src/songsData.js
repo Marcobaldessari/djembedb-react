@@ -27,6 +27,15 @@ export const SongsData = [
       ,
     },
     {
+      songName: "Kuku",
+      song: "Dun Ca xx Gun Dun go do Gun Dun Ca xx Gun Dun go do Gun",
+      song2: [
+        [""]
+        [""]
+      ]
+      ,
+    },
+    {
       songName: "Test",
       song: "Dun Dun Dun Dun Dun Dun do do do do do Pa Pa Pa Pa Pa",
       song2: [
