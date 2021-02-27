@@ -51,7 +51,7 @@ class App extends Component {
     this.state.SongsData[songId].song2.forEach(
       (element) => (song2 += " " + element)
     );
-    // console.log(song2);
+    console.log(song2);
 
     this.interval = setInterval(() => {
       this.animateNote(this.state.songPlaying, step);
