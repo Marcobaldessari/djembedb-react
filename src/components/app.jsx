@@ -47,16 +47,15 @@ class App extends Component {
     }));
 
     const notes = this.state.SongsData[songId].song.split(" ");
-    let song2 = "";
+    let songString = "";
     this.state.SongsData[songId].song2.forEach(
-      (element) => (song2 += " " + element)
+      (element) => (songString += element + " ")
     );
-    console.log(song2);
 
     this.interval = setInterval(() => {
       this.animateNote(this.state.songPlaying, step);
       this.playNoteSound(notes[step]);
-      step = step < SongsData[songId].song.split(" ").length - 1 ? step + 1 : 0;
+      step = step < songString.split(" ").length - 2 ? step + 1 : 0;
     }, (60 * 1000) / this.state.bpm / 2);
   };
 

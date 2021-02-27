@@ -4,15 +4,13 @@ var uniqid = require("uniqid");
 
 class SongCard extends Component {
   state = {
-    songName: this.props.songName,
-    song: this.props.song,
     notes: this.props.song.split(" "),
   };
 
   render() {
     return (
       <div className="song-card">
-        <h2 className="song-name">{this.state.songName}</h2>
+        <h2 className="song-name">{this.props.songName}</h2>
         {/* <button
           className={"btn btn-play paused"}
           onClick={() => {
