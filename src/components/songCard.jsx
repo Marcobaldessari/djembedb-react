@@ -3,9 +3,7 @@ import NotationNote from "./notationNote";
 var uniqid = require("uniqid");
 
 class SongCard extends Component {
-  state = {
-    notes: this.props.song.split(" "),
-  };
+  state = {};
 
   render() {
     return (
@@ -25,13 +23,25 @@ class SongCard extends Component {
             this.props.OnPlayPause(this.props.songId);
           }}
         >
-          {this.state.notes.map((i, index) => (
-            <NotationNote
+          {this.props.song.map((measure, indexMeasure) => (
+            <div
+              className="measure"
               key={uniqid()}
-              note={i}
-              noteIndex={index}
-              songId={this.props.songId}
-            />
+              id={this.getMeasureId(indexMeasure)}
+            >
+              {measure.split(" ").map((n, indexNote) => (
+                <NotationNote
+                  key={uniqid()}
+                  note={n}
+                  noteIndex={this.getNoteIndex(
+                    indexNote,
+                    indexMeasure,
+                    measure
+                  )}
+                  songId={this.props.songId}
+                />
+              ))}
+            </div>
           ))}
         </div>
       </div>
@@ -45,6 +55,15 @@ class SongCard extends Component {
         : "";
     return classes;
   };
+
+  getMeasureId(indexMeasure) {
+    let id = "measure-" + this.props.songId + "-" + indexMeasure;
+    return id;
+  }
+
+  getNoteIndex(indexNote, indexMeasure, measure) {
+    return indexNote + indexMeasure * measure.split(" ").length;
+  }
 }
 
 export default SongCard;

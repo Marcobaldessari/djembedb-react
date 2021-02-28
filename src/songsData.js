@@ -1,8 +1,7 @@
 export const SongsData = [
     {
       songName: "Bala Kulandyan",
-      song: "Pa xx xx Ta Pa xx go do Pa xx xx Ta Pa xx go do",
-      song2: [
+      song: [
         "Pa xx xx Ta Pa xx go do",
         "Pa xx xx Ta Pa xx go do"
       ]
@@ -10,27 +9,25 @@ export const SongsData = [
     },
     {
       songName: "Modern beat",
-      song: "xx Gun xx xx Pa xx xx Gun xx Gun xx do Pa xx xx xx",
-      song2: [
-        "xx Gun xx xx Pa xx xx Gun",
+      song: [
+        "xx Gun xx Pa xx Gun xx xx",
         "xx Gun xx do Pa xx xx xx"
       ]
-      ,
+      
     },
     {
       songName: "Djansa",
-      song: "Pa Ta xx Ta Pa xx do go Ta xx Gun xx Ta Dun go do",
-      song2: [
+      song: [
         "Pa Ta xx Ta Pa xx do go",
         "Ta xx Gun xx Ta Dun go do"
+        
       ]
       ,
     },
     {
       songName: "Kuku",
       src: "https://www.youtube.com/watch?v=5HIAuK9RS6E&t=8s",
-      song: "Gun Ca xx Gun Dun go do Gun Dun Ca xx Gun Dun go do Gun",
-      song2: [
+      song: [
         "Gun Ca xx Gun Dun go do Gun",
         "Dun Ca xx Gun Dun go do Gun"
       ]
@@ -39,9 +36,8 @@ export const SongsData = [
     {
       songName: "Kono",
       src: "https://www.youtube.com/watch?v=5HIAuK9RS6E&t=8s",
-      song: "Gun do go do Gun xx Ta Pa Gun do go do Gun xx Pa xx",
-      song2: [
-        "Gun do go do Gun xx Ta Pa ",
+      song: [
+        "Gun do go do Gun xx Ta Pa",
         "Gun do go do Gun xx Pa xx"
       ]
       ,
@@ -49,9 +45,8 @@ export const SongsData = [
     {
       songName: "Patatje",
       src: "https://www.youtube.com/watch?v=5HIAuK9RS6E&t=8s",
-      song: " ",
-      song2: [
-        "Gun xx Ta Pa xx Dun Dun Ta ",
+      song: [
+        "Gun xx Ta Pa xx Dun Dun Ta",
         "xx Gun xx Ta Pa xx Dun Dun Ta Pa xx"
       ]
       ,
@@ -59,19 +54,17 @@ export const SongsData = [
     {
       songName: "Yankadi",
       src: "https://www.youtube.com/watch?v=5HIAuK9RS6E&t=8s",
-      song: "",
-      song2: [
-        "Gun xx go do Gun Ta Pa xx ",
-        "Gun"
+      song: [
+        "Gun xx go do Gun Ta Pa xx",
+        "Gun xx xx xx xx xx xx xx"
       ]
       ,
     },
     {
       songName: "Test",
-      song: "Gun Gun Gun Gun Gun Gun do do do do do Pa Pa Pa Pa Pa",
-      song2: [
-        "Pa Ta xx Ta Pa xx do go ",
-        "Ta xx Gun xx Ta Dun go do"
+      song: [
+        "Gun Gun Gun Gun Ca Ca Ca Ca",
+        "go go go go Ta Ta Ta Ta"
       ]
       ,
     },

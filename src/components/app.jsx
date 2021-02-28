@@ -1,6 +1,7 @@
 import React, { Component, Fragment, useState, useRef, useEffect } from "react";
 import { SongsData } from "../songsData";
 import SongCard from "./songCard";
+import Logo from "./logo";
 import UIfx from "uifx";
 import gunAudio from "../sounds/gun.mp3";
 import dunAudio from "../sounds/dun.mp3";
@@ -25,7 +26,7 @@ class App extends Component {
     SongsData: SongsData,
     playing: false,
     step: 0,
-    bpm: 120.0,
+    bpm: 160.0,
     step: 0,
   };
 
@@ -46,35 +47,38 @@ class App extends Component {
       step: 0,
     }));
 
-    const notes = this.state.SongsData[songId].song.split(" ");
     let songString = "";
-    this.state.SongsData[songId].song2.forEach(
+    this.state.SongsData[songId].song.forEach(
       (element) => (songString += element + " ")
     );
+    let notes = songString.split(" ");
 
     this.interval = setInterval(() => {
       this.animateNote(this.state.songPlaying, step);
       this.playNoteSound(notes[step]);
-      step = step < songString.split(" ").length - 2 ? step + 1 : 0;
+      step = step < notes.length - 2 ? step + 1 : 0;
     }, (60 * 1000) / this.state.bpm / 2);
   };
 
   render() {
     return (
-      <div className={"songList"}>
-        {SongsData.map((song, index) => (
-          <SongCard
-            key={uniqid()}
-            songId={index}
-            songName={song.songName}
-            song={song.song}
-            song2={song.song2}
-            OnPlayPause={this.handlePlayPause}
-            songPlaying={this.state.songPlaying}
-            playing={this.state.playing}
-          />
-        ))}
-      </div>
+      <React.Fragment>
+        <Logo></Logo>
+        <div className={"songList"}>
+          {SongsData.map((song, index) => (
+            <SongCard
+              key={uniqid()}
+              songId={index}
+              songName={song.songName}
+              song={song.song}
+              song={song.song}
+              OnPlayPause={this.handlePlayPause}
+              songPlaying={this.state.songPlaying}
+              playing={this.state.playing}
+            />
+          ))}
+        </div>
+      </React.Fragment>
     );
   }
 
