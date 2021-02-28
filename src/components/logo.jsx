@@ -38,8 +38,8 @@ class Logo extends Component {
           <div className="logomark-note Dun" id="note-logo-3"></div>
           <div className="logomark-note Gun" id="note-logo-4"></div>
         </div>
-        <img src={require("../vectors/logotype.svg")} alt="" />
-        <img src="../vectors/logotype.svg" alt="" />
+        {/* <img src={require("../../src/assets/vectors/timer.jpg")} alt="" /> */}
+        {/* <img src="../vectors/logotype.svg" alt="" /> */}
         <div className="logotype">
           {/* <img src="/src/vectors/logotype.svg" /> */}
           <svg

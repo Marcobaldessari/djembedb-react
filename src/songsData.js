@@ -7,14 +7,14 @@ export const SongsData = [
       ]
       ,
     },
-    {
-      songName: "Modern beat",
-      song: [
-        "xx Gun xx Pa xx Gun xx xx",
-        "xx Gun xx do Pa xx xx xx"
-      ]
+    // {
+    //   songName: "Modern beat",
+    //   song: [
+    //     "xx Gun xx Pa xx Gun xx xx",
+    //     "xx Gun xx do Pa xx xx xx"
+    //   ]
       
-    },
+    // },
     {
       songName: "Djansa",
       song: [
@@ -42,21 +42,21 @@ export const SongsData = [
       ]
       ,
     },
-    {
-      songName: "Patatje",
-      src: "https://www.youtube.com/watch?v=5HIAuK9RS6E&t=8s",
-      song: [
-        "Gun xx Ta Pa xx Dun Dun Ta",
-        "xx Gun xx Ta Pa xx Dun Dun Ta Pa xx"
-      ]
-      ,
-    },
+    // {
+    //   songName: "Patatje",
+    //   src: "https://www.youtube.com/watch?v=5HIAuK9RS6E&t=8s",
+    //   song: [
+    //     "Gun xx Ta Pa xx Dun Dun Ta",
+    //     "xx Gun xx Ta Pa xx Dun Dun Ta Pa xx"
+    //   ]
+    //   ,
+    // },
     {
       songName: "Yankadi",
       src: "https://www.youtube.com/watch?v=5HIAuK9RS6E&t=8s",
       song: [
         "Gun xx go do Gun Ta Pa xx",
-        "Gun xx xx xx xx xx xx xx"
+        "xx xx xx xx xx xx xx xx"
       ]
       ,
     },
