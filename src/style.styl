@@ -211,14 +211,21 @@ a
 .logo
     *
         transition width .5s, margin .5s, top .5s, left .5s
-    
+    +tablet()
+        margin-top 60px
+        margin-bottom 16px
+    +desktop()
+        margin-top 120px
+        margin-bottom 40px
+
+
 
 .logotype
     text-align center
     +desktop()
-        margin 40px auto 80px
+        margin 40px auto 0px
     +tablet()
-        margin 20px auto 40px
+        margin 20px auto 0px
         width 200px
         height auto
     svg 
@@ -233,13 +240,13 @@ a
     background $main-color
     +desktop()
         padding 16px
-        margin 120px auto 0px
+        margin 0 auto 
         width 168px
         height 108px
         border-radius 35px
     +tablet()
         padding 10px
-        margin 40px auto 0px
+        margin 0 auto
         width 108px
         height 68px
         border-radius 20px

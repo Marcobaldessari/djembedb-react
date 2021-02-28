@@ -217,17 +217,29 @@ a {
   -o-transition: width 0.5s, margin 0.5s, top 0.5s, left 0.5s;
   transition: width 0.5s, margin 0.5s, top 0.5s, left 0.5s;
 }
+@media (max-width: 639px) {
+  .logo {
+    margin-top: 60px;
+    margin-bottom: 16px;
+  }
+}
+@media (min-width: 640px) {
+  .logo {
+    margin-top: 120px;
+    margin-bottom: 40px;
+  }
+}
 .logotype {
   text-align: center;
 }
 @media (min-width: 640px) {
   .logotype {
-    margin: 40px auto 80px;
+    margin: 40px auto 0px;
   }
 }
 @media (max-width: 639px) {
   .logotype {
-    margin: 20px auto 40px;
+    margin: 20px auto 0px;
     width: 200px;
     height: auto;
   }
@@ -250,7 +262,7 @@ a {
 @media (min-width: 640px) {
   .logomark {
     padding: 16px;
-    margin: 120px auto 0px;
+    margin: 0 auto;
     width: 168px;
     height: 108px;
     border-radius: 35px;
@@ -259,7 +271,7 @@ a {
 @media (max-width: 639px) {
   .logomark {
     padding: 10px;
-    margin: 40px auto 0px;
+    margin: 0 auto;
     width: 108px;
     height: 68px;
     border-radius: 20px;
