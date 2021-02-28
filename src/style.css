@@ -78,6 +78,9 @@ a {
   height: 88px;
   background: #f7f7f7;
 }
+.song-card .notation-frame:hover {
+  cursor: pointer;
+}
 .song-card .notation-frame.active {
   background: #faf0f3;
 }
@@ -261,6 +264,9 @@ a {
     height: 68px;
     border-radius: 20px;
   }
+}
+.logomark:hover {
+  cursor: pointer;
 }
 .logomark .logomark-note {
   width: 100%;
