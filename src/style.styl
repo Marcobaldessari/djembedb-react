@@ -11,19 +11,15 @@ mobile()
     @media (max-width: 479px)
         {block}
 
-// Color tokens
-$main-color = #FF5D8E
-$grey-bg = #F7F7F7
-$text-color = #000
-// $notation-line = #BDBDBD
-$notation-line = #C8C8C8
-$bg = #fff
+
+
+
 
 // // Dark theme
-// $main-color = #FF5D8E
-// $grey-bg = #1c1c1c
+// --primary-color-regular = #FF5D8E
+// --notation-bg-color = #1c1c1c
 // $text-color = #fff
-// $bg = #222
+// --bg-color = #222
 
 // Normalize
 *
@@ -39,11 +35,36 @@ $bg = #fff
 *:focus 
     outline none
 
+// // Color tokens
+// --primary-color-regular = #FF5D8E
+// --notation-bg-color = #F7F7F7
+// $text-color = #000
+// // --notation-line-color = #BDBDBD
+// --notation-line-color = #C8C8C8
+// --bg-color = #fff
+
+body
+    --bg-color #fff
+    --text-color #222
+    --note-color #fff
+    --notation-line-color #C8C8C8
+    --notation-bg-color #0033cc
+    --primary-color-regular #FF5D8E
+
+    &.dark-theme
+        --bg-color: #fff
+        --text-color #222
+        --note-color #fff
+        --notation-line-color #C8C8C8
+        --notation-bg-color #0033cc
+        --primary-color-regular #FF5D8E
+
 html, body
     height 100%
     width 100%
     overflow-x hidden
-    background-color $bg
+    background-color --bg-color
+    
 
 h1
 h2
@@ -83,7 +104,7 @@ a
         right 16px
         height 24px
         width 74px
-        background $main-color
+        background --primary-color-regular
         color white
         border-radius 40px
         border none
@@ -103,7 +124,7 @@ a
         top 74px
         width 100%
         height 88px
-        background $grey-bg
+        background --notation-bg-color
         &:hover
             cursor pointer
         &.active
@@ -116,7 +137,7 @@ a
             bottom: 0;
             left: 0;
             right: 0;
-            border: 2px solid $main-color;
+            border: 2px solid --primary-color-regular;
             +desktop()
                 border-radius: 5px;
             +tablet()
@@ -139,7 +160,7 @@ a
                 left: 0;
                 right: 0;
                 border-radius: 5px;
-                border: 2px solid $main-color;
+                border: 2px solid --primary-color-regular;
 
     .notation-note
         position relative
@@ -152,7 +173,7 @@ a
         position absolute
         height 1px
         width 100%
-        background $notation-line
+        background --notation-line-color
         top 50%
         align-items center
         align-self center
@@ -163,9 +184,9 @@ a
         width 4%
         top 25%
         left 48%
-        background $notation-line
+        background --notation-line-color
         &.active
-            background $main-color
+            background --primary-color-regular
 
     .notation-note-circle
         position relative
@@ -190,7 +211,7 @@ a
         top 18%
     .Ca
         top 18%
-        background $grey-bg
+        background --notation-bg-color
         border 2px solid $text-color
         &::after
             content ""
@@ -237,7 +258,7 @@ a
     display grid
     grid-template-columns repeat(4,1fr)
     grid-column-gap 4% 
-    background $main-color
+    background --primary-color-regular
     +desktop()
         padding 16px
         margin 0 auto 
@@ -261,25 +282,25 @@ a
         border-radius 100%
         justify-self center
         &.Dun
-            background $bg
+            background --bg-color
             align-self end
         &.Gun
-            background $bg
+            background --bg-color
             align-self end
         &.Ca
-            // outline  4px solid $bg
+            // outline  4px solid --bg-color
             position relative
-            background $main-color
+            background --primary-color-regular
             align-self start
             +desktop()
-                box-shadow: inset 0 0 0 4px $bg;
+                box-shadow: inset 0 0 0 4px --bg-color;
             +tablet()
-                box-shadow: inset 0 0 0 3px $bg;
+                box-shadow: inset 0 0 0 3px --bg-color;
             &::after
                 content ""
                 position absolute
                 display block
-                background $bg
+                background --bg-color
                 border-radius 100%
                 +desktop()
                     top 33%
