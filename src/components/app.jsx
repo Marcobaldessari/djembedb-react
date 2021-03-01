@@ -56,7 +56,7 @@ class App extends Component {
 
     this.buffer = setTimeout(() => {
       this.startLoop(step, notes);
-    }, 1000);
+    }, 500);
   };
 
   startLoop(step, notes) {

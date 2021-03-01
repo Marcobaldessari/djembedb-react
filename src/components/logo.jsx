@@ -89,9 +89,15 @@ class Logo extends Component {
 
   playLogoMusic = () => {
     clearInterval(this.interval);
+    clearTimeout(this.buffer);
     let step = 0;
     const notesArray = this.state.songString.split(" ");
+    this.buffer = setTimeout(() => {
+      this.startLoop(step, notesArray);
+    }, 500);
+  };
 
+  startLoop(step, notesArray) {
     this.animateNote(this.state.songPlaying, step);
     this.interval = setInterval(() => {
       this.playNoteSound(notesArray[step]);
@@ -102,7 +108,8 @@ class Logo extends Component {
         clearInterval(this.interval);
       }
     }, (60 * 1000) / this.state.logoBpm / 2);
-  };
+    return step;
+  }
 
   animateNote(songPlaying, step) {
     var note1Animation = gsap.timeline();
