@@ -26,6 +26,15 @@ export const SongsData = [
     ]
     ,
   },
+  {
+    songName: "Didadi",
+    src: "https://www.youtube.com/watch?v=5HIAuK9RS6E&t=8s",
+    song: [
+      "Gun do Gun do Gun Gun xx go do Pa Ta xx",
+      ""
+    ]
+    ,
+  },
     {
       songName: "Bala Kulandyan",
       song: [

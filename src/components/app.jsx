@@ -32,6 +32,7 @@ class App extends Component {
 
   handlePlayPause = (songId) => {
     clearInterval(this.interval);
+    clearTimeout(this.buffer);
     let step = 0;
 
     if (this.state.playing && this.state.songPlaying == songId) {
@@ -53,12 +54,19 @@ class App extends Component {
     );
     let notes = songString.split(" ");
 
+    this.buffer = setTimeout(() => {
+      this.startLoop(step, notes);
+    }, 1000);
+  };
+
+  startLoop(step, notes) {
     this.interval = setInterval(() => {
       this.animateNote(this.state.songPlaying, step);
       this.playNoteSound(notes[step]);
       step = step < notes.length - 2 ? step + 1 : 0;
     }, (60 * 1000) / this.state.bpm / 2);
-  };
+    return step;
+  }
 
   render() {
     return (
