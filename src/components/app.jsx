@@ -1,6 +1,7 @@
 import React, { Component, Fragment, useState, useRef, useEffect } from "react";
 import { SongsData } from "../songsData";
 import SongCard from "./songCard";
+import Topbar from "./topbar";
 import Logo from "./logo";
 import UIfx from "uifx";
 import gunAudio from "../sounds/gun.mp3";
@@ -71,6 +72,7 @@ class App extends Component {
   render() {
     return (
       <React.Fragment>
+        <Topbar></Topbar>
         <Logo></Logo>
         <div className={"songList"}>
           {SongsData.map((song, index) => (
