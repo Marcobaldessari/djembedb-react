@@ -31,6 +31,8 @@ class App extends Component {
   };
 
   handlePlayPause = (songId) => {
+    document.body.classList.toggle("dark-theme");
+
     clearInterval(this.interval);
     clearTimeout(this.buffer);
     let step = 0;
@@ -98,12 +100,10 @@ class App extends Component {
     tl.to(animatedNoteIdHashtag, {
       scale: 1.5,
       duration: 0.05,
-      // ease: "power2.out",
     });
     tl.to(animatedNoteIdHashtag, {
       scale: 1,
       duration: 0.2,
-      // ease: "power2.in",
     });
   }
 
