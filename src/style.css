@@ -12,28 +12,12 @@
 *:focus {
   outline: none;
 }
-body {
-  --bg-color: #fff;
-  --text-color: #222;
-  --note-color: #fff;
-  --notation-line-color: #c8c8c8;
-  --notation-bg-color: #03c;
-  --primary-color-regular: #ff5d8e;
-}
-body.dark-theme {
-  --bg-color: #fff;
-  --text-color: #222;
-  --note-color: #fff;
-  --notation-line-color: #c8c8c8;
-  --notation-bg-color: #03c;
-  --primary-color-regular: #ff5d8e;
-}
 html,
 body {
   height: 100%;
   width: 100%;
   overflow-x: hidden;
-  background-color: --bg-color;
+  background-color: #fff;
 }
 h1,
 h2,
@@ -44,7 +28,7 @@ h6,
 p,
 a {
   font-family: 'Poppins', sans-serif;
-  color: $text-color;
+  color: #000;
 }
 .song-card {
   position: relative;
@@ -67,7 +51,7 @@ a {
   right: 16px;
   height: 24px;
   width: 74px;
-  background: --primary-color-regular;
+  background: #ff5d8e;
   color: #fff;
   border-radius: 40px;
   border: none;
@@ -92,7 +76,7 @@ a {
   top: 74px;
   width: 100%;
   height: 88px;
-  background: --notation-bg-color;
+  background: #f7f7f7;
 }
 .song-card .notation-frame:hover {
   cursor: pointer;
@@ -108,7 +92,7 @@ a {
   bottom: 0;
   left: 0;
   right: 0;
-  border: 2px solid --primary-color-regular;
+  border: 2px solid #ff5d8e;
 }
 @media (min-width: 640px) {
   .song-card .notation-frame.active:after {
@@ -144,7 +128,7 @@ a {
   left: 0;
   right: 0;
   border-radius: 5px;
-  border: 2px solid --primary-color-regular;
+  border: 2px solid #ff5d8e;
 }
 .song-card .notation-note {
   position: relative;
@@ -161,7 +145,7 @@ a {
   position: absolute;
   height: 1px;
   width: 100%;
-  background: --notation-line-color;
+  background: #c8c8c8;
   top: 50%;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -176,17 +160,17 @@ a {
   width: 4%;
   top: 25%;
   left: 48%;
-  background: --notation-line-color;
+  background: #c8c8c8;
 }
 .song-card .notation-vertical-line.active {
-  background: --primary-color-regular;
+  background: #ff5d8e;
 }
 .song-card .notation-note-circle {
   position: relative;
   width: 15px;
   height: 15px;
   border-radius: 50px;
-  background: $text-color;
+  background: #000;
   margin: 0 auto;
 }
 .song-card .Dun {
@@ -209,8 +193,8 @@ a {
 }
 .song-card .Ca {
   top: 18%;
-  background: --notation-bg-color;
-  border: 2px solid $text-color;
+  background: #f7f7f7;
+  border: 2px solid #000;
 }
 .song-card .Ca::after {
   content: "";
@@ -219,7 +203,7 @@ a {
   left: 4px;
   top: 4px;
   position: absolute;
-  background: $text-color;
+  background: #000;
   border-radius: 50px;
 }
 .song-card .xx {
@@ -273,7 +257,7 @@ a {
   -ms-grid-columns: (1fr)[4];
   grid-template-columns: repeat(4, 1fr);
   grid-column-gap: 4%;
-  background: --primary-color-regular;
+  background: #ff5d8e;
 }
 @media (min-width: 640px) {
   .logomark {
@@ -304,41 +288,41 @@ a {
   justify-self: center;
 }
 .logomark .logomark-note.Dun {
-  background: --bg-color;
+  background: #fff;
   -ms-flex-item-align: end;
   -ms-grid-row-align: end;
   align-self: end;
 }
 .logomark .logomark-note.Gun {
-  background: --bg-color;
+  background: #fff;
   -ms-flex-item-align: end;
   -ms-grid-row-align: end;
   align-self: end;
 }
 .logomark .logomark-note.Ca {
   position: relative;
-  background: --primary-color-regular;
+  background: #ff5d8e;
   -ms-flex-item-align: start;
   -ms-grid-row-align: start;
   align-self: start;
 }
 @media (min-width: 640px) {
   .logomark .logomark-note.Ca {
-    -webkit-box-shadow: inset 0 0 0 4px --bg-color;
-    box-shadow: inset 0 0 0 4px --bg-color;
+    -webkit-box-shadow: inset 0 0 0 4px #fff;
+    box-shadow: inset 0 0 0 4px #fff;
   }
 }
 @media (max-width: 639px) {
   .logomark .logomark-note.Ca {
-    -webkit-box-shadow: inset 0 0 0 3px --bg-color;
-    box-shadow: inset 0 0 0 3px --bg-color;
+    -webkit-box-shadow: inset 0 0 0 3px #fff;
+    box-shadow: inset 0 0 0 3px #fff;
   }
 }
 .logomark .logomark-note.Ca::after {
   content: "";
   position: absolute;
   display: block;
-  background: --bg-color;
+  background: #fff;
   border-radius: 100%;
 }
 @media (min-width: 640px) {
