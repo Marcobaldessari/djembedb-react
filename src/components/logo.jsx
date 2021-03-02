@@ -26,14 +26,14 @@ class Logo extends Component {
 
   render() {
     return (
-      <div className="logo">
+      <div
+        className="logo"
+        onClick={() => {
+          this.playLogoMusic();
+        }}
+      >
         <div className="logomark-wrapper">
-          <div
-            className="logomark"
-            onClick={() => {
-              this.playLogoMusic();
-            }}
-          >
+          <div className="logomark">
             <div className="logomark-note Dun" id="note-logo-1"></div>
             <div className="logomark-note Ca" id="note-logo-2"></div>
             <div className="logomark-note Dun" id="note-logo-3"></div>

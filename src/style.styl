@@ -275,6 +275,8 @@ a
     .logo
         display inline-block
         position relative
+        &:hover
+            cursor pointer
 
         .logotype
             display inline-block
@@ -345,8 +347,7 @@ a
             width 108px
             height 68px
             border-radius 20px
-        &:hover
-            cursor pointer
+        
 
 .logomark-note
     // width 16px
@@ -364,20 +365,19 @@ a
     &.Ca
         // outline  4px solid --bg-color
         position relative
-        background var(--primary-color-regular)
         align-self start
-        +desktop()
-            box-shadow: inset 0 0 0 4px var(--logo-note-color)
-        +tablet()
-            box-shadow: inset 0 0 0 3px var(--logo-note-color)
-        &::after
-            content ""
-            position absolute
-            display block
-            background var(--logo-note-color)
-            border-radius 100%
-            top 33%
-            left 33%
-            width 33%
-            height 33%
+        background var(--logo-note-color)
+
+        // background var(--primary-color-regular)
+        // box-shadow: inset 0 0 0 1px var(--logo-note-color)
+        // &::after
+        //     content ""
+        //     position absolute
+        //     display block
+        //     background var(--logo-note-color)
+        //     border-radius 100%
+        //     width 30%
+        //     height 30%
+        //     top 30%
+        //     left 30%
     

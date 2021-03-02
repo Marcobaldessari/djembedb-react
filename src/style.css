@@ -281,6 +281,9 @@ a {
   display: inline-block;
   position: relative;
 }
+.topbar .logo:hover {
+  cursor: pointer;
+}
 .topbar .logo .logotype {
   display: inline-block;
   position: absolute;
@@ -375,9 +378,6 @@ a {
     border-radius: 20px;
   }
 }
-.logo-big .logomark:hover {
-  cursor: pointer;
-}
 .logomark-note {
   width: 100%;
   padding-top: 100%;
@@ -399,31 +399,8 @@ a {
 }
 .logomark-note.Ca {
   position: relative;
-  background: var(--primary-color-regular);
   -ms-flex-item-align: start;
   -ms-grid-row-align: start;
   align-self: start;
-}
-@media (min-width: 640px) {
-  .logomark-note.Ca {
-    -webkit-box-shadow: inset 0 0 0 4px var(--logo-note-color);
-    box-shadow: inset 0 0 0 4px var(--logo-note-color);
-  }
-}
-@media (max-width: 639px) {
-  .logomark-note.Ca {
-    -webkit-box-shadow: inset 0 0 0 3px var(--logo-note-color);
-    box-shadow: inset 0 0 0 3px var(--logo-note-color);
-  }
-}
-.logomark-note.Ca::after {
-  content: "";
-  position: absolute;
-  display: block;
   background: var(--logo-note-color);
-  border-radius: 100%;
-  top: 33%;
-  left: 33%;
-  width: 33%;
-  height: 33%;
 }
