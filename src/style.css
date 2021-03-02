@@ -267,7 +267,7 @@ a {
   margin-top: 16px;
   border: 0;
   border-radius: 100%;
-  background: var(--bg-color);
+  background: transparent;
 }
 @media (max-width: 479px) {
   .topbar .btn-darktheme {
