@@ -73,20 +73,22 @@ class App extends Component {
     return (
       <React.Fragment>
         <Topbar></Topbar>
-        <Logo></Logo>
-        <div className={"songList"}>
-          {SongsData.map((song, index) => (
-            <SongCard
-              key={uniqid()}
-              songId={index}
-              songName={song.songName}
-              song={song.song}
-              song={song.song}
-              OnPlayPause={this.handlePlayPause}
-              songPlaying={this.state.songPlaying}
-              playing={this.state.playing}
-            />
-          ))}
+        {/* <Logo></Logo> */}
+        <div className="container">
+          <div className={"song-list"}>
+            {SongsData.map((song, index) => (
+              <SongCard
+                key={uniqid()}
+                songId={index}
+                songName={song.songName}
+                song={song.song}
+                song={song.song}
+                OnPlayPause={this.handlePlayPause}
+                songPlaying={this.state.songPlaying}
+                playing={this.state.playing}
+              />
+            ))}
+          </div>
         </div>
       </React.Fragment>
     );

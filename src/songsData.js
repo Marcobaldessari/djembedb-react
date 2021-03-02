@@ -60,6 +60,43 @@ export const SongsData = [
       ]
       ,
     },
+    {
+      songName: "Djansa",
+      song: [
+        "Pa Ta xx Ta Pa xx do go",
+        "Ta xx Gun xx Ta Dun go do"
+        
+      ]
+      ,
+    },
+    {
+      songName: "Djansa",
+      song: [
+        "Pa Ta xx Ta Pa xx do go",
+        "Ta xx Gun xx Ta Dun go do"
+        
+      ]
+      ,
+    },
+    {
+      songName: "Djansa",
+      song: [
+        "Pa Ta xx Ta Pa xx do go",
+        "Ta xx Gun xx Ta Dun go do"
+        
+      ]
+      ,
+    },
+    {
+      songName: "Djansa",
+      song: [
+        "Pa Ta xx Ta Pa xx do go",
+        "Ta xx Gun xx Ta Dun go do"
+        
+      ]
+      ,
+    },
+    
     
     
     // {

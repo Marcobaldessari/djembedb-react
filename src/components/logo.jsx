@@ -27,16 +27,18 @@ class Logo extends Component {
   render() {
     return (
       <div className="logo">
-        <div
-          className="logomark"
-          onClick={() => {
-            this.playLogoMusic();
-          }}
-        >
-          <div className="logomark-note Dun" id="note-logo-1"></div>
-          <div className="logomark-note Ca" id="note-logo-2"></div>
-          <div className="logomark-note Dun" id="note-logo-3"></div>
-          <div className="logomark-note Gun" id="note-logo-4"></div>
+        <div className="logomark-wrapper">
+          <div
+            className="logomark"
+            onClick={() => {
+              this.playLogoMusic();
+            }}
+          >
+            <div className="logomark-note Dun" id="note-logo-1"></div>
+            <div className="logomark-note Ca" id="note-logo-2"></div>
+            <div className="logomark-note Dun" id="note-logo-3"></div>
+            <div className="logomark-note Gun" id="note-logo-4"></div>
+          </div>
         </div>
         {/* <img src={require("../../src/assets/vectors/timer.jpg")} alt="" /> */}
         {/* <img src="../vectors/logotype.svg" alt="" /> */}
