@@ -2,7 +2,26 @@ import React, { Component } from "react";
 import Logo from "./logo";
 
 class Topbar extends Component {
-  state = {};
+  state = {
+    darkmode: false,
+  };
+
+  toggleDarkMode = () => {
+    var link = document.querySelector("link[rel*='icon']");
+    if (this.state.darkmode) {
+      link.href = "/favicon.ico";
+      this.setState({
+        darkmode: false,
+      });
+    } else {
+      link.href = "/favicon-dark.ico";
+      this.setState({
+        darkmode: true,
+      });
+    }
+    document.body.classList.toggle("dark-theme");
+  };
+
   render() {
     return (
       <div className="topbar">
@@ -11,7 +30,7 @@ class Topbar extends Component {
           <button
             className="btn-darktheme"
             onClick={() => {
-              document.body.classList.toggle("dark-theme");
+              this.toggleDarkMode();
             }}
           >
             <svg
