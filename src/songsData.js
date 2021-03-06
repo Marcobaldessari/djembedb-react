@@ -9,6 +9,16 @@ export const SongsData = [
     ]
     ,
   },
+  {
+    songName: "OG 4/4 variant",
+    src: "",
+    timeSignature: "4/4",
+    song: [
+      "Gun xx Dun xx Ca xx do Gun",
+      "xx Gun xx do Ca xx xx xx"
+    ]
+    ,
+  },
 
   {
     songName: "A 3/4 hello world",
