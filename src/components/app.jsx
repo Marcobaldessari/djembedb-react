@@ -82,7 +82,7 @@ class App extends Component {
                 songId={index}
                 songName={song.songName}
                 song={song.song}
-                song={song.song}
+                timeSignature={song.timeSignature}
                 OnPlayPause={this.handlePlayPause}
                 songPlaying={this.state.songPlaying}
                 playing={this.state.playing}
