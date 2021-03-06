@@ -1,25 +1,5 @@
 export const SongsData = [
-  {
-    songName: "OG 4/4",
-    src: "",
-    timeSignature: "4/4",
-    song: [
-      "Gun do go do Ca xx do Gun",
-      "xx Gun xx do Ca xx xx xx"
-    ]
-    ,
-  },
 
-  {
-    songName: "A 3/4 composition",
-    src: "Marco Baldessari",
-    timeSignature: "3/4",
-    song: [
-      "Gun do go do Gun xx",
-      "Gun do go do Gun Ta"
-    ]
-    ,
-  },
 
   {
     songName: "Kono",
