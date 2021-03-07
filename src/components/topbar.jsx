@@ -28,6 +28,7 @@ class Topbar extends Component {
         <div className="container">
           <Logo></Logo>
           <button
+            aria-label="Toggle Dark/Light Theme"
             className="btn-darktheme"
             onClick={() => {
               this.toggleDarkMode();
