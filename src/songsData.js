@@ -56,8 +56,8 @@ export const SongsData = [
     src: "https://www.youtube.com/watch?v=5HIAuK9RS6E&t=8s",
     timeSignature: "4/4",
     song: [
-      "Gun Ca xx Gun Dun go do Gun",
-      "Dun Ca xx Gun Dun go do Gun"
+      "Gun Dun go do Gun Dun Ca xx",
+      "Gun Dun go do Gun Gun Ca xx"
     ]
     ,
   },
