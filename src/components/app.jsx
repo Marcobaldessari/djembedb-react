@@ -2,8 +2,7 @@ import React, { Component, Fragment, useState, useRef, useEffect } from "react";
 import { SongsData } from "../songsData";
 import SongCard from "./songCard";
 import Topbar from "./topbar";
-import Logo from "./logo";
-import UIfx from "uifx";
+import { Howl, Howler } from "howler";
 import gunAudio from "../sounds/gun.mp3";
 import dunAudio from "../sounds/dun.mp3";
 import goAudio from "../sounds/go.mp3";
@@ -13,14 +12,15 @@ import taAudio from "../sounds/ta.mp3";
 import caAudio from "../sounds/ca.mp3";
 import gsap from "gsap";
 
+const howlerGun = new Howl({ src: [gunAudio] });
+const howlerDun = new Howl({ src: [dunAudio] });
+const howlerGo = new Howl({ src: [goAudio] });
+const howlerDo = new Howl({ src: [doAudio] });
+const howlerPa = new Howl({ src: [paAudio] });
+const howlerTa = new Howl({ src: [taAudio] });
+const howlerCa = new Howl({ src: [caAudio] });
+
 var uniqid = require("uniqid");
-const gun = new UIfx(gunAudio),
-  dun = new UIfx(dunAudio),
-  go = new UIfx(goAudio),
-  d0 = new UIfx(doAudio),
-  pa = new UIfx(paAudio),
-  ta = new UIfx(taAudio),
-  ca = new UIfx(caAudio);
 
 class App extends Component {
   state = {
@@ -32,7 +32,7 @@ class App extends Component {
 
   handlePlayPause = (songId) => {
     clearInterval(this.interval);
-    clearTimeout(this.buffer);
+    // clearTimeout(this.buffer);
     let step = 0;
 
     if (this.state.playing && this.state.songPlaying == songId) {
@@ -53,9 +53,9 @@ class App extends Component {
     );
     let notes = songString.split(" ");
 
-    this.buffer = setTimeout(() => {
-      this.startLoop(step, notes);
-    }, 1);
+    // this.buffer = setTimeout(() => {
+    this.startLoop(step, notes);
+    // }, 1);
   };
 
   startLoop(step, notes) {
@@ -112,25 +112,25 @@ class App extends Component {
   playNoteSound(note) {
     switch (note) {
       case "Gun":
-        gun.play();
+        howlerGun.play();
         break;
       case "Dun":
-        dun.play();
+        howlerDun.play();
         break;
       case "go":
-        go.play();
+        howlerGo.play();
         break;
       case "do":
-        d0.play();
+        howlerDo.play();
         break;
       case "Pa":
-        pa.play();
+        howlerPa.play();
         break;
       case "Ta":
-        ta.play();
+        howlerTa.play();
         break;
       case "Ca":
-        ca.play();
+        howlerCa.play();
         break;
       default:
         break;

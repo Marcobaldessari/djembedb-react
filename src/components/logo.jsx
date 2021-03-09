@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Howl, Howler } from "howler";
 import UIfx from "uifx";
 import gunAudio from "../sounds/gun.mp3";
 import dunAudio from "../sounds/dun.mp3";
@@ -9,13 +10,13 @@ import taAudio from "../sounds/ta.mp3";
 import caAudio from "../sounds/ca.mp3";
 import gsap from "gsap";
 
-const gun = new UIfx(gunAudio),
-  dun = new UIfx(dunAudio),
-  go = new UIfx(goAudio),
-  d0 = new UIfx(doAudio),
-  pa = new UIfx(paAudio),
-  ta = new UIfx(taAudio),
-  ca = new UIfx(caAudio);
+const howlerGun = new Howl({ src: [gunAudio] });
+const howlerDun = new Howl({ src: [dunAudio] });
+const howlerGo = new Howl({ src: [goAudio] });
+const howlerDo = new Howl({ src: [doAudio] });
+const howlerPa = new Howl({ src: [paAudio] });
+const howlerTa = new Howl({ src: [taAudio] });
+const howlerCa = new Howl({ src: [caAudio] });
 
 class Logo extends Component {
   state = {
@@ -136,25 +137,25 @@ class Logo extends Component {
   playNoteSound(note) {
     switch (note) {
       case "Gun":
-        gun.play();
+        howlerGun.play();
         break;
       case "Dun":
-        dun.play();
+        howlerDun.play();
         break;
       case "go":
-        go.play();
+        howlerGo.play();
         break;
       case "do":
-        d0.play();
+        howlerDo.play();
         break;
       case "Pa":
-        pa.play();
+        howlerPa.play();
         break;
       case "Ta":
-        ta.play();
+        howlerTa.play();
         break;
       case "Ca":
-        ca.play();
+        howlerCa.play();
         break;
       default:
         break;
