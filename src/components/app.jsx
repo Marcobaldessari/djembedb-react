@@ -26,7 +26,6 @@ class App extends Component {
   state = {
     SongsData: SongsData,
     playing: false,
-    step: 0,
     bpm: 160.0,
     step: 0,
   };
@@ -46,7 +45,6 @@ class App extends Component {
     this.setState(() => ({
       playing: true,
       songPlaying: songId,
-      step: 0,
     }));
 
     let songString = "";
@@ -57,7 +55,7 @@ class App extends Component {
 
     this.buffer = setTimeout(() => {
       this.startLoop(step, notes);
-    }, 500);
+    }, 1);
   };
 
   startLoop(step, notes) {

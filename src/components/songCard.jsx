@@ -26,7 +26,6 @@ class SongCard extends Component {
           {this.props.song.map((measure, indexMeasure) => (
             <div
               className={this.getMeasureClass()}
-              // className="measure"
               key={uniqid()}
               id={this.getMeasureId(indexMeasure)}
             >
@@ -54,7 +53,6 @@ class SongCard extends Component {
       case "2/4":
         classes += "two-four";
         break;
-
       case "3/4":
         classes += "three-four";
         break;
@@ -74,11 +72,10 @@ class SongCard extends Component {
         classes += "five-four";
         break;
       default:
-
-      // code block
     }
     return classes;
   };
+
   getNotationFrameClass = () => {
     let classes = "notation-frame ";
     switch (this.props.timeSignature) {
