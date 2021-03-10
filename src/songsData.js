@@ -9,27 +9,17 @@ export const SongsData = [
     ]
     ,
   },
-  {
-    songName: "OG 4/4 variant",
-    src: "",
-    timeSignature: "4/4",
-    song: [
-      "Gun xx Dun xx Ca xx do Gun",
-      "xx Gun xx do Ca xx xx xx"
-    ]
-    ,
-  },
+  // {
+  //   songName: "OG 4/4 variant",
+  //   src: "",
+  //   timeSignature: "4/4",
+  //   song: [
+  //     "Gun xx Gun xx Ca xx do Gun",
+  //     "xx Gun xx do Ca xx xx xx"
+  //   ]
+  //   ,
+  // },
 
-  {
-    songName: "A 3/4 hello world",
-    src: "Marco Baldessari",
-    timeSignature: "3/4",
-    song: [
-      "Gun do go do Gun xx",
-      "Gun do go do Gun Ta"
-    ]
-    ,
-  },
 
   {
     songName: "Kono",
@@ -58,6 +48,16 @@ export const SongsData = [
     song: [
       "Gun Dun go do Gun Dun Ca xx",
       "Gun Dun go do Gun Gun Ca xx"
+    ]
+    ,
+  },
+  {
+    songName: "A 3/4 hello world",
+    src: "Marco Baldessari",
+    timeSignature: "3/4",
+    song: [
+      "Gun do go do Gun xx",
+      "Gun do go do Gun Ta"
     ]
     ,
   },
