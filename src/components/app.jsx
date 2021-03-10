@@ -35,12 +35,18 @@ class App extends Component {
     // clearTimeout(this.buffer);
     let step = 0;
 
+    // if player is already playing stop it and return
     if (this.state.playing && this.state.songPlaying == songId) {
       this.setState(() => ({
         playing: false,
       }));
       return;
     }
+
+    // note1Animation.to("#note-logo-1", {
+    //   scale: 1.5,
+    //   duration: 0.05,
+    // });
 
     this.setState(() => ({
       playing: true,
@@ -93,12 +99,12 @@ class App extends Component {
   }
 
   animateNote(songPlaying, step) {
-    this.state.animatedNoteId = "note-" + songPlaying + "-" + step;
-    let animatedNoteIdHashtag = "#" + this.state.animatedNoteId;
+    let animatedNoteId = "note-" + songPlaying + "-" + step;
+    let animatedNoteIdHashtag = "#" + animatedNoteId;
 
     var tl = gsap.timeline();
     tl.to(animatedNoteIdHashtag, {
-      scale: 1.5,
+      scale: 1.8,
       duration: 0.05,
       // ease: "power2.out",
     });
