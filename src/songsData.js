@@ -32,12 +32,32 @@ export const SongsData = [
     ,
   },
   {
+    songName: "Kono variant",
+    src: "Marco Baldessari",
+    timeSignature: "4/4",
+    song: [
+      "Gun dos gos dos Gun xx Ta Pa",
+      "Gun dos gos dos Gun xx Pa xx"
+    ]
+    ,
+  },
+  {
     songName: "Yankadi",
     src: "https://www.youtube.com/watch?v=5HIAuK9RS6E&t=8s",
     timeSignature: "4/4",
     song: [
       "Gun xx go do Gun Ta Pa xx",
       "Gun xx go xx Gun Ta Pa xx"
+    ]
+    ,
+  },
+  {
+    songName: "Yankadi variant",
+    src: "https://www.youtube.com/watch?v=5HIAuK9RS6E&t=8s",
+    timeSignature: "4/4",
+    song: [
+      "Gun xx gos dos Gun Ta Pa xx",
+      "Gun xx gos xx Gun Ta Pa xx"
     ]
     ,
   },
