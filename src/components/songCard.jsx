@@ -1,9 +1,14 @@
 import React, { Component } from "react";
 import NotationNote from "./notationNote";
+import gsap from "gsap";
+
 var uniqid = require("uniqid");
 
 class SongCard extends Component {
-  state = {};
+  constructor() {
+    super();
+    this.notationFrame = null;
+  }
 
   render() {
     return (
@@ -19,8 +24,10 @@ class SongCard extends Component {
         </button> */}
         <div
           className={this.getNotationFrameClass()}
-          onClick={() => {
-            this.props.OnPlayPause(this.props.songId);
+          ref={(e) => (this.notationFrame = e)}
+          onClick={(e) => {
+            // this.animateNotationFrame();
+            this.props.OnPlayPause(e, this.props.songId);
           }}
         >
           {this.props.song.map((measure, indexMeasure) => (
@@ -47,6 +54,20 @@ class SongCard extends Component {
       </div>
     );
   }
+
+  animateNotationFrame() {
+    var tl = gsap.timeline();
+    console.log(this.notationFrame);
+    tl.to(this.notationFrame, {
+      x: 1.8,
+      duration: 0.05,
+    });
+    tl.to(this.notationFrame, {
+      x: 1,
+      duration: 0.2,
+    });
+  }
+
   getMeasureClass = () => {
     let classes = "measure ";
     switch (this.props.timeSignature) {

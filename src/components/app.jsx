@@ -6,7 +6,9 @@ import { Howl, Howler } from "howler";
 import gunAudio from "../sounds/gun.mp3";
 import dunAudio from "../sounds/dun.mp3";
 import goAudio from "../sounds/go.mp3";
+import gosAudio from "../sounds/gos.mp3";
 import doAudio from "../sounds/do.mp3";
+import dosAudio from "../sounds/dos.mp3";
 import paAudio from "../sounds/pa.mp3";
 import taAudio from "../sounds/ta.mp3";
 import caAudio from "../sounds/ca.mp3";
@@ -15,7 +17,9 @@ import gsap from "gsap";
 const howlerGun = new Howl({ src: [gunAudio] });
 const howlerDun = new Howl({ src: [dunAudio] });
 const howlerGo = new Howl({ src: [goAudio] });
+const howlerGos = new Howl({ src: [gosAudio] });
 const howlerDo = new Howl({ src: [doAudio] });
+const howlerDos = new Howl({ src: [dosAudio] });
 const howlerPa = new Howl({ src: [paAudio] });
 const howlerTa = new Howl({ src: [taAudio] });
 const howlerCa = new Howl({ src: [caAudio] });
@@ -30,7 +34,7 @@ class App extends Component {
     step: 0,
   };
 
-  handlePlayPause = (songId) => {
+  handlePlayPause = (e, songId) => {
     clearInterval(this.interval);
     // clearTimeout(this.buffer);
     let step = 0;
@@ -42,11 +46,6 @@ class App extends Component {
       }));
       return;
     }
-
-    // note1Animation.to("#note-logo-1", {
-    //   scale: 1.5,
-    //   duration: 0.05,
-    // });
 
     this.setState(() => ({
       playing: true,
@@ -128,6 +127,12 @@ class App extends Component {
         break;
       case "do":
         howlerDo.play();
+        break;
+      case "gos":
+        howlerGos.play();
+        break;
+      case "dos":
+        howlerDos.play();
         break;
       case "Pa":
         howlerPa.play();

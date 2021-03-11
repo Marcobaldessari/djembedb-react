@@ -8,6 +8,7 @@
 *::before {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
 }
 *:focus {
   outline: none;
@@ -298,6 +299,16 @@ a {
   position: absolute;
   background: var(--text-color);
   border-radius: 50px;
+}
+.song-card .dos {
+  top: 42%;
+  background: var(--notation-bg-color);
+  border: 2px dotted var(--text-color);
+}
+.song-card .gos {
+  top: 42%;
+  background: var(--notation-bg-color);
+  border: 2px dotted var(--text-color);
 }
 .song-card .xx {
   display: none;
