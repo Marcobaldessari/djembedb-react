@@ -357,6 +357,11 @@ a {
   fill: var(--text-color);
   width: 137px;
 }
+@media (max-width: 479px) {
+  .topbar .logo .logotype {
+    display: none;
+  }
+}
 .topbar .logo .logomark-wrapper {
   display: inline-block;
   top: 0;
