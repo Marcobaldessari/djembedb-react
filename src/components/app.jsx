@@ -34,6 +34,28 @@ class App extends Component {
     step: 0,
   };
 
+  componentDidMount() {
+    window.addEventListener("load", this.handleWindowLoad);
+  }
+
+  handleWindowLoad = () => {
+    const allSongCards = document.getElementsByClassName("song-card");
+    Array.prototype.forEach.call(allSongCards, function (e, index) {
+      gsap.fromTo(
+        e,
+        { y: 40, opacity: 0 },
+        {
+          opacity: 1,
+          duration: 0.5,
+          y: 0,
+          delay: 0.15 * index,
+          ease: "power2.out",
+        }
+      );
+    });
+    document.querySelector(".song-list").classList.remove("preload");
+  };
+
   handlePlayPause = (e, songId) => {
     clearInterval(this.interval);
     // clearTimeout(this.buffer);
@@ -78,7 +100,7 @@ class App extends Component {
         <Topbar></Topbar>
         {/* <Logo></Logo> */}
         <div className="container">
-          <div className={"song-list"}>
+          <div className={"song-list preload"}>
             {SongsData.map((song, index) => (
               <SongCard
                 key={uniqid()}

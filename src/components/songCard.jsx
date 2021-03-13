@@ -12,7 +12,7 @@ class SongCard extends Component {
 
   render() {
     return (
-      <div className="song-card">
+      <div className="song-card" id={this.getSongCardId()}>
         <h2 className="song-name">{this.props.songName}</h2>
         {/* <button
           className={"btn btn-play paused"}
@@ -134,6 +134,11 @@ class SongCard extends Component {
 
   getMeasureId(indexMeasure) {
     let id = "measure-" + this.props.songId + "-" + indexMeasure;
+    return id;
+  }
+
+  getSongCardId() {
+    let id = "songCard-" + this.props.songId;
     return id;
   }
 

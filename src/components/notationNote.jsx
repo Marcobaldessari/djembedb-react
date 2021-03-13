@@ -11,9 +11,7 @@ class NotationNote extends Component {
       <div className="notation-note">
         <div className="notation-horizontal-line"></div>
         <div className="notation-vertical-line"></div>
-        <div className={this.getNoteClasses()} id={this.getNoteId()}>
-          {/* <div className={"note-animated"} id={this.getNoteId()}></div> */}
-        </div>
+        <div className={this.getNoteClasses()} id={this.getNoteId()}></div>
       </div>
     );
   }
