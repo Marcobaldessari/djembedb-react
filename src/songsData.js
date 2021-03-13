@@ -21,12 +21,12 @@ export const SongsData = [
   // },
 
   {
-    songName: "Workout",
+    songName: "Workout 7/4",
     src: "https://www.youtube.com/watch?v=YFNegZdsDpE",
-    timeSignature: "4/4",
+    timeSignature: "7/4",
     song: [
-      "Gun dos gos dos Gun gos dos Pa",
-      "Gun dos gos dos Gun gos dos Pa"
+      "Gun xx gos dos gos dos Gun",
+      "xx xx Dun xx Pa xx xx"
     ]
     ,
   },
