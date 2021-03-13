@@ -73,6 +73,9 @@ a {
 .song-list {
   margin-top: 80px;
 }
+.preload .song-card {
+  opacity: 0;
+}
 .preload.topbar {
   opacity: 0;
 }
