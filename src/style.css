@@ -73,9 +73,6 @@ a {
 .song-list {
   margin-top: 80px;
 }
-.preload .song-card {
-  opacity: 0;
-}
 .preload.topbar {
   opacity: 0;
 }
@@ -137,6 +134,10 @@ a {
 .song-card .five-four {
   -ms-grid-columns: (1fr)[5];
   grid-template-columns: repeat(5, 1fr);
+}
+.song-card .seven-four {
+  -ms-grid-columns: (1fr)[7];
+  grid-template-columns: repeat(7, 1fr);
 }
 .song-card .one-bar {
   -ms-grid-columns: (1fr)[2];

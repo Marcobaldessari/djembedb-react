@@ -91,6 +91,8 @@ class SongCard extends Component {
         break;
       case "5/4":
         classes += "five-four";
+      case "7/4":
+        classes += "seven-four";
         break;
       default:
     }
@@ -119,6 +121,9 @@ class SongCard extends Component {
         classes += "two-bars";
         break;
       case "5/4":
+        classes += "two-bars";
+        break;
+      case "7/4":
         classes += "two-bars";
         break;
       default:
