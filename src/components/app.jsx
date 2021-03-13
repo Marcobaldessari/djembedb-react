@@ -39,26 +39,15 @@ class App extends Component {
   }
 
   handleWindowLoad = () => {
-    const allSongCards = document.getElementsByClassName("song-card");
-    Array.prototype.forEach.call(allSongCards, function (e, index) {
-      gsap.fromTo(
-        e,
-        { y: 40, opacity: 0 },
-        {
-          opacity: 1,
-          duration: 0.5,
-          y: 0,
-          delay: 0.15 * index,
-          ease: "power2.out",
-        }
-      );
-    });
-    document.querySelector(".song-list").classList.remove("preload");
+    this.checkIfSystemDarkTheme();
+    setTimeout(() => {
+      this.animateInTopBar();
+      this.animateInSongCards();
+    }, 200);
   };
 
   handlePlayPause = (e, songId) => {
     clearInterval(this.interval);
-    // clearTimeout(this.buffer);
     let step = 0;
 
     // if player is already playing stop it and return
@@ -80,10 +69,50 @@ class App extends Component {
     );
     let notes = songString.split(" ");
 
-    // this.buffer = setTimeout(() => {
     this.startLoop(step, notes);
-    // }, 1);
   };
+
+  checkIfSystemDarkTheme() {
+    if (
+      window.matchMedia &&
+      window.matchMedia("(prefers-color-scheme: dark)").matches
+    ) {
+      document.body.classList.toggle("dark-theme");
+    }
+  }
+
+  animateInSongCards() {
+    const allSongCards = document.getElementsByClassName("song-card");
+    Array.prototype.forEach.call(allSongCards, function (e, index) {
+      gsap.fromTo(
+        e,
+        { y: 40, opacity: 0 },
+        {
+          opacity: 1,
+          duration: 0.5,
+          y: 0,
+          delay: 0.15 * (index + 1),
+          ease: "power2.out",
+        }
+      );
+    });
+    document.querySelector(".song-list").classList.remove("preload");
+  }
+
+  animateInTopBar() {
+    const topbar = document.querySelector(".topbar");
+    gsap.fromTo(
+      topbar,
+      { y: -40, opacity: 0 },
+      {
+        opacity: 1,
+        duration: 0.5,
+        y: 0,
+        ease: "power2.out",
+      }
+    );
+    topbar.classList.remove("preload");
+  }
 
   startLoop(step, notes) {
     this.interval = setInterval(() => {
@@ -94,31 +123,6 @@ class App extends Component {
     return step;
   }
 
-  render() {
-    return (
-      <React.Fragment>
-        <Topbar></Topbar>
-        {/* <Logo></Logo> */}
-        <div className="container">
-          <div className={"song-list preload"}>
-            {SongsData.map((song, index) => (
-              <SongCard
-                key={uniqid()}
-                songId={index}
-                songName={song.songName}
-                song={song.song}
-                timeSignature={song.timeSignature}
-                OnPlayPause={this.handlePlayPause}
-                songPlaying={this.state.songPlaying}
-                playing={this.state.playing}
-              />
-            ))}
-          </div>
-        </div>
-      </React.Fragment>
-    );
-  }
-
   animateNote(songPlaying, step) {
     let animatedNoteId = "note-" + songPlaying + "-" + step;
     let animatedNoteIdHashtag = "#" + animatedNoteId;
@@ -127,12 +131,10 @@ class App extends Component {
     tl.to(animatedNoteIdHashtag, {
       scale: 1.8,
       duration: 0.05,
-      // ease: "power2.out",
     });
     tl.to(animatedNoteIdHashtag, {
       scale: 1,
       duration: 0.2,
-      // ease: "power2.in",
     });
   }
 
@@ -168,6 +170,30 @@ class App extends Component {
       default:
         break;
     }
+  }
+
+  render() {
+    return (
+      <React.Fragment>
+        <Topbar></Topbar>
+        <div className="container">
+          <div className={"song-list preload"}>
+            {SongsData.map((song, index) => (
+              <SongCard
+                key={uniqid()}
+                songId={index}
+                songName={song.songName}
+                song={song.song}
+                timeSignature={song.timeSignature}
+                OnPlayPause={this.handlePlayPause}
+                songPlaying={this.state.songPlaying}
+                playing={this.state.playing}
+              />
+            ))}
+          </div>
+        </div>
+      </React.Fragment>
+    );
   }
 }
 

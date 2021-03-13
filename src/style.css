@@ -76,6 +76,9 @@ a {
 .preload .song-card {
   opacity: 0;
 }
+.preload.topbar {
+  opacity: 0;
+}
 .song-card {
   width: 100%;
   position: relative;
