@@ -20,6 +20,38 @@ export const SongsData = [
   //   ,
   // },
 
+  {
+    songName: "Workout",
+    src: "https://www.youtube.com/watch?v=YFNegZdsDpE",
+    timeSignature: "4/4",
+    song: [
+      "Gun dos gos dos Gun gos dos Pa",
+      "Gun dos gos dos Gun gos dos Pa"
+    ]
+    ,
+  },
+
+  {
+    songName: "Chaabi",
+    src: "https://www.youtube.com/watch?v=xM83XVw83yk",
+    timeSignature: "3/4",
+    song: [
+      "xx xx Pa xx Gun xx",
+      "xx Ta xx xx Gun xx"
+    ]
+    ,
+  },
+
+  {
+    songName: "Chaabi variant",
+    src: "https://www.youtube.com/watch?v=xM83XVw83yk",
+    timeSignature: "3/4",
+    song: [
+      "xx xx Pa dos Gun xx",
+      "xx Ta xx dos Gun xx"
+    ]
+    ,
+  },
 
   {
     songName: "Kono",
