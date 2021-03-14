@@ -3,8 +3,13 @@ import NotationNote from "./notationNote";
 import gsap from "gsap";
 
 var uniqid = require("uniqid");
+var clickHasBeenAnimated = false;
 
 class SongCard extends Component {
+  state = {
+    playing: false,
+    // songPlaying: this.props.playing,
+  };
   constructor() {
     super();
     this.notationFrame = null;
@@ -14,19 +19,10 @@ class SongCard extends Component {
     return (
       <div className="song-card" id={this.getSongCardId()}>
         <h2 className="song-name">{this.props.songName}</h2>
-        {/* <button
-          className={"btn btn-play paused"}
-          onClick={() => {
-            this.props.OnPlayPause(this.props.songId);
-          }}
-        >
-          PLAY
-        </button> */}
         <div
           className={this.getNotationFrameClass()}
           ref={(e) => (this.notationFrame = e)}
           onClick={(e) => {
-            // this.animateNotationFrame();
             this.props.OnPlayPause(e, this.props.songId);
           }}
         >
@@ -55,12 +51,21 @@ class SongCard extends Component {
     );
   }
 
-  animateNotationFrame() {
+  componentDidUpdate() {
+    // if (!clickHasBeenAnimated) {
+    // clickHasBeenAnimated = true;
+    this.animateNotationFrame();
+    console.log(this.notationFrame);
+    // }
+  }
+
+  animateNotationFrame(e) {
     var tl = gsap.timeline();
     console.log(this.notationFrame);
     tl.to(this.notationFrame, {
-      x: 1.8,
-      duration: 0.05,
+      scale: 2,
+      duration: 2,
+      backgroundColor: "#eeeeee",
     });
     tl.to(this.notationFrame, {
       x: 1,
