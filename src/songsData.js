@@ -21,6 +21,17 @@ export const SongsData = [
   // },
 
   {
+    songName: "Baba ganoush",
+    src: "https://youtu.be/WR_du_EPITw?list=PL68l7-3lyYtPdVsAAru0cJQfYx9wHu5tB",
+    timeSignature: "4/4",
+    song: [
+      "Gun dos gos Ta gos dos Gun dos",
+      "gos Ta gos dos Gun gos dos gos"
+    ]
+    ,
+  },
+  
+  {
     songName: "Workout 7/4",
     src: "https://www.youtube.com/watch?v=YFNegZdsDpE",
     timeSignature: "7/4",
@@ -139,6 +150,16 @@ export const SongsData = [
       song: [
         "Pa Ta xx Ta Pa xx do go",
         "Ta xx Gun xx Ta Dun go do"
+        
+      ]
+      ,
+    },
+    {
+      songName: "Djansa variant",
+      timeSignature: "4/4",
+      song: [
+        "Pa Ta xx Ta Pa xx dos gos",
+        "Ta xx Gun xx Ta Dun gos dos"
         
       ]
       ,
