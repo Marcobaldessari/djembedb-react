@@ -161,8 +161,6 @@ a {
 .song-card .notation-frame {
   display: -ms-grid;
   display: grid;
-  -webkit-column-gap: 16px;
-  column-gap: 16px;
   position: absolute;
   padding: 0 16px;
   top: 74px;
