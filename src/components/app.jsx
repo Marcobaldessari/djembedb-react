@@ -70,8 +70,9 @@ class App extends Component {
       (element) => (songString += element + " ")
     );
     let notes = songString.split(" ");
-
-    this.startLoop(step, notes);
+    this.buffer = setTimeout(() => {
+      this.startLoop(step, notes);
+    }, 500);
   };
 
   checkIfSystemDarkTheme() {
