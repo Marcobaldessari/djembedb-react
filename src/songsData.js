@@ -1,4 +1,16 @@
+// allSongTitles: "Kuku, Kono, Raprhythm (patatje), Yankadi, Didadi, Rumba 1.1, Rumba 1.2, Mix1, Mix2, Mix3, Rumba 2.1, Rumba 2.2., The Gambia. (You can play the Rumba 1 rhythms together so you can play it with more djembeplayers. The same with the Mixrhythms and the Rumba 2 rhythms)",
+
 export const SongsData = [
+  {
+    songName: "Minestrone",
+    src: "",
+    timeSignature: "4/4",
+    song: [
+      "dos gos dos gos dos gos dos gos",
+      "dos gos dos gos Ta go do Gun"
+    ]
+    ,
+  },
   {
     songName: "Mix A",
     src: "https://youtu.be/5HIAuK9RS6E?list=PL68l7-3lyYtPdVsAAru0cJQfYx9wHu5tB&t=218",
@@ -9,6 +21,19 @@ export const SongsData = [
     ]
     ,
   },
+
+  // {
+  //   songName: "A long one",
+  //   src: "",
+  //   timeSignature: "4/4",
+  //   song: [
+  //     "Gun xx Gun xx gos dos xx Pa",
+  //     "xx dos xx gos dos Ta Pa Ta",
+  //     "Gun xx Gun xx gos dos xx Pa",
+  //     "xx dos xx gos dos Ta Pa Ta"
+  //   ]
+  //   ,
+  // },
   {
     songName: "Mix A variant",
     src: "https://youtu.be/5HIAuK9RS6E?list=PL68l7-3lyYtPdVsAAru0cJQfYx9wHu5tB&t=218",
