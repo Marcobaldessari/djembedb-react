@@ -6,8 +6,8 @@ export const SongsData = [
     src: "",
     timeSignature: "4/4",
     song: [
-      "dos gos dos gos dos gos dos gos",
-      "dos gos dos gos Ta go do Gun"
+      "Gun dos gos dos gos dos gos dos",
+      "gos dos gos dos gos Ta go do"
     ]
     ,
   },
