@@ -34,16 +34,16 @@ export const SongsData = [
   //   ]
   //   ,
   // },
-  {
-    songName: "Mix A variant",
-    src: "https://youtu.be/5HIAuK9RS6E?list=PL68l7-3lyYtPdVsAAru0cJQfYx9wHu5tB&t=218",
-    timeSignature: "4/4",
-    song: [
-      "Gun xx Gun xx gos dos xx Pa",
-      "xx dos xx gos dos Ta Pa Ta"
-    ]
-    ,
-  },
+  // {
+  //   songName: "Mix A variant",
+  //   src: "https://youtu.be/5HIAuK9RS6E?list=PL68l7-3lyYtPdVsAAru0cJQfYx9wHu5tB&t=218",
+  //   timeSignature: "4/4",
+  //   song: [
+  //     "Gun xx Gun xx gos dos xx Pa",
+  //     "xx dos xx gos dos Ta Pa Ta"
+  //   ]
+  //   ,
+  // },
   {
     songName: "OG 4/4",
     src: "",
