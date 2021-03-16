@@ -2,6 +2,37 @@
 
 export const SongsData = [
   {
+    songName: "Fill 1",
+    src: "https://www.youtube.com/watch?v=rhPL28kKS2Q",
+    timeSignature: "4/4",
+    song: [
+      "Pa dos gos Ta gos dos Pa dos",
+      "gos Ta gos dos Pa dos Pa Ta"
+    ]
+    ,
+  },
+  
+  {
+    songName: "Fill 2",
+    src: "https://www.youtube.com/watch?v=rhPL28kKS2Q",
+    timeSignature: "4/4",
+    song: [
+      "Pa dos gos Ta gos dos Pa dos",
+      "gos dos Pa dos Pa Ta Pa Ta"
+    ]
+    ,
+  },
+  {
+    songName: "Fill 3",
+    src: "https://www.youtube.com/watch?v=rhPL28kKS2Q",
+    timeSignature: "4/4",
+    song: [
+      "Gun dos gos Ta Pa dos Pa dos",
+      "gos Ta Pa dos Pa dos Pa Ta"
+    ]
+    ,
+  },
+  {
     songName: "Minestrone",
     src: "",
     timeSignature: "4/4",
@@ -16,7 +47,7 @@ export const SongsData = [
     src: "https://youtu.be/5HIAuK9RS6E?list=PL68l7-3lyYtPdVsAAru0cJQfYx9wHu5tB&t=218",
     timeSignature: "4/4",
     song: [
-      "Gun xx Gun xx go do xx Pa",
+      "Gun xx Gun xx go do xx Ta",
       "xx do xx go do Ta Pa Ta"
     ]
     ,
