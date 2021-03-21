@@ -2,6 +2,17 @@
 
 export const SongsData = [
   {
+    songName: "Minestrone due",
+    src: "",
+    timeSignature: "4/4",
+    song: [
+      "Gun dos gos Dun gos dos Gun dos",
+      "gos dos gos dos gos dos gos dos"
+    ]
+    ,
+  },
+
+  {
     songName: "Fill 1",
     src: "https://www.youtube.com/watch?v=rhPL28kKS2Q",
     timeSignature: "4/4",
@@ -33,12 +44,22 @@ export const SongsData = [
     ,
   },
   {
-    songName: "Minestrone",
+    songName: "Minestrone uno",
     src: "",
     timeSignature: "4/4",
     song: [
       "Gun dos gos dos gos dos gos dos",
       "gos dos gos dos gos Ta go do"
+    ]
+    ,
+  },
+  {
+    songName: "Lato",
+    src: "https://www.youtube.com/watch?v=rhPL28kKS2Q",
+    timeSignature: "4/4",
+    song: [
+      "Pa dos Pa dos gos dos gos Ta",
+      "gos Ta Pa dos gos dos gos dos"
     ]
     ,
   },
