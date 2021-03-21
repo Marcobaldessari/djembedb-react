@@ -1,6 +1,73 @@
 // allSongTitles: "Kuku, Kono, Raprhythm (patatje), Yankadi, Didadi, Rumba 1.1, Rumba 1.2, Mix1, Mix2, Mix3, Rumba 2.1, Rumba 2.2., The Gambia. (You can play the Rumba 1 rhythms together so you can play it with more djembeplayers. The same with the Mixrhythms and the Rumba 2 rhythms)",
 
 export const SongsData = [
+  
+  {
+    songName: "Cissy strut",
+    src: "https://youtu.be/Prg73ySVu6E?t=291",
+    timeSignature: "4/4",
+    feel: "swing",
+    song: [
+      "Gun dos gos Dun Pa Dun gos dos",
+      "Gun dos gos Dun Pa Dun Pa dos"
+    ]
+    ,
+  },
+
+  {
+    songName: "Ain't nobody",
+    src: "https://youtu.be/Prg73ySVu6E?t=185",
+    timeSignature: "4/4",
+    song: [
+      "Gun Dun gos dos Pa dos gos Dun",
+      "gos dos gos Dun Pa Dun gos dos"
+    ]
+    ,
+  },
+
+  {
+    songName: "Stolen Groove 1",
+    src: "https://cajonmaster.com/groove-course-1/",
+    timeSignature: "4/4",
+    song: [
+      "Gun dos gos Dun Pa Ta gos Ta",
+      "gos Ta Gun Ta Pa Dun gos dos"
+    ]
+    ,
+  },
+  {
+    songName: "Stolen Groove 1 variant",
+    src: "https://cajonmaster.com/groove-course-1/",
+    timeSignature: "4/4",
+    song: [
+      "Gun dos gos dos Pa Ta dos Ta",
+      "gos Ta Gun Ta Pa dos gos dos"
+    ]
+    ,
+  },
+  {
+    songName: "Stolen Groove 2",
+    src: "https://cajonmaster.com/groove-course-1/",
+    timeSignature: "4/4",
+    song: [
+      "Gun Ta gos dos Pa dos gos dos",
+      "Gun Ta gos dos Pa dos gos dos"
+    ]
+    ,
+  },
+
+ 
+
+  {
+    songName: "Goldskin",
+    src: "https://youtu.be/04IXXJxNwtk?t=32",
+    timeSignature: "4/4",
+    song: [
+      "Gun dos gos dos Pa dos gos dos",
+      "Gun dos gos dos Pa dos gos dos"
+    ]
+    ,
+  },
   {
     songName: "Minestrone due",
     src: "",
