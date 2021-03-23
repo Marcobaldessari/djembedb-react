@@ -2,6 +2,36 @@
 
 export const SongsData = [
   {
+    songName: "A-Velocity",
+    src: "Pizeta --> https://open.spotify.com/track/6WK8Vu7iHPVA2fnEHjcL9T?si=VQz0pRqNR-eKahFpQl7VJQ",
+    timeSignature: "4/4",
+    song: [
+      "Gun xx Gun xx Pa Ta xx xx",
+      "Gun xx xx Ca xx xx xx xx"
+    ]
+    ,
+  },
+  {
+    songName: "A-Velocity variant 1",
+    src: "Pizeta --> https://open.spotify.com/track/6WK8Vu7iHPVA2fnEHjcL9T?si=VQz0pRqNR-eKahFpQl7VJQ",
+    timeSignature: "4/4",
+    song: [
+      "Gun dos Gun dos Pa Ta gos dos",
+      "Gun dos gos Ca gos dos gos dos"
+    ]
+    ,
+  },
+  {
+    songName: "A-Velocity variant 2",
+    src: "Pizeta --> https://open.spotify.com/track/6WK8Vu7iHPVA2fnEHjcL9T?si=VQz0pRqNR-eKahFpQl7VJQ",
+    timeSignature: "4/4",
+    song: [
+      "Gun dos gos Ta Pa Ta gos dos",
+      "Gun dos gos Pa gos dos gos dos"
+    ]
+    ,
+  },
+  {
     songName: "Fill 1",
     src: "https://www.youtube.com/watch?v=rhPL28kKS2Q",
     timeSignature: "4/4",
@@ -108,7 +138,7 @@ export const SongsData = [
   },
   
   {
-    songName: "Workout 7/4",
+    songName: "Working out the 7/4",
     src: "https://www.youtube.com/watch?v=YFNegZdsDpE",
     timeSignature: "7/4",
     song: [
