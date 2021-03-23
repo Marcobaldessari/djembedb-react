@@ -1,7 +1,38 @@
 // allSongTitles: "Kuku, Kono, Raprhythm (patatje), Yankadi, Didadi, Rumba 1.1, Rumba 1.2, Mix1, Mix2, Mix3, Rumba 2.1, Rumba 2.2., The Gambia. (You can play the Rumba 1 rhythms together so you can play it with more djembeplayers. The same with the Mixrhythms and the Rumba 2 rhythms)",
 
 export const SongsData = [
-  
+  {
+    songName: "A-Velocity",
+    src: "Pizeta --> https://open.spotify.com/track/6WK8Vu7iHPVA2fnEHjcL9T?si=VQz0pRqNR-eKahFpQl7VJQ",
+    timeSignature: "4/4",
+    song: [
+      "Gun xx Gun xx Pa Ta xx xx",
+      "Gun xx xx Ca xx xx xx xx"
+    ]
+    ,
+  },
+  {
+    songName: "A-Velocity variant 1",
+    src: "Pizeta --> https://open.spotify.com/track/6WK8Vu7iHPVA2fnEHjcL9T?si=VQz0pRqNR-eKahFpQl7VJQ",
+    timeSignature: "4/4",
+    song: [
+      "Gun dos Gun dos Pa Ta gos dos",
+      "Gun dos gos Ca gos dos gos dos"
+    ]
+    ,
+  },
+  {
+    songName: "A-Velocity variant 2",
+    src: "Pizeta --> https://open.spotify.com/track/6WK8Vu7iHPVA2fnEHjcL9T?si=VQz0pRqNR-eKahFpQl7VJQ",
+    timeSignature: "4/4",
+    song: [
+      "Gun dos gos Ta Pa Ta gos dos",
+      "Gun dos gos Pa gos dos gos dos"
+    ]
+    ,
+  },
+
+
   {
     songName: "Cissy strut",
     src: "https://youtu.be/Prg73ySVu6E?t=291",
@@ -117,6 +148,16 @@ export const SongsData = [
     song: [
       "Gun dos gos dos gos dos gos dos",
       "gos dos gos dos gos Ta go do"
+    ]
+    ,
+  },
+  {
+    songName: "Minestrone uno Fill",
+    src: "",
+    timeSignature: "4/4",
+    song: [
+      "Gun do go do Gun do go do",
+      "Gun Ta Gun Ta Gun Ta go do"
     ]
     ,
   },
