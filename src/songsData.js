@@ -1,6 +1,28 @@
 // allSongTitles: "Kuku, Kono, Raprhythm (patatje), Yankadi, Didadi, Rumba 1.1, Rumba 1.2, Mix1, Mix2, Mix3, Rumba 2.1, Rumba 2.2., The Gambia. (You can play the Rumba 1 rhythms together so you can play it with more djembeplayers. The same with the Mixrhythms and the Rumba 2 rhythms)",
 
 export const SongsData = [
+  
+
+  {
+    songName: "You and me",
+    src: "Pizeta --> https://open.spotify.com/track/3bUknCt3Ga7f1zH1ElCSJu?si=pan7-YJKTSi3Up7f9ttSKg",
+    timeSignature: "4/4",
+    song: [
+      "Gun xx xx Ta Pa xx xx xx",
+      "Gun do xx do Pa xx go Dun"
+    ]
+    ,
+  },
+  {
+    songName: "You and me variant",
+    src: "Pizeta --> https://open.spotify.com/track/3bUknCt3Ga7f1zH1ElCSJu?si=pan7-YJKTSi3Up7f9ttSKg",
+    timeSignature: "4/4",
+    song: [
+      "Gun xx xx Dun Pa xx xx xx",
+      "Gun do xx do Pa do go Ta"
+    ]
+    ,
+  },
   {
     songName: "A-Velocity",
     src: "Pizeta --> https://open.spotify.com/track/6WK8Vu7iHPVA2fnEHjcL9T?si=VQz0pRqNR-eKahFpQl7VJQ",
