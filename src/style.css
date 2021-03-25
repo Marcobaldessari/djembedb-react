@@ -2,9 +2,6 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-transition: all 0.2s;
-  -o-transition: all 0.2s;
-  transition: all 0.2s;
 }
 *,
 *::after,
