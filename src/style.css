@@ -90,6 +90,9 @@ a {
   display: block;
   height: 172px;
 }
+.detailed .song-card {
+  height: 192px;
+}
 .song-name {
   position: relative;
   top: 36px;
