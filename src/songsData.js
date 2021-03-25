@@ -1,6 +1,149 @@
 // allSongTitles: "Kuku, Kono, Raprhythm (patatje), Yankadi, Didadi, Rumba 1.1, Rumba 1.2, Mix1, Mix2, Mix3, Rumba 2.1, Rumba 2.2., The Gambia. (You can play the Rumba 1 rhythms together so you can play it with more djembeplayers. The same with the Mixrhythms and the Rumba 2 rhythms)",
 
 export const SongsData = [
+  
+
+  {
+    songName: "You and me",
+    src: "Pizeta --> https://open.spotify.com/track/3bUknCt3Ga7f1zH1ElCSJu?si=pan7-YJKTSi3Up7f9ttSKg",
+    timeSignature: "4/4",
+    song: [
+      "Gun xx xx Ta Pa xx xx xx",
+      "Gun do xx do Pa xx go Dun"
+    ]
+    ,
+    
+  },
+  {
+    songName: "You and me variant",
+    src: "Pizeta --> https://open.spotify.com/track/3bUknCt3Ga7f1zH1ElCSJu?si=pan7-YJKTSi3Up7f9ttSKg",
+    timeSignature: "4/4",
+    song: [
+      "Gun xx xx Dun Pa xx xx xx",
+      "Gun do xx do Pa do go Ta"
+    ]
+    ,
+  },
+  {
+    songName: "A-Velocity",
+    src: "Pizeta --> https://open.spotify.com/track/6WK8Vu7iHPVA2fnEHjcL9T?si=VQz0pRqNR-eKahFpQl7VJQ",
+    timeSignature: "4/4",
+    song: [
+      "Gun xx Gun xx Pa Ta xx xx",
+      "Gun xx xx Ca xx xx xx xx"
+    ]
+    ,
+  },
+  {
+    songName: "A-Velocity variant 1",
+    src: "Pizeta --> https://open.spotify.com/track/6WK8Vu7iHPVA2fnEHjcL9T?si=VQz0pRqNR-eKahFpQl7VJQ",
+    timeSignature: "4/4",
+    song: [
+      "Gun dos Gun dos Pa Ta gos dos",
+      "Gun dos gos Ca gos dos gos dos"
+    ]
+    ,
+  },
+  {
+    songName: "A-Velocity variant 2",
+    src: "Pizeta --> https://open.spotify.com/track/6WK8Vu7iHPVA2fnEHjcL9T?si=VQz0pRqNR-eKahFpQl7VJQ",
+    timeSignature: "4/4",
+    song: [
+      "Gun dos gos Ta Pa Ta gos dos",
+      "Gun dos gos Pa gos dos gos dos"
+    ]
+    ,
+  },
+
+  {
+    songName: "Cissy strut",
+    src: "https://youtu.be/Prg73ySVu6E?t=291",
+    timeSignature: "4/4",
+    feel: "swing",
+    song: [
+      "Gun dos gos Dun Pa Dun gos dos",
+      "Gun dos gos Dun Pa Dun Pa dos"
+    ]
+    ,
+  },
+
+  {
+    songName: "Cissy fill",
+    src: "",
+    timeSignature: "4/4",
+    song: [
+      "Gun dos gos Dun gos dos Gun dos",
+      "gos dos Gun dos Gun dos gos dos"
+    ]
+    ,
+  },
+
+  {
+    songName: "Ain't nobody",
+    src: "https://youtu.be/Prg73ySVu6E?t=185",
+    timeSignature: "4/4",
+    song: [
+      "Gun Dun gos dos Pa dos gos Dun",
+      "gos dos gos Dun Pa Dun gos dos"
+    ]
+    ,
+  },
+
+  {
+    songName: "Stolen Groove 1",
+    src: "https://cajonmaster.com/groove-course-1/",
+    timeSignature: "4/4",
+    song: [
+      "Gun dos gos Dun Pa Ta gos Ta",
+      "gos Ta Gun Ta Pa Dun gos dos"
+    ]
+    ,
+  },
+  {
+    songName: "Stolen Groove 1 variant",
+    src: "https://cajonmaster.com/groove-course-1/",
+    timeSignature: "4/4",
+    song: [
+      "Gun dos gos dos Pa Ta dos Ta",
+      "gos Ta Gun Ta Pa dos gos dos"
+    ]
+    ,
+  },
+  {
+    songName: "Stolen Groove 2",
+    src: "https://cajonmaster.com/groove-course-1/",
+    timeSignature: "4/4",
+    song: [
+      "Gun Ta gos dos Pa dos gos dos",
+      "Gun Ta gos dos Pa dos gos dos"
+    ]
+    ,
+  },
+
+ 
+
+  {
+    songName: "Goldskin",
+    src: "https://youtu.be/04IXXJxNwtk?t=32",
+    timeSignature: "4/4",
+    song: [
+      "Gun dos gos dos Pa dos gos dos",
+      "Gun dos gos dos Pa dos gos dos"
+    ]
+    ,
+  },
+  {
+    songName: "Minestrone due",
+    src: "",
+    timeSignature: "4/4",
+    song: [
+      "Gun dos gos Dun gos dos Gun dos",
+      "gos dos gos dos gos dos gos dos"
+    ]
+    ,
+  },
+
+  
   {
     songName: "Fill 1",
     src: "https://www.youtube.com/watch?v=rhPL28kKS2Q",
@@ -33,12 +176,32 @@ export const SongsData = [
     ,
   },
   {
-    songName: "Minestrone",
+    songName: "Minestrone uno",
     src: "",
     timeSignature: "4/4",
     song: [
       "Gun dos gos dos gos dos gos dos",
       "gos dos gos dos gos Ta go do"
+    ]
+    ,
+  },
+  {
+    songName: "Minestrone uno Fill",
+    src: "",
+    timeSignature: "4/4",
+    song: [
+      "Gun do go do Gun do go do",
+      "Gun Ta Gun Ta Gun Ta go do"
+    ]
+    ,
+  },
+  {
+    songName: "Lato",
+    src: "https://www.youtube.com/watch?v=rhPL28kKS2Q",
+    timeSignature: "4/4",
+    song: [
+      "Pa dos Pa dos gos dos gos Ta",
+      "gos Ta Pa dos gos dos gos dos"
     ]
     ,
   },
