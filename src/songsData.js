@@ -2,6 +2,29 @@
 
 export const SongsData = [
   {
+    songName: "Fill 7",
+    src: "https://youtu.be/ByERSyW828Y?t=285",
+    timeSignature: "4/4",
+    style: "",
+    song: [
+      "Pa Ta Pa Ta Gun Dun Gun Dun",
+      "Pa Ta xx xx Pa Ta Pa Ta"
+    ]
+    ,
+  },
+  {
+    songName: "Fill 6",
+    src: "https://youtu.be/ByERSyW828Y?t=242",
+    timeSignature: "4/4",
+    style: "",
+    song: [
+      "Pa Gun Dun Ta Gun dos Pa Dun",
+      "Gun Ta Gun dos Pa Ta Pa Ta"
+    ]
+    ,
+  },
+
+  {
     songName: "Fill 5",
     src: "https://youtu.be/ByERSyW828Y?t=187",
     timeSignature: "4/4",
