@@ -14,14 +14,14 @@ import taAudio from "../sounds/ta.mp3";
 import caAudio from "../sounds/ca.mp3";
 import gsap from "gsap";
 
-const volume = 0.1;
-// const volume = 1;
+// const volume = 0.1;
+const volume = 1;
 const howlerGun = new Howl({ src: [gunAudio], volume: volume });
 const howlerDun = new Howl({ src: [dunAudio], volume: volume });
 const howlerGo = new Howl({ src: [goAudio], volume: volume });
-const howlerGos = new Howl({ src: [gosAudio], volume: volume });
+const howlerGos = new Howl({ src: [gosAudio], volume: volume / 4 });
 const howlerDo = new Howl({ src: [doAudio], volume: volume });
-const howlerDos = new Howl({ src: [dosAudio], volume: volume });
+const howlerDos = new Howl({ src: [dosAudio], volume: volume / 4 });
 const howlerPa = new Howl({ src: [paAudio], volume: volume });
 const howlerTa = new Howl({ src: [taAudio], volume: volume });
 const howlerCa = new Howl({ src: [caAudio], volume: volume });
