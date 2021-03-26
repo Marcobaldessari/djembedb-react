@@ -1,12 +1,35 @@
 // allSongTitles: "Kuku, Kono, Raprhythm (patatje), Yankadi, Didadi, Rumba 1.1, Rumba 1.2, Mix1, Mix2, Mix3, Rumba 2.1, Rumba 2.2., The Gambia. (You can play the Rumba 1 rhythms together so you can play it with more djembeplayers. The same with the Mixrhythms and the Rumba 2 rhythms)",
 
 export const SongsData = [
-  
+  {
+    songName: "Fill 5",
+    src: "https://youtu.be/ByERSyW828Y?t=187",
+    timeSignature: "4/4",
+    style: "",
+    song: [
+      "Gun dos Gun Pa Gun dos Gun Pa",
+      "Gun dos Gun Pa Gun Dun Gun Dun"
+    ]
+    ,
+  },
+
+  {
+    songName: "Fill 4",
+    src: "https://youtu.be/ByERSyW828Y?t=135",
+    timeSignature: "4/4",
+    style: "",
+    song: [
+      "Gun dos Gun dos Gun dos gos Ta",
+      "Pa dos gos Ta Pa dos Pa dos"
+    ]
+    ,
+  },
 
   {
     songName: "Lut gaye",
     src: "https://youtu.be/aC51OjA992I",
     timeSignature: "4/4",
+    style: "indian",
     song: [
       "Gun xx xx do go xx go xx",
       "xx do xx do Gun xx xx xx"
