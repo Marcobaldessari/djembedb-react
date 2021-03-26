@@ -4,6 +4,17 @@ export const SongsData = [
   
 
   {
+    songName: "Lut gaye",
+    src: "https://youtu.be/aC51OjA992I",
+    timeSignature: "4/4",
+    song: [
+      "Gun xx xx do go xx go xx",
+      "xx do xx do Gun xx xx xx"
+    ]
+    ,
+  },
+
+  {
     songName: "You and me",
     src: "Pizeta --> https://open.spotify.com/track/3bUknCt3Ga7f1zH1ElCSJu?si=pan7-YJKTSi3Up7f9ttSKg",
     timeSignature: "4/4",
