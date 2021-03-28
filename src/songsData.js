@@ -345,6 +345,16 @@ export const SongsData = [
     ,
   },
 
+  {
+    songName: "Mix A variant",
+    src: "https://youtu.be/5HIAuK9RS6E?list=PL68l7-3lyYtPdVsAAru0cJQfYx9wHu5tB&t=218",
+    timeSignature: "4/4",
+    song: [
+      "Gun dos Gun dos gos dos gos Pa",
+      "gos dos gos gos dos Ta Pa Ta"
+    ]
+    ,
+  },
   // {
   //   songName: "A long one",
   //   src: "",
@@ -352,16 +362,6 @@ export const SongsData = [
   //   song: [
   //     "Gun xx Gun xx gos dos xx Pa",
   //     "xx dos xx gos dos Ta Pa Ta",
-  //     "Gun xx Gun xx gos dos xx Pa",
-  //     "xx dos xx gos dos Ta Pa Ta"
-  //   ]
-  //   ,
-  // },
-  // {
-  //   songName: "Mix A variant",
-  //   src: "https://youtu.be/5HIAuK9RS6E?list=PL68l7-3lyYtPdVsAAru0cJQfYx9wHu5tB&t=218",
-  //   timeSignature: "4/4",
-  //   song: [
   //     "Gun xx Gun xx gos dos xx Pa",
   //     "xx dos xx gos dos Ta Pa Ta"
   //   ]
@@ -377,16 +377,7 @@ export const SongsData = [
     ]
     ,
   },
-  // {
-  //   songName: "OG 4/4 variant",
-  //   src: "",
-  //   timeSignature: "4/4",
-  //   song: [
-  //     "Gun xx Gun xx Ca xx do Gun",
-  //     "xx Gun xx do Ca xx xx xx"
-  //   ]
-  //   ,
-  // },
+
 
   {
     songName: "Baba ganoush",
