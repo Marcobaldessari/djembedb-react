@@ -14,8 +14,8 @@ import taAudio from "../sounds/ta.mp3";
 import caAudio from "../sounds/ca.mp3";
 import gsap from "gsap";
 
-// const volume = 0.1;
-const volume = 1;
+const volume = 0.1;
+// const volume = 1;
 const howlerGun = new Howl({ src: [gunAudio], volume: volume });
 const howlerDun = new Howl({ src: [dunAudio], volume: volume });
 const howlerGo = new Howl({ src: [goAudio], volume: volume });

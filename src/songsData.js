@@ -2,6 +2,78 @@
 
 export const SongsData = [
   {
+    songName: "Rock groove 5",
+    src: "https://youtu.be/eJ09XJ14BM4?t=290",
+    timeSignature: "4/4",
+    style: "Rock",
+    tempo: "40",
+    song: [
+      "Gun dos gos dos Pa Dun Gun Dun",
+      "Gun dos Gun dos Pa Dun gos dos"
+    ]
+    ,
+  },
+  {
+    songName: "Rock groove 4",
+    src: "https://youtu.be/eJ09XJ14BM4?t=262",
+    timeSignature: "4/4",
+    style: "Rock",
+    tempo: "40",
+    song: [
+      "Gun dos gos Dun Pa dos Gun dos",
+      "Gun dos Gun Dun Pa dos gos dos"
+    ]
+    ,
+  },
+  {
+    songName: "Rock groove 3",
+    src: "https://youtu.be/eJ09XJ14BM4?t=155",
+    timeSignature: "4/4",
+    style: "Rock",
+    tempo: "40",
+    song: [
+      "Gun Dun gos dos Pa dos gos dos",
+      "gos dos gos dos Pa dos Gun Ta"
+    ]
+    ,
+  },
+  {
+    songName: "Rock beeat 2",
+    src: "https://youtu.be/eJ09XJ14BM4?t=137",
+    timeSignature: "4/4",
+    style: "Rock",
+    tempo: "40",
+    song: [
+      "Gun dos gos dos Pa dos gos Dun",
+      "gos dos Gun dos Pa dos gos Dun"
+    ]
+    ,
+  },
+
+  {
+    songName: "Amen break",
+    src: "https://youtu.be/VtJCTLwcw6s?t=126",
+    timeSignature: "4/4",
+    style: "Rock",
+    song: [
+      "Gun dos Gun dos Pa dos gos Ta",
+      "dos Ta Gun Dun Pa dos gos dos"
+    ]
+    ,
+  },
+
+  {
+    songName: "Beat it",
+    src: "https://www.youtube.com/watch?v=NaOPNwjhURQ",
+    timeSignature: "4/4",
+    style: "",
+    song: [
+      "Gun dos Pa dos Gun dos Pa dos",
+      "Gun dos Pa dos gos Dun Pa dos"
+    ]
+    ,
+  },
+  {
     songName: "Fill 7",
     src: "https://youtu.be/ByERSyW828Y?t=285",
     timeSignature: "4/4",
