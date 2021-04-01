@@ -440,6 +440,9 @@ a {
 .topbar .logo .logomark:hover {
   cursor: pointer;
 }
+.topbar .logo .Ca {
+  border: none !important;
+}
 .logo-big .logotype {
   display: block;
 }
