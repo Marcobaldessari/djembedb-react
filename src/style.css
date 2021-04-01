@@ -521,21 +521,16 @@ a {
   align-self: start;
   background: var(--logo-note-color);
 }
-/* width */
-::-webkit-scrollbar {
-  width: 15px;
-  right: 10px;
-}
-/* Track */
-::-webkit-scrollbar-track {
-  background: var(--bg-color);
-}
-/* Handle */
-::-webkit-scrollbar-thumb {
-  border-radius: 20px;
-  background: var(--scrollbar-color);
-}
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #555;
+@media (min-width: 640px) {
+  ::-webkit-scrollbar {
+    width: 15px;
+    right: 10px;
+  }
+  ::-webkit-scrollbar-thumb {
+    border-radius: 20px;
+    background: var(--scrollbar-color);
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
 }
