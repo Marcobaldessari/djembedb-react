@@ -60,19 +60,19 @@ class App extends Component {
       return;
     }
 
-    this.setState(() => ({
-      playing: true,
-      songPlaying: songId,
-    }));
-
+    // get the song data and play
     let songString = "";
     this.state.SongsData[songId].song.forEach(
       (element) => (songString += element + " ")
     );
     let notes = songString.split(" ");
-    this.buffer = setTimeout(() => {
-      this.startLoop(step, notes);
-    }, 500);
+    this.startLoop(step, notes);
+
+    // set the states
+    this.setState(() => ({
+      playing: true,
+      songPlaying: songId,
+    }));
   };
 
   checkIfSystemDarkTheme() {
