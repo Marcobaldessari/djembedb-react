@@ -41,6 +41,7 @@ body
     --notation-frame-border none
     --notation-number rgba(0,0,0,.7)
     --notation-number-active #824759
+    --scrollbar-color #d3d3d3
 
     &.dark-theme
         --bg-color: #1F1B2B
@@ -55,6 +56,7 @@ body
         --notation-frame-border 1px solid var(--notation-line-color)
         --notation-number rgba(255, 255, 255, .5)
         --notation-number-active #ffbcd1
+        --scrollbar-color #100D1B
 
 html, body
     height 100%
@@ -336,7 +338,7 @@ a
     width 100%
     height 56px
     top 0
-    z-index 999
+    z-index 10
     background var(--topbar-color)
     backdrop-filter blur(10px)
 
@@ -474,3 +476,28 @@ a
         //     top 30%
         //     left 30%
     
+
+// Scrollbar
+
+/* width */
+::-webkit-scrollbar {
+    width: 15px;
+    right 10px
+
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--bg-color)
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    border-radius 20px
+    background: var(--scrollbar-color)
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
