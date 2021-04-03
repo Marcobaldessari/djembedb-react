@@ -1,6 +1,16 @@
-// allSongTitles: "Kuku, Kono, Raprhythm (patatje), Yankadi, Didadi, Rumba 1.1, Rumba 1.2, Mix1, Mix2, Mix3, Rumba 2.1, Rumba 2.2., The Gambia. (You can play the Rumba 1 rhythms together so you can play it with more djembeplayers. The same with the Mixrhythms and the Rumba 2 rhythms)",
-
 export const SongsData = [
+  // {
+  //   songName: "Dun tek tek",
+  //   src: "",
+  //   timeSignature: "4/4",
+  //   style: "Turkish",
+  //   tempo: "",
+  //   song: [
+  //     "",
+  //     ""
+  //   ]
+  //   ,
+  // },
   {
     songName: "Rock groove 5",
     src: "https://youtu.be/eJ09XJ14BM4?t=290",
@@ -46,6 +56,18 @@ export const SongsData = [
     song: [
       "Gun dos gos dos Pa dos gos Dun",
       "gos dos Gun dos Pa dos gos Dun"
+    ]
+    ,
+  },
+  {
+    songName: "Rock beeat alpha",
+    src: "Marco://youtu.be/eJ09XJ14BM4?t=137",
+    timeSignature: "4/4",
+    style: "Rock",
+    tempo: "40",
+    song: [
+      "Gun dos gos dos Pa dos gos dos",
+      "gos dos Gun dos Pa dos gos dos"
     ]
     ,
   },
