@@ -12,6 +12,19 @@ export const SongsData = [
   //   ,
   // },
   {
+    songName: "Khaligi",
+    src: "https://youtu.be/JZsY_R9ee6U?t=131",
+    timeSignature: "3/4",
+    style: "Middle eastern",
+    tempo: "40",
+    song: [
+      "Gun dos Gun dos Pa dos",
+      "Gun dos Gun dos Pa dos",
+    ]
+    ,
+  },
+
+  {
     songName: "Rock groove 5",
     src: "https://youtu.be/eJ09XJ14BM4?t=290",
     timeSignature: "4/4",
@@ -80,6 +93,18 @@ export const SongsData = [
     song: [
       "Gun dos Gun dos Pa dos gos Ta",
       "dos Ta Gun Dun Pa dos gos dos"
+    ]
+    ,
+  },
+
+  {
+    songName: "Amen break variant",
+    src: "Marco Baldessari",
+    timeSignature: "4/4",
+    style: "Rock",
+    song: [
+      "Gun dos Gun dos Pa Ta gos Ta",
+      "dos Ta Gun Ta Pa dos gos dos"
     ]
     ,
   },
