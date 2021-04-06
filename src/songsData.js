@@ -11,6 +11,19 @@ export const SongsData = [
   //   ]
   //   ,
   // },
+
+  {
+    songName: "Sweet potato",
+    src: "",
+    timeSignature: "4/4",
+    style: "Modern",
+    tempo: "40",
+    song: [
+      "Gun dos gos Dun Pa Dun Gun Ta",
+      "Gun dos gos Dun gos Dun Gun Ta",
+    ]
+    ,
+  },
   {
     songName: "Khaligi",
     src: "https://youtu.be/JZsY_R9ee6U?t=131",
