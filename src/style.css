@@ -20,6 +20,7 @@ body {
   --note-color: #000;
   --notation-line-color: #c8c8c8;
   --notation-bg-color: #f6f6f6;
+  --notation-bg-hover-color: #ececec;
   --notation-bg-active-color: #faf0f3;
   --primary-color-regular: #ff5d8e;
   --topbar-color: rgba(255,255,255,0.7);
@@ -35,6 +36,7 @@ body.dark-theme {
   --logo-note-color: #fff;
   --notation-line-color: #352c38;
   --notation-bg-color: #1d1a29;
+  --notation-bg-hover-color: #181622;
   --notation-bg-active-color: #261b2b;
   --primary-color-regular: #ff705d;
   --topbar-color: rgba(31,27,43,0.7);
@@ -196,6 +198,7 @@ a {
 }
 .notation-frame:hover {
   cursor: pointer;
+  background: var(--notation-bg-hover-color);
 }
 .notation-frame.active {
   background: var(--notation-bg-active-color);

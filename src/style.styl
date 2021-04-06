@@ -35,6 +35,7 @@ body
     --note-color #000
     --notation-line-color #C8C8C8
     --notation-bg-color #F6F6F6
+    --notation-bg-hover-color  #ECECEC
     --notation-bg-active-color #FAF0F3
     --primary-color-regular #FF5D8E
     --topbar-color rgba(255,255,255,.7)
@@ -50,6 +51,7 @@ body
         --logo-note-color #fff
         --notation-line-color #352C38
         --notation-bg-color #1D1A29
+        --notation-bg-hover-color #181622
         --notation-bg-active-color #261B2B
         --primary-color-regular #FF705D
         --topbar-color rgba(31,27,43,.7)
@@ -193,6 +195,7 @@ a
         border-bottom var(--notation-frame-border)
     &:hover
         cursor pointer
+        background var(--notation-bg-hover-color)
     &.active
         background var(--notation-bg-active-color)
     &.active:after
@@ -476,7 +479,6 @@ a
         //     top 30%
         //     left 30%
     
-
 
 // Scrollbar
 +desktop()
