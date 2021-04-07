@@ -13,6 +13,19 @@ export const SongsData = [
   // },
 
   {
+    songName: "Minestrone tre",
+    src: "Marco Baldessari",
+    timeSignature: "4/4",
+    style: "Modern",
+    tempo: "40",
+    song: [
+      "Pa dos gos Ta dos Ta Gun dos",
+      "gos dos gos dos gos dos gos dos",
+    ]
+    ,
+  },
+
+  {
     songName: "Sweet potato",
     src: "",
     timeSignature: "4/4",
@@ -24,18 +37,18 @@ export const SongsData = [
     ]
     ,
   },
-  {
-    songName: "Khaligi",
-    src: "https://youtu.be/JZsY_R9ee6U?t=131",
-    timeSignature: "3/4",
-    style: "Middle eastern",
-    tempo: "40",
-    song: [
-      "Gun dos Gun dos Pa dos",
-      "Gun dos Gun dos Pa dos",
-    ]
-    ,
-  },
+  // {
+  //   songName: "Khaligi",
+  //   src: "https://youtu.be/JZsY_R9ee6U?t=131",
+  //   timeSignature: "3/4",
+  //   style: "Middle eastern",
+  //   tempo: "40",
+  //   song: [
+  //     "Gun dos Gun dos Pa dos",
+  //     "Gun dos Gun dos Pa dos",
+  //   ]
+  //   ,
+  // },
 
   {
     songName: "Rock groove 5",
