@@ -20,7 +20,7 @@ export const SongsData = [
     tempo: "40",
     song: [
       "Gun dos gos Dun Pa Dun Gun Ta",
-      "Gun dos gos Dun gos Dun Gun Ta",
+      "Gun dos Gun Dun gos Dun Gun Ta",
     ]
     ,
   },
