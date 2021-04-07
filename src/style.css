@@ -446,7 +446,10 @@ a {
   cursor: pointer;
 }
 .topbar .logo .Ca {
-  border: none !important;
+  border: none;
+}
+.topbar .logo .Ca::after {
+  content: none;
 }
 .logo-big .logotype {
   display: block;
