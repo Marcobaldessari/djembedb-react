@@ -13,6 +13,30 @@ export const SongsData = [
   // },
 
   {
+    songName: "Minestrone quattro",
+    src: "Marco Baldessari",
+    timeSignature: "4/4",
+    feel: "funk",
+    song: [
+      "Gun dos gos Dun Pa Dun gos dos",
+      "gos dos gos dos gos dos gos dos"
+    ]
+    ,
+  },
+
+  {
+    songName: "Minestrone quattro break",
+    src: "Marco Baldessari",
+    timeSignature: "4/4",
+    feel: "funk",
+    song: [
+      "Gun dos gos Dun Pa Dun gos Ta",
+      "gos Ta Gun Dun Pa Dun Pa Ta"
+    ]
+    ,
+  },
+
+  {
     songName: "Minestrone tre",
     src: "Marco Baldessari",
     timeSignature: "4/4",
