@@ -33,7 +33,9 @@ class SongCard extends Component {
               id={this.getMeasureId(indexMeasure)}
             >
               {measure.split(" ").map((n, indexNote) => (
-                <span className="notation-number">{indexNote + 1}</span>
+                <span key={uniqid()} className="notation-number">
+                  {indexNote + 1}
+                </span>
               ))}
 
               {measure.split(" ").map((n, indexNote) => (
