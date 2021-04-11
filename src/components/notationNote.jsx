@@ -1,11 +1,6 @@
 import React, { Component } from "react";
 
-class NotationNote extends Component {
-  state = {
-    note: this.props.note,
-    noteIndex: this.props.noteIndex,
-  };
-
+class NotationNote extends React.PureComponent {
   render() {
     return (
       <div className="notation-note">
@@ -17,7 +12,7 @@ class NotationNote extends Component {
   }
 
   getNoteClasses() {
-    let classes = "notation-note-circle " + this.state.note;
+    let classes = "notation-note-circle " + this.props.note;
     return classes;
   }
 

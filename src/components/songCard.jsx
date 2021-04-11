@@ -5,11 +5,7 @@ import gsap from "gsap";
 var uniqid = require("uniqid");
 var clickHasBeenAnimated = false;
 
-class SongCard extends Component {
-  state = {
-    playing: false,
-    // songPlaying: this.props.playing,
-  };
+class SongCard extends React.PureComponent {
   constructor() {
     super();
     this.notationFrame = null;
@@ -29,18 +25,18 @@ class SongCard extends Component {
           {this.props.song.map((measure, indexMeasure) => (
             <div
               className={this.getMeasureClass()}
-              key={uniqid()}
+              key={indexMeasure}
               id={this.getMeasureId(indexMeasure)}
             >
               {measure.split(" ").map((n, indexNote) => (
-                <span key={uniqid()} className="notation-number">
+                <span key={indexNote} className="notation-number">
                   {indexNote + 1}
                 </span>
               ))}
 
               {measure.split(" ").map((n, indexNote) => (
                 <NotationNote
-                  key={uniqid()}
+                  key={indexNote}
                   note={n}
                   noteIndex={this.getNoteIndex(
                     indexNote,
@@ -58,24 +54,31 @@ class SongCard extends Component {
   }
 
   componentDidUpdate() {
-    // if (!clickHasBeenAnimated) {
-    // clickHasBeenAnimated = true;
-    this.animateNotationFrame();
-    console.log(this.notationFrame);
-    // }
+    if (this.props.isPlaying) {
+      this.animateNotationFrame();
+    }
   }
 
   animateNotationFrame(e) {
     var tl = gsap.timeline();
-    console.log(this.notationFrame);
+    // tl.to(this.notationFrame, {
+    //   scale: 1.04,
+    //   duration: 0.1,
+    // });
+    // tl.to(this.notationFrame, {
+    //   scale: 1,
+    //   duration: 1,
+    //   ease: "elastic.out(1,0.3)",
+    // });
+    console.log(this.notationFrame.style.backgroundColor);
     tl.to(this.notationFrame, {
-      scale: 2,
-      duration: 2,
-      backgroundColor: "#eeeeee",
+      scale: 1.04,
+      duration: 0.1,
     });
     tl.to(this.notationFrame, {
-      x: 1,
-      duration: 0.2,
+      scale: 1,
+      duration: 1,
+      ease: "elastic.out(1,0.3)",
     });
   }
 
@@ -141,10 +144,7 @@ class SongCard extends Component {
         classes += "two-bars";
         break;
     }
-    classes +=
-      this.props.playing && this.props.songPlaying === this.props.songId
-        ? " active"
-        : "";
+    classes += this.props.isPlaying ? " active" : "";
     return classes;
   };
 

@@ -28,7 +28,7 @@ const howlerCa = new Howl({ src: [caAudio], volume: volume });
 
 var uniqid = require("uniqid");
 
-class App extends Component {
+class App extends React.PureComponent {
   state = {
     SongsData: SongsData,
     playing: false,
@@ -56,6 +56,7 @@ class App extends Component {
     if (this.state.playing && this.state.songPlaying == songId) {
       this.setState(() => ({
         playing: false,
+        songPlaying: 9999,
       }));
       return;
     }
@@ -206,20 +207,23 @@ class App extends Component {
           <div className={"song-list preload"}>
             {SongsData.map((song, index) => (
               <SongCard
-                key={uniqid()}
+                key={index}
                 songId={index}
                 songName={song.songName}
                 song={song.song}
                 timeSignature={song.timeSignature}
                 OnPlayPause={this.handlePlayPause}
-                songPlaying={this.state.songPlaying}
-                playing={this.state.playing}
+                isPlaying={this.isPlaying(index)}
               />
             ))}
           </div>
         </div>
       </React.Fragment>
     );
+  }
+
+  isPlaying(songId) {
+    return this.state.songPlaying == songId ? true : false;
   }
 }
 
