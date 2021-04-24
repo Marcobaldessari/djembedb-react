@@ -13,6 +13,54 @@ export const SongsData = [
   // },
 
   {
+    songName: "Thunder",
+    src: "https://www.youtube.com/watch?v=fKopy74weus",
+    timeSignature: "4/4",
+    feel: "pop/rock",
+    song: [
+      "Gun dos gos Dun Ca xx Gun xx",
+      "xx dos Gun xx Ca xx xx xx"
+    ]
+    ,
+  },
+
+  {
+    songName: "Thunder McCallum",
+    src: "https://www.youtube.com/watch?v=Kb1S4w7DKeY",
+    timeSignature: "4/4",
+    feel: "pop/rock",
+    song: [
+      "Gun xx xx Dun Pa xx Gun xx",
+      "xx Ta Pa xx Pa xx xx xx"
+    ]
+    ,
+  },
+
+  // {
+  //   songName: "Thunder Fill",
+  //   src: "https://www.youtube.com/watch?v=Kb1S4w7DKeY",
+  //   timeSignature: "4/4",
+  //   feel: "pop/rock",
+  //   song: [
+  //     "Gun dos gos Dun Pa dos Gun dos",
+  //     "Pa Ta Pa Ta Pa Ta Pa Ta"
+  //   ]
+  //   ,
+  // },
+
+  {
+    songName: "Thunder McCallum",
+    src: "https://www.youtube.com/watch?v=Kb1S4w7DKeY",
+    timeSignature: "4/4",
+    feel: "pop/rock",
+    song: [
+      "Gun dos gos Dun Pa dos Gun dos",
+      "gos Dun Gun dos Pa dos gos dos"
+    ]
+    ,
+  },
+
+  {
     songName: "Minestrone quattro",
     src: "Marco Baldessari",
     timeSignature: "4/4",
