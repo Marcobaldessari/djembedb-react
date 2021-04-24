@@ -13,6 +13,8 @@ import paAudio from "../sounds/pa.mp3";
 import taAudio from "../sounds/ta.mp3";
 import caAudio from "../sounds/ca.mp3";
 import gsap from "gsap";
+import ReactGA from "react-ga";
+ReactGA.initialize("UA-30988885-14");
 
 // const volume = 0.1;
 const volume = 1;
