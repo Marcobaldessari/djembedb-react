@@ -18,7 +18,7 @@ export const SongsData = [
     timeSignature: "4/4",
     feel: "pop/rock",
     song: [
-      "Gun dos gos Dun Ca xx Gun xx",
+      "Gun xx gos Dun Ca xx Gun xx",
       "xx dos Gun xx Ca xx xx xx"
     ]
     ,
