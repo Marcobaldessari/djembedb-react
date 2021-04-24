@@ -24,7 +24,7 @@ const howlerPa = new Howl({ src: [paAudio], volume: volume });
 const howlerTa = new Howl({ src: [taAudio], volume: volume });
 const howlerCa = new Howl({ src: [caAudio], volume: volume });
 
-class Logo extends Component {
+class Logo extends React.PureComponent {
   state = {
     logoBpm: 220,
     interval: 0.136,

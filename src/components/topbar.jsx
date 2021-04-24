@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Logo from "./logo";
 
-class Topbar extends Component {
+class Topbar extends React.PureComponent {
   state = {
     darkmode: false,
   };
