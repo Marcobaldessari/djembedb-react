@@ -393,12 +393,12 @@ export const SongsData = [
     timeSignature: "4/4",
     song: [
       "Gun dos gos dos Pa Ta dos Ta",
-      "gos Ta Gun Ta Pa dos gos dos"
+      "gos Ta gos Ta Pa dos gos dos"
     ]
     ,
   },
   {
-    songName: "Stolen Groove 2",
+    songName: "R2D2",
     src: "https://cajonmaster.com/groove-course-1/",
     timeSignature: "4/4",
     song: [
@@ -485,11 +485,21 @@ export const SongsData = [
   },
   {
     songName: "Lato",
-    src: "https://www.youtube.com/watch?v=rhPL28kKS2Q",
+    src: "Marco Baldessari",
     timeSignature: "4/4",
     song: [
       "Pa dos Pa dos gos dos gos Ta",
       "gos Ta Pa dos gos dos gos dos"
+    ]
+    ,
+  },
+  {
+    songName: "Otal",
+    src: "Marco Baldessari",
+    timeSignature: "4/4",
+    song: [
+      "Gun dos Gun dos gos dos gos Dun",
+      "gos Dun Gun dos gos dos gos dos"
     ]
     ,
   },
