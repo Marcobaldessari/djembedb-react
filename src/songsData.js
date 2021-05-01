@@ -11,6 +11,19 @@ export const SongsData = [
   //   ]
   //   ,
   // },
+  {
+    songName: "3:00pm",
+    src: "Marco Baldessari",
+    timeSignature: "4/4",
+    feel: "pop/rock",
+    song: [
+      "Gun dos gos Dun gos dos Pa dos",
+      "Gun dos gos Dun gos dos Pa dos",
+      "Gun dos gos Dun gos dos Pa dos",
+      "Pa dos gos Ta gos dos Pa Ta"
+    ]
+    ,
+  },
 
   {
     songName: "Thunder",
@@ -23,6 +36,7 @@ export const SongsData = [
     ]
     ,
   },
+
 
   {
     songName: "Thunder McCallum",
@@ -49,7 +63,7 @@ export const SongsData = [
   // },
 
   {
-    songName: "Thunder McCallum",
+    songName: "Thunder McCallum variant",
     src: "https://www.youtube.com/watch?v=Kb1S4w7DKeY",
     timeSignature: "4/4",
     feel: "pop/rock",
