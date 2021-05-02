@@ -30,23 +30,27 @@ class Topbar extends React.PureComponent {
     // toggle dark-theme on the whole page
     document.body.classList.toggle("dark-theme");
   };
-  handleChange = (event, newValue) => {
-    // setValue(newValue);
-  };
+
   render() {
     return (
       <div className="topbar preload">
         <div className="container">
           <Logo></Logo>
           <Slider
-            // value={x}
-            // onChange={this.handleChange}
             onChange={this.props.OnTempoChange}
             aria-labelledby="continuous-slider"
             marks
+            defaultValue={this.props.defaultTempo}
             step={10}
             min={20}
             max={360}
+          />
+          <Slider
+            onChange={this.props.OnVolumeChange}
+            aria-labelledby="continuous-slider"
+            defaultValue={this.props.defaultVolume}
+            min={0}
+            max={100}
           />
           <Button
             aria-label="Toggle Dark/Light Theme"

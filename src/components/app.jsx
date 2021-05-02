@@ -18,8 +18,7 @@ import ReactGA from "react-ga";
 ReactGA.initialize("UA-30988885-14");
 ReactGA.pageview(window.location.pathname + window.location.search);
 
-// const volume = 0.1;
-const volume = 1;
+var volume = 0.7;
 const howlerGun = new Howl({ src: [gunAudio], volume: volume });
 const howlerDun = new Howl({ src: [dunAudio], volume: volume });
 const howlerGo = new Howl({ src: [goAudio], volume: volume });
@@ -60,10 +59,16 @@ class App extends React.PureComponent {
     this.startLoop(step, notes);
   };
 
-  handlePlayPause = (e, songId) => {
-    clearInterval(this.interval);
+  handleVolumeChange = (e, v) => {
+    volume = v / 100;
+    Howler.volume(volume);
+  };
 
-    // if player is already playing stop it and return
+  handlePlayPause = (e, songId) => {
+    //stop the music and reset the step
+    clearInterval(this.interval);
+    step = 0;
+
     if (this.state.playing && this.state.songPlaying == songId) {
       this.setState(() => ({
         playing: false,
@@ -152,7 +157,7 @@ class App extends React.PureComponent {
     topbar.classList.remove("preload");
   }
 
-  startLoop(step, notes) {
+  startLoop(s, notes) {
     this.interval = setInterval(() => {
       this.animateNote(this.state.songPlaying, step);
       this.playNoteSound(notes[step]);
@@ -213,7 +218,12 @@ class App extends React.PureComponent {
   render() {
     return (
       <React.Fragment>
-        <Topbar OnTempoChange={this.handleTempoChange}></Topbar>
+        <Topbar
+          OnTempoChange={this.handleTempoChange}
+          defaultTempo={bpm}
+          OnVolumeChange={this.handleVolumeChange}
+          defaultVolume={volume * 100}
+        ></Topbar>
         <div className="container">
           <div className={"song-list preload"}>
             {SongsData.map((song, index) => (
