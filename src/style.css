@@ -17,6 +17,9 @@
 *:focus {
   outline: none;
 }
+*.hidden {
+  display: none !important;
+}
 body {
   --bg-color: #fff;
   --text-color: #222;
@@ -535,4 +538,10 @@ a {
   ::-webkit-scrollbar-thumb:hover {
     background: #555;
   }
+}
+.slider {
+  width: 70% !important;
+  position: absolute !important;
+  right: 0;
+  top: 54px;
 }
