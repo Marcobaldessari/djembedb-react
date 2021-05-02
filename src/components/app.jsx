@@ -68,10 +68,10 @@ class App extends React.PureComponent {
   };
 
   _handleKeyDown = (e) => {
-    console.log("keypress");
+    // console.log("keypressed: " + e.key);
     if (e.key === "d") {
-      alert("Debug enabled");
-      document.body.classList.toggle("debug");
+      alert("Debug mode enabled");
+      document.body.classList.add("debug");
     }
   };
 
