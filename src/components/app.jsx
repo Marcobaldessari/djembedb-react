@@ -2,6 +2,7 @@ import React, { Component, Fragment, useState, useRef, useEffect } from "react";
 import { SongsData } from "../songsData";
 import SongCard from "./songCard";
 import Topbar from "./topbar";
+import Button from "@material-ui/core/Button";
 import { Howl, Howler } from "howler";
 import gunAudio from "../sounds/gun.mp3";
 import dunAudio from "../sounds/dun.mp3";
@@ -30,12 +31,14 @@ const howlerTa = new Howl({ src: [taAudio], volume: volume });
 const howlerCa = new Howl({ src: [caAudio], volume: volume });
 
 var uniqid = require("uniqid");
+var bpm = 160;
+var step;
+var notes;
 
 class App extends React.PureComponent {
   state = {
     SongsData: SongsData,
     playing: false,
-    bpm: 160,
     step: 0,
   };
 
@@ -51,9 +54,14 @@ class App extends React.PureComponent {
     }, 200);
   };
 
+  handleTempoChange = (e, t) => {
+    bpm = t;
+    clearInterval(this.interval);
+    this.startLoop(step, notes);
+  };
+
   handlePlayPause = (e, songId) => {
     clearInterval(this.interval);
-    let step = 0;
 
     // if player is already playing stop it and return
     if (this.state.playing && this.state.songPlaying == songId) {
@@ -69,7 +77,7 @@ class App extends React.PureComponent {
     this.state.SongsData[songId].song.forEach(
       (element) => (songString += element + " ")
     );
-    let notes = songString.split(" ");
+    notes = songString.split(" ");
     this.startLoop(step, notes);
 
     // set the states
@@ -149,7 +157,7 @@ class App extends React.PureComponent {
       this.animateNote(this.state.songPlaying, step);
       this.playNoteSound(notes[step]);
       step = step < notes.length - 2 ? step + 1 : 0;
-    }, (60 * 1000) / this.state.bpm / 2);
+    }, (60 * 1000) / bpm / 2);
     return step;
   }
 
@@ -205,7 +213,7 @@ class App extends React.PureComponent {
   render() {
     return (
       <React.Fragment>
-        <Topbar></Topbar>
+        <Topbar OnTempoChange={this.handleTempoChange}></Topbar>
         <div className="container">
           <div className={"song-list preload"}>
             {SongsData.map((song, index) => (
