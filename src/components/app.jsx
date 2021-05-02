@@ -43,6 +43,7 @@ class App extends React.PureComponent {
 
   componentDidMount() {
     window.addEventListener("load", this.handleWindowLoad);
+    document.addEventListener("keydown", this._handleKeyDown);
   }
 
   handleWindowLoad = () => {
@@ -56,12 +57,22 @@ class App extends React.PureComponent {
   handleTempoChange = (e, t) => {
     bpm = t;
     clearInterval(this.interval);
-    this.startLoop(step, notes);
+    if (this.state.playing) {
+      this.startLoop(step, notes);
+    }
   };
 
   handleVolumeChange = (e, v) => {
     volume = v / 100;
     Howler.volume(volume);
+  };
+
+  _handleKeyDown = (e) => {
+    console.log("keypress");
+    if (e.key === "d") {
+      alert("Debug enabled");
+      document.body.classList.toggle("debug");
+    }
   };
 
   handlePlayPause = (e, songId) => {

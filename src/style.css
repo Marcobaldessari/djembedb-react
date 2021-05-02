@@ -1,3 +1,7 @@
+.debug .song-card,
+.debug .topbar {
+  opacity: 1 !important;
+}
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 * {
   margin: 0;

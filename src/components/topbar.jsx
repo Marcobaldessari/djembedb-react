@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import Logo from "./logo";
 import Button from "@material-ui/core/Button";
 import Slider from "@material-ui/core/Slider";
+import ButtonBpm from "./buttonBpm";
+import ButtonVolume from "./buttonVolume";
 
 class Topbar extends React.PureComponent {
   state = {
@@ -36,22 +38,23 @@ class Topbar extends React.PureComponent {
       <div className="topbar preload">
         <div className="container">
           <Logo></Logo>
-          <Slider
-            onChange={this.props.OnTempoChange}
-            aria-labelledby="continuous-slider"
-            marks
-            defaultValue={this.props.defaultTempo}
-            step={10}
-            min={20}
-            max={360}
-          />
-          <Slider
+
+          <ButtonBpm
+            defaultTempo={this.props.defaultTempo}
+            OnTempoChange={this.props.OnTempoChange}
+          ></ButtonBpm>
+          <ButtonVolume
+            defaultVolume={this.props.defaultVolume}
+            OnVolumeChange={this.props.OnVolumeChange}
+          ></ButtonVolume>
+
+          {/* <Slider
             onChange={this.props.OnVolumeChange}
             aria-labelledby="continuous-slider"
             defaultValue={this.props.defaultVolume}
             min={0}
             max={100}
-          />
+          /> */}
           <Button
             aria-label="Toggle Dark/Light Theme"
             className="btn-darktheme"
