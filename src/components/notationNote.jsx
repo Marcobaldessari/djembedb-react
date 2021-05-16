@@ -12,7 +12,11 @@ class NotationNote extends React.PureComponent {
   }
 
   getNoteClasses() {
-    let classes = "notation-note-circle " + this.props.note;
+    let classes =
+      "note-of-song-" +
+      this.props.songId +
+      " notation-note-circle " +
+      this.props.note;
     return classes;
   }
 

@@ -52,6 +52,7 @@ class App extends React.PureComponent {
   };
 
   handlePlayPause = (e, songId) => {
+    this.animateNotesRadialWave(e, songId);
     clearInterval(this.interval);
     let step = 0;
 
@@ -78,6 +79,36 @@ class App extends React.PureComponent {
       songPlaying: songId,
     }));
   };
+
+  animateNotesRadialWave(e, songId) {
+    var dx, dy;
+    var mouseX = e.clientX;
+    var mouseY = e.clientY;
+
+    var targetNotesClass = "note-of-song-" + songId;
+    var notesToAnimate = document.getElementsByClassName(targetNotesClass);
+    Array.prototype.forEach.call(notesToAnimate, function (note, index) {
+      // get notes position in the viewport
+      var viewportOffset = note.getBoundingClientRect();
+      var noteX = viewportOffset.left;
+      var noteY = viewportOffset.top;
+
+      var d = Math.sqrt(
+        (dx = mouseX - noteX) * dx + (dy = mouseY - noteY) * dy
+      );
+
+      var tl = gsap.timeline();
+      tl.to(note, {
+        scale: 1.8,
+        duration: 0.05,
+        delay: d * 0.002,
+      });
+      tl.to(note, {
+        scale: 1,
+        duration: 0.2,
+      });
+    });
+  }
 
   checkIfSystemDarkTheme() {
     if (
