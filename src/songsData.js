@@ -12,6 +12,61 @@ export const SongsData = [
   //   ,
   // },
   {
+    songName: "R&B Groove",
+    src: "https://www.youtube.com/watch?v=BlBeHS0kj9I",
+    timeSignature: "4/4",
+    feel: "pop/rock",
+    bpm: "90",
+    song: [
+      "Gun dos gos Dun gos dos gos dos",
+      "Pa dos gos dos gos dos gos dos",
+      "Gun dos gos Dun gos Dun Gun dos",
+      "Pa dos gos Dun gos dos gos dos",
+    ]
+    ,
+  },
+  {
+    songName: "Minestrone 7",
+    src: "Marco Baldessari",
+    timeSignature: "4/4",
+    feel: "pop/rock",
+    song: [
+      "Gun dos Pa Ta gos Ta Pa Ta",
+      "Gun dos gos dos gos dos gos dos",
+    ]
+    ,
+  },
+  {
+    songName: "Minestrone 7 fill",
+    src: "Marco Baldessari",
+    timeSignature: "4/4",
+    feel: "pop/rock",
+    song: [
+      "Gun dos Pa Ta gos Ta Pa Ta",
+      "Gun dos Pa Ta gos Ta Pa Ta",
+    ]
+    ,
+  },
+  {
+    songName: "Minestrone 6",
+    src: "Marco Baldessari",
+    timeSignature: "4/4",
+    feel: "pop/rock",
+    song: [
+      "Gun dos gos Ta Gun Ta gos Dun",
+      "gos dos gos dos gos dos gos dos",
+      "Gun dos gos Ta Gun Ta gos Dun",
+      "gos Dun gos dos Gun dos gos dos",
+      "Gun dos gos Ta Gun Ta gos Dun",
+      "gos dos Pa Dun gos dos gos Dun",
+      "Gun dos gos Ta Gun Ta gos Dun",
+      "Gun Ta Pa dos Pa dos Pa dos",
+
+    ]
+    ,
+  },
+
+  {
     songName: "3:00pm",
     src: "Marco Baldessari",
     timeSignature: "4/4",
