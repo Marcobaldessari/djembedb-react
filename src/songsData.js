@@ -1,16 +1,18 @@
 export const SongsData = [
-  // {
-  //   songName: "Dun tek tek",
-  //   src: "",
-  //   timeSignature: "4/4",
-  //   style: "Turkish",
-  //   tempo: "",
-  //   song: [
-  //     "",
-  //     ""
-  //   ]
-  //   ,
-  // },
+
+  {
+    songName: "Blues Shuffle",
+    src: "https://www.youtube.com/watch?v=ldD1LeIx4hU",
+    timeSignature: "3/4",
+    feel: "blues",
+    bpm: "90",
+    song: [
+      "Gun dos Gun Ta gos dos",
+      "Gun dos gos Ta gos dos"
+    ]
+    ,
+  },
+
   {
     songName: "R&B Groove",
     src: "https://www.youtube.com/watch?v=BlBeHS0kj9I",
