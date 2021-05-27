@@ -1,3 +1,7 @@
+.debug .song-card,
+.debug .topbar {
+  opacity: 1 !important;
+}
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 * {
   margin: 0;
@@ -12,6 +16,9 @@
 }
 *:focus {
   outline: none;
+}
+*.hidden {
+  display: none !important;
 }
 body {
   --bg-color: #fff;
@@ -531,4 +538,41 @@ a {
   ::-webkit-scrollbar-thumb:hover {
     background: #555;
   }
+}
+.slider {
+  width: 70% !important;
+  right: 0;
+  top: 54px;
+}
+.btn-volume {
+  float: right;
+  right: 0;
+  margin-top: 8px;
+  border: 0;
+  border-radius: 100%;
+  background: transparent;
+}
+@media (max-width: 479px) {
+  .btn-volume {
+    margin-right: 24px;
+  }
+}
+.btn-volume svg {
+  fill: var(--note-color);
+}
+.btn-bpm {
+  float: right;
+  right: 0;
+  margin-top: 8px;
+  border: 0;
+  border-radius: 100%;
+  background: transparent;
+}
+@media (max-width: 479px) {
+  .btn-bpm {
+    margin-right: 24px;
+  }
+}
+.btn-bpm svg {
+  fill: var(--note-color);
 }

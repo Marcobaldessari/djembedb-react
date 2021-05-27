@@ -1,3 +1,8 @@
+.debug 
+    .song-card,.topbar
+        opacity 1 !important
+
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 // Media queries mixins
@@ -26,6 +31,8 @@ mobile()
 *:focus 
     outline none
 
+*.hidden
+    display none !important
 
 // Color tokens
 body
@@ -45,7 +52,8 @@ body
     --scrollbar-color #d3d3d3
 
     &.dark-theme
-        --bg-color: #1F1B2B
+        // --bg-color: #1F1B2B
+        --bg-color: rgb(31,27,43)
         --text-color #fff
         --note-color #fff
         --logo-note-color #fff
@@ -502,3 +510,35 @@ a
     ::-webkit-scrollbar-thumb:hover {
     background: #555;
     }
+
+
+.slider
+    width 70% !important
+    // position absolute !important
+    right 0
+    top 54px
+    
+
+.btn-volume
+    float right
+    right 0
+    margin-top 8px 
+    border 0
+    border-radius 100%
+    background transparent
+    +mobile()
+        margin-right 24px
+    svg
+        fill var(--note-color)
+
+.btn-bpm
+    float right
+    right 0
+    margin-top 8px 
+    border 0
+    border-radius 100%
+    background transparent
+    +mobile()
+        margin-right 24px
+    svg
+        fill var(--note-color)
