@@ -1,5 +1,43 @@
 export const SongsData = [
   {
+    songName: "Shake the floor",
+    src: "Marco Baldessari",
+    timeSignature: "4/4",
+    feel: "pop",
+    bpm: "120",
+    song: [
+      "Gun dos Pa dos Pa dos Gun Ta",
+      "gos Ta Gun dos Pa Gun Pa Ta",
+    ]
+    ,
+  },
+  {
+    songName: "Another fill",
+    src: "Marco Baldessari",
+    timeSignature: "4/4",
+    feel: "tribal",
+    bpm: "120",
+    song: [
+      "Gun dos Pa Ta gos Ta dos Ta",
+      "Gun dos Pa Ta Pa Ta Pa Ta",
+    ]
+    ,
+  },
+  {
+    songName: "01 am",
+    src: "Marco Baldessari",
+    timeSignature: "4/4",
+    feel: "tribal",
+    bpm: "120",
+    song: [
+      "Gun dos gos Dun gos dos Gun dos",
+      "gos dos gos dos gos dos gos dos",
+      "Gun dos gos Dun gos dos Gun dos",
+      "gos dos Gun dos Gun Dun gos Dun",
+    ]
+    ,
+  },
+  {
     songName: "Dum dum dim dum",
     src: "Marco Baldessari",
     timeSignature: "4/4",
