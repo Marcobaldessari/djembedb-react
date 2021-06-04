@@ -361,31 +361,14 @@ a {
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
 }
-.topbar .btn-darktheme {
+.topbar .btn-topbar {
   float: right;
   right: 0;
-  margin-top: 8px;
   border: 0;
   border-radius: 100%;
   background: transparent;
 }
-@media (max-width: 479px) {
-  .topbar .btn-darktheme {
-    margin-right: 24px;
-  }
-}
-.topbar .btn-darktheme svg {
-  fill: var(--note-color);
-}
-.topbar .btn-number-notation {
-  float: right;
-  right: 0;
-  margin-top: 8px;
-  border: 0;
-  border-radius: 100%;
-  background: transparent;
-}
-.topbar .btn-number-notation svg {
+.topbar .btn-topbar svg {
   fill: var(--note-color);
 }
 .topbar .logo {
@@ -539,11 +522,6 @@ a {
     background: #555;
   }
 }
-.slider {
-  width: 70% !important;
-  right: 0;
-  top: 54px;
-}
 .btn-volume {
   float: right;
   right: 0;
@@ -575,4 +553,17 @@ a {
 }
 .btn-bpm svg {
   fill: var(--note-color);
+}
+.sliderButton {
+  width: 48px;
+  height: 200px;
+  float: right;
+  right: 0;
+  margin-top: 0 !important;
+  margin-left: 16px !important;
+}
+.btn-rounded {
+  border-radius: 100%;
+  display: block;
+  padding: 0;
 }

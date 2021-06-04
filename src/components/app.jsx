@@ -2,6 +2,7 @@ import React, { Component, Fragment, useState, useRef, useEffect } from "react";
 import { SongsData } from "../songsData";
 import SongCard from "./songCard";
 import Topbar from "./topbar";
+import Button from "@material-ui/core/Button";
 import { Howl, Howler } from "howler";
 import gunAudio from "../sounds/gun.mp3";
 import dunAudio from "../sounds/dun.mp3";
@@ -17,8 +18,7 @@ import ReactGA from "react-ga";
 ReactGA.initialize("UA-30988885-14");
 ReactGA.pageview(window.location.pathname + window.location.search);
 
-// const volume = 0.1;
-const volume = 1;
+var volume = 0.7;
 const howlerGun = new Howl({ src: [gunAudio], volume: volume });
 const howlerDun = new Howl({ src: [dunAudio], volume: volume });
 const howlerGo = new Howl({ src: [goAudio], volume: volume });
@@ -30,17 +30,20 @@ const howlerTa = new Howl({ src: [taAudio], volume: volume });
 const howlerCa = new Howl({ src: [caAudio], volume: volume });
 
 var uniqid = require("uniqid");
+var bpm = 160;
+var step;
+var notes;
 
 class App extends React.PureComponent {
   state = {
     SongsData: SongsData,
     playing: false,
-    bpm: 160,
     step: 0,
   };
 
   componentDidMount() {
     window.addEventListener("load", this.handleWindowLoad);
+    document.addEventListener("keydown", this._handleKeyDown);
   }
 
   handleWindowLoad = () => {
@@ -51,11 +54,32 @@ class App extends React.PureComponent {
     }, 200);
   };
 
-  handlePlayPause = (e, songId) => {
+  handleTempoChange = (e, t) => {
+    bpm = t;
     clearInterval(this.interval);
-    let step = 0;
+    if (this.state.playing) {
+      this.startLoop(step, notes);
+    }
+  };
 
-    // if player is already playing stop it and return
+  handleVolumeChange = (e, v) => {
+    volume = v / 100;
+    Howler.volume(volume);
+  };
+
+  _handleKeyDown = (e) => {
+    // console.log("keypressed: " + e.key);
+    if (e.key === "d") {
+      alert("Debug mode enabled");
+      document.body.classList.add("debug");
+    }
+  };
+
+  handlePlayPause = (e, songId) => {
+    //stop the music and reset the step
+    clearInterval(this.interval);
+    step = 0;
+
     if (this.state.playing && this.state.songPlaying == songId) {
       this.setState(() => ({
         playing: false,
@@ -69,7 +93,7 @@ class App extends React.PureComponent {
     this.state.SongsData[songId].song.forEach(
       (element) => (songString += element + " ")
     );
-    let notes = songString.split(" ");
+    notes = songString.split(" ");
     this.startLoop(step, notes);
 
     // set the states
@@ -144,12 +168,12 @@ class App extends React.PureComponent {
     topbar.classList.remove("preload");
   }
 
-  startLoop(step, notes) {
+  startLoop(s, notes) {
     this.interval = setInterval(() => {
       this.animateNote(this.state.songPlaying, step);
       this.playNoteSound(notes[step]);
       step = step < notes.length - 2 ? step + 1 : 0;
-    }, (60 * 1000) / this.state.bpm / 2);
+    }, (60 * 1000) / bpm / 2);
     return step;
   }
 
@@ -205,7 +229,12 @@ class App extends React.PureComponent {
   render() {
     return (
       <React.Fragment>
-        <Topbar></Topbar>
+        <Topbar
+          OnTempoChange={this.handleTempoChange}
+          defaultTempo={bpm}
+          OnVolumeChange={this.handleVolumeChange}
+          defaultVolume={volume * 100}
+        ></Topbar>
         <div className="container">
           <div className={"song-list preload"}>
             {SongsData.map((song, index) => (

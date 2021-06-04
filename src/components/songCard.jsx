@@ -70,9 +70,9 @@ class SongCard extends React.PureComponent {
     //   duration: 1,
     //   ease: "elastic.out(1,0.3)",
     // });
-    console.log(this.notationFrame.style.backgroundColor);
+    // console.log(this.notationFrame.style.backgroundColor);
     tl.to(this.notationFrame, {
-      scale: 1.04,
+      scale: 1.02,
       duration: 0.1,
     });
     tl.to(this.notationFrame, {
