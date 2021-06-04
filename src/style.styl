@@ -52,7 +52,8 @@ body
     --scrollbar-color #d3d3d3
 
     &.dark-theme
-        --bg-color: #1F1B2B
+        // --bg-color: #1F1B2B
+        --bg-color: rgb(31,27,43)
         --text-color #fff
         --note-color #fff
         --logo-note-color #fff
@@ -511,8 +512,47 @@ a
     }
 
 
-.slider
-    width 70% !important
-    position absolute !important
+// .slider
+//     width 70% !important
+//     position absolute !important
+//     right 0
+//     top 54px
+    
+
+.btn-volume
+    float right
     right 0
-    top 54px
+    margin-top 8px 
+    border 0
+    border-radius 100%
+    background transparent
+    +mobile()
+        margin-right 24px
+    svg
+        fill var(--note-color)
+
+    
+.btn-bpm
+    float right
+    right 0
+    margin-top 8px 
+    border 0
+    border-radius 100%
+    background transparent
+    +mobile()
+        margin-right 24px
+    svg
+        fill var(--note-color)
+
+
+.sliderButton
+    width 48px
+    height 200px
+    float right
+    right 0
+    // border-radius 100%
+    margin-top 0 !important
+    margin-left 16px !important
+
+.btn-rounded
+    border-radius 100%

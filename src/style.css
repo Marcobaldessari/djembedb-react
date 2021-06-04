@@ -539,9 +539,46 @@ a {
     background: #555;
   }
 }
-.slider {
-  width: 70% !important;
-  position: absolute !important;
+.btn-volume {
+  float: right;
   right: 0;
-  top: 54px;
+  margin-top: 8px;
+  border: 0;
+  border-radius: 100%;
+  background: transparent;
+}
+@media (max-width: 479px) {
+  .btn-volume {
+    margin-right: 24px;
+  }
+}
+.btn-volume svg {
+  fill: var(--note-color);
+}
+.btn-bpm {
+  float: right;
+  right: 0;
+  margin-top: 8px;
+  border: 0;
+  border-radius: 100%;
+  background: transparent;
+}
+@media (max-width: 479px) {
+  .btn-bpm {
+    margin-right: 24px;
+  }
+}
+.btn-bpm svg {
+  fill: var(--note-color);
+}
+.sliderButton {
+  width: 48px;
+  height: 200px;
+  float: right;
+  right: 0;
+  margin-top: 0 !important;
+  margin-left: 16px !important;
+}
+.btn-rounded {
+  border-radius: 100%;
 }

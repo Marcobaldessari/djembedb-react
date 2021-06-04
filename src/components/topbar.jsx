@@ -48,13 +48,6 @@ class Topbar extends React.PureComponent {
             OnVolumeChange={this.props.OnVolumeChange}
           ></ButtonVolume>
 
-          {/* <Slider
-            onChange={this.props.OnVolumeChange}
-            aria-labelledby="continuous-slider"
-            defaultValue={this.props.defaultVolume}
-            min={0}
-            max={100}
-          /> */}
           <Button
             aria-label="Toggle Dark/Light Theme"
             className="btn-darktheme"
