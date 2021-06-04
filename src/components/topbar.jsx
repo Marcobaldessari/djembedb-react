@@ -50,7 +50,7 @@ class Topbar extends React.PureComponent {
 
           <Button
             aria-label="Toggle Dark/Light Theme"
-            className="btn-darktheme"
+            className="btn-topbar"
             onClick={() => {
               this.toggleDarkMode();
             }}
@@ -67,7 +67,7 @@ class Topbar extends React.PureComponent {
           </Button>
           <Button
             aria-label="Toggle number notation"
-            className="btn-number-notation"
+            className="btn-topbar"
             onClick={() => {
               this.toggleNotationDetails();
             }}

@@ -361,31 +361,14 @@ a {
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
 }
-.topbar .btn-darktheme {
+.topbar .btn-topbar {
   float: right;
   right: 0;
-  margin-top: 8px;
   border: 0;
   border-radius: 100%;
   background: transparent;
 }
-@media (max-width: 479px) {
-  .topbar .btn-darktheme {
-    margin-right: 24px;
-  }
-}
-.topbar .btn-darktheme svg {
-  fill: var(--note-color);
-}
-.topbar .btn-number-notation {
-  float: right;
-  right: 0;
-  margin-top: 8px;
-  border: 0;
-  border-radius: 100%;
-  background: transparent;
-}
-.topbar .btn-number-notation svg {
+.topbar .btn-topbar svg {
   fill: var(--note-color);
 }
 .topbar .logo {
@@ -581,4 +564,6 @@ a {
 }
 .btn-rounded {
   border-radius: 100%;
+  display: block;
+  padding: 0;
 }

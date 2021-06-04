@@ -27,10 +27,10 @@ class ButtonBpm extends React.PureComponent {
   render() {
     return (
       <React.Fragment>
-        <div class={"sliderButton btn-darktheme btn-rounded"}>
+        <div class={"sliderButton btn-topbar btn-rounded"}>
           <Button
             aria-label="Change bpm"
-            className="btn-bpm btn-darktheme btn-rounded"
+            className="btn-bpm btn-topbar btn-rounded"
             onClick={() => {
               this.toggleOpen();
             }}
