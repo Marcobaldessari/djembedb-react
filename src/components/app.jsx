@@ -30,7 +30,7 @@ const howlerTa = new Howl({ src: [taAudio], volume: volume });
 const howlerCa = new Howl({ src: [caAudio], volume: volume });
 
 var uniqid = require("uniqid");
-var bpm = 90;
+var bpm = 160;
 var step;
 var notes;
 
@@ -173,7 +173,7 @@ class App extends React.PureComponent {
       this.animateNote(this.state.songPlaying, step);
       this.playNoteSound(notes[step]);
       step = step < notes.length - 2 ? step + 1 : 0;
-    }, (60 * 1000) / bpm / 4);
+    }, (60 * 1000) / bpm / 2);
     return step;
   }
 
