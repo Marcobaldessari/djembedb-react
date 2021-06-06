@@ -32,24 +32,10 @@ class ButtonBpm extends React.PureComponent {
     this.handleClickOutside = this.handleClickOutside.bind(this);
   }
 
-  // componentDidMount() {
-  //   document.addEventListener("mousedown", this.handleClickOutside);
-  // }
-
-  // componentWillUnmount() {
-  //   document.removeEventListener("mousedown", this.handleClickOutside);
-  // }
-
-  /**
-   * Set the wrapper ref
-   */
   setWrapperRef(node) {
     this.wrapperRef = node;
   }
 
-  /**
-   * Alert if clicked on outside of element
-   */
   handleClickOutside(event) {
     if (this.wrapperRef && !this.wrapperRef.contains(event.target)) {
       // alert("You clicked outside of me!");
@@ -85,9 +71,9 @@ class ButtonBpm extends React.PureComponent {
             aria-labelledby="continuous-slider"
             // marks
             orientation="vertical"
-            step={10}
-            min={20}
-            max={360}
+            step={5}
+            min={40}
+            max={210}
             valueLabelDisplay="auto"
             className={this.getSliderClasses()}
           />
