@@ -7,20 +7,42 @@ class ButtonVolume extends React.PureComponent {
 
   toggleOpen = () => {
     if (this.state.open) {
+      document.removeEventListener("mousedown", this.handleClickOutside);
       this.setState(() => ({
         open: false,
       }));
     } else {
+      document.addEventListener("mousedown", this.handleClickOutside);
       this.setState(() => ({
         open: true,
       }));
     }
   };
+  constructor(props) {
+    super(props);
+
+    this.setWrapperRef = this.setWrapperRef.bind(this);
+    this.handleClickOutside = this.handleClickOutside.bind(this);
+  }
+
+  setWrapperRef(node) {
+    this.wrapperRef = node;
+  }
+
+  handleClickOutside(event) {
+    if (this.wrapperRef && !this.wrapperRef.contains(event.target)) {
+      // alert("You clicked outside of me!");
+      this.toggleOpen();
+    }
+  }
 
   render() {
     return (
       <React.Fragment>
-        <div class={"sliderButton btn-topbar btn-rounded"}>
+        <div
+          ref={this.setWrapperRef}
+          class={"sliderButton btn-topbar btn-rounded"}
+        >
           <Button
             aria-label="Change volume"
             className="btn-bpm btn-topbar btn-rounded"
