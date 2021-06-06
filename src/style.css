@@ -30,6 +30,7 @@ body {
   --notation-bg-hover-color: #ececec;
   --notation-bg-active-color: #faf0f3;
   --primary-color-regular: #ff5d8e;
+  --primary-color-light: #ffbbd0;
   --topbar-color: rgba(255,255,255,0.7);
   --notation-frame-border: none;
   --notation-number: rgba(0,0,0,0.7);
@@ -46,6 +47,7 @@ body.dark-theme {
   --notation-bg-hover-color: #181622;
   --notation-bg-active-color: #261b2b;
   --primary-color-regular: #ff705d;
+  --primary-color-light: #ffb0a6;
   --topbar-color: rgba(31,27,43,0.7);
   --notation-frame-border: 1px solid var(--notation-line-color);
   --notation-number: rgba(255,255,255,0.5);
@@ -566,4 +568,7 @@ a {
   border-radius: 100%;
   display: block;
   padding: 0;
+}
+.MuiSlider-root {
+  color: var(--primary-color-regular) !important;
 }
