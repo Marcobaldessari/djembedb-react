@@ -4,6 +4,42 @@ import gsap from "gsap";
 
 var uniqid = require("uniqid");
 var clickHasBeenAnimated = false;
+const countingSystemAmerican = [
+  "1",
+  "e",
+  "&",
+  "a",
+  "2",
+  "e",
+  "&",
+  "a",
+  "3",
+  "e",
+  "&",
+  "a",
+  "4",
+  "e",
+  "&",
+  "a",
+];
+const countingSystemNumbers = [
+  "1",
+  "2",
+  "3",
+  "4",
+  "5",
+  "6",
+  "7",
+  "8",
+  "9",
+  "10",
+  "11",
+  "12",
+  "13",
+  "14",
+  "15",
+  "16",
+];
 
 class SongCard extends React.PureComponent {
   constructor() {
@@ -30,7 +66,7 @@ class SongCard extends React.PureComponent {
             >
               {measure.split(" ").map((n, indexNote) => (
                 <span key={indexNote} className="notation-number">
-                  {indexNote + 1}
+                  {this.getNotationNumber(indexNote)}
                 </span>
               ))}
 
@@ -82,6 +118,11 @@ class SongCard extends React.PureComponent {
     });
   }
 
+  getNotationNumber = (index) => {
+    // return countingSystemAmerican[index];
+    return index + 1;
+  };
+
   getMeasureClass = () => {
     let classes = "measure ";
     switch (this.props.timeSignature) {
@@ -115,35 +156,35 @@ class SongCard extends React.PureComponent {
 
   getNotationFrameClass = () => {
     let classes = "notation-frame ";
-    switch (this.props.timeSignature) {
-      case "2/4":
-        classes += "two-bars";
-        break;
-      case "3/4":
-        classes += "two-bars";
-        break;
-      case "4/4":
-        classes += "two-bars";
-        break;
-      case "6/8":
-        classes += "two-bars";
-        break;
-      case "9/8":
-        classes += "two-bars";
-        break;
-      case "12/8":
-        classes += "two-bars";
-        break;
-      case "5/4":
-        classes += "two-bars";
-        break;
-      case "7/4":
-        classes += "two-bars";
-        break;
-      default:
-        classes += "two-bars";
-        break;
-    }
+    // switch (this.props.timeSignature) {
+    //   case "2/4":
+    //     classes += "two-bars";
+    //     break;
+    //   case "3/4":
+    //     classes += "two-bars";
+    //     break;
+    //   case "4/4":
+    //     classes += "two-bars";
+    //     break;
+    //   case "6/8":
+    //     classes += "two-bars";
+    //     break;
+    //   case "9/8":
+    //     classes += "two-bars";
+    //     break;
+    //   case "12/8":
+    //     classes += "two-bars";
+    //     break;
+    //   case "5/4":
+    //     classes += "two-bars";
+    //     break;
+    //   case "7/4":
+    //     classes += "two-bars";
+    //     break;
+    //   default:
+    //     classes += "two-bars";
+    //     break;
+    // }
     classes += this.props.isPlaying ? " active" : "";
     return classes;
   };

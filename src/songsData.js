@@ -6,8 +6,7 @@ export const SongsData = [
     feel: "pop",
     bpm: "120",
     song: [
-      "Gun Ta Gun dos gos dos gos Ta",
-      "gos Ta Gun dos Gun Ta Gun dos",
+      "Gun Ta Gun dos gos dos gos Ta gos Ta Gun dos Gun Ta Gun dos",
     ]
     ,
   },
@@ -18,8 +17,7 @@ export const SongsData = [
     feel: "pop",
     bpm: "120",
     song: [
-      "Gun dos Pa dos Pa dos Gun Ta",
-      "gos Ta Gun dos Pa Gun Pa Ta",
+      "Gun dos Pa dos Pa dos Gun Ta gos Ta Gun dos Pa Gun Pa Ta",
     ]
     ,
   },
@@ -30,8 +28,7 @@ export const SongsData = [
     feel: "tribal",
     bpm: "120",
     song: [
-      "Gun dos Pa Ta gos Ta dos Ta",
-      "Gun dos Pa Ta Pa Ta Pa Ta",
+      "Gun dos Pa Ta gos Ta dos Ta Gun dos Pa Ta Pa Ta Pa Ta",
     ]
     ,
   },
@@ -42,10 +39,8 @@ export const SongsData = [
     feel: "tribal",
     bpm: "120",
     song: [
-      "Gun dos gos Dun gos dos Gun dos",
-      "gos dos gos dos gos dos gos dos",
-      "Gun dos gos Dun gos dos Gun dos",
-      "gos dos Gun dos Gun Dun gos Dun",
+      "Gun dos gos Dun gos dos Gun dos gos dos gos dos gos dos gos dos",
+      "Gun dos gos Dun gos dos Gun dos gos dos Gun dos Gun Dun gos Dun",
     ]
     ,
   },
@@ -56,8 +51,7 @@ export const SongsData = [
     feel: "tribal",
     bpm: "90",
     song: [
-      "Gun dos Pa Dun gos Dun Gun dos",
-      "Pa Dun gos Dun Gun dos Pa dos",
+      "Gun dos Pa Dun gos Dun Gun dos Pa Dun gos Dun Gun dos Pa dos",
     ]
     ,
   },
@@ -69,8 +63,7 @@ export const SongsData = [
     feel: "blues",
     bpm: "90",
     song: [
-      "Gun dos Gun Ta gos dos",
-      "Gun dos gos Ta gos dos"
+      "Gun dos Gun Ta gos dos Gun dos gos Ta gos dos"
     ]
     ,
   },
@@ -82,10 +75,8 @@ export const SongsData = [
     feel: "pop/rock",
     bpm: "90",
     song: [
-      "Gun dos gos Dun gos dos gos dos",
-      "Pa dos gos dos gos dos gos dos",
-      "Gun dos gos Dun gos Dun Gun dos",
-      "Pa dos gos Dun gos dos gos dos",
+      "Gun dos gos Dun gos dos gos dos Pa dos gos dos gos dos gos dos",
+      "Gun dos gos Dun gos Dun Gun dos Pa dos gos Dun gos dos gos dos",
     ]
     ,
   },
@@ -95,8 +86,7 @@ export const SongsData = [
     timeSignature: "4/4",
     feel: "pop/rock",
     song: [
-      "Gun dos Pa Ta gos Ta Pa Ta",
-      "Gun dos gos dos gos dos gos dos",
+      "Gun dos Pa Ta gos Ta Pa Ta Gun dos gos dos gos dos gos dos",
     ]
     ,
   },
@@ -106,8 +96,7 @@ export const SongsData = [
     timeSignature: "4/4",
     feel: "pop/rock",
     song: [
-      "Gun dos Pa Ta gos Ta Pa Ta",
-      "Gun dos Pa Ta gos Ta Pa Ta",
+      "Gun dos Pa Ta gos Ta Pa Ta Gun dos Pa Ta gos Ta Pa Ta",
     ]
     ,
   },
@@ -117,14 +106,10 @@ export const SongsData = [
     timeSignature: "4/4",
     feel: "pop/rock",
     song: [
-      "Gun dos gos Ta Gun Ta gos Dun",
-      "gos dos gos dos gos dos gos dos",
-      "Gun dos gos Ta Gun Ta gos Dun",
-      "gos Dun gos dos Gun dos gos dos",
-      "Gun dos gos Ta Gun Ta gos Dun",
-      "gos dos Pa Dun gos dos gos Dun",
-      "Gun dos gos Ta Gun Ta gos Dun",
-      "Gun Ta Pa dos Pa dos Pa dos",
+      "Gun dos gos Ta Gun Ta gos Dun gos dos gos dos gos dos gos dos",
+      "Gun dos gos Ta Gun Ta gos Dun gos Dun gos dos Gun dos gos dos",
+      "Gun dos gos Ta Gun Ta gos Dun gos dos Pa Dun gos dos gos Dun",
+      "Gun dos gos Ta Gun Ta gos Dun Gun Ta Pa dos Pa dos Pa dos",
 
     ]
     ,
@@ -136,10 +121,8 @@ export const SongsData = [
     timeSignature: "4/4",
     feel: "pop/rock",
     song: [
-      "Gun dos gos Dun gos dos Pa dos",
-      "Gun dos gos Dun gos dos Pa dos",
-      "Gun dos gos Dun gos dos Pa dos",
-      "Pa dos gos Ta gos dos Pa Ta"
+      "Gun dos gos Dun gos dos Pa dos Gun dos gos Dun gos dos Pa dos",
+      "Gun dos gos Dun gos dos Pa dos Pa dos gos Ta gos dos Pa Ta"
     ]
     ,
   },
@@ -150,8 +133,7 @@ export const SongsData = [
     timeSignature: "4/4",
     feel: "pop/rock",
     song: [
-      "Gun xx gos Dun Ca xx Gun xx",
-      "xx dos Gun xx Ca xx xx xx"
+      "Gun xx gos Dun Ca xx Gun xx xx dos Gun xx Ca xx xx xx"
     ]
     ,
   },
@@ -163,8 +145,7 @@ export const SongsData = [
     timeSignature: "4/4",
     feel: "pop/rock",
     song: [
-      "Gun xx xx Dun Pa xx Gun xx",
-      "xx Ta Pa xx Pa xx xx xx"
+      "Gun xx xx Dun Pa xx Gun xx xx Ta Pa xx Pa xx xx xx"
     ]
     ,
   },
@@ -187,8 +168,7 @@ export const SongsData = [
     timeSignature: "4/4",
     feel: "pop/rock",
     song: [
-      "Gun dos gos Dun Pa dos Gun dos",
-      "gos Dun Gun dos Pa dos gos dos"
+      "Gun dos gos Dun Pa dos Gun dos gos Dun Gun dos Pa dos gos dos"
     ]
     ,
   },
@@ -199,8 +179,7 @@ export const SongsData = [
     timeSignature: "4/4",
     feel: "funk",
     song: [
-      "Gun dos gos Dun Pa Dun gos dos",
-      "gos dos gos dos gos dos gos dos"
+      "Gun dos gos Dun Pa Dun gos dos gos dos gos dos gos dos gos dos"
     ]
     ,
   },
@@ -211,8 +190,7 @@ export const SongsData = [
     timeSignature: "4/4",
     feel: "funk",
     song: [
-      "Gun dos gos Dun Pa Dun gos Ta",
-      "gos Ta Gun Dun Pa Dun Pa Ta"
+      "Gun dos gos Dun Pa Dun gos Ta gos Ta Gun Dun Pa Dun Pa Ta"
     ]
     ,
   },
@@ -224,8 +202,7 @@ export const SongsData = [
     style: "Modern",
     tempo: "40",
     song: [
-      "Pa dos gos Ta dos Ta Gun dos",
-      "gos dos gos dos gos dos gos dos",
+      "Pa dos gos Ta dos Ta Gun dos gos dos gos dos gos dos gos dos",
     ]
     ,
   },
@@ -237,8 +214,7 @@ export const SongsData = [
     style: "Modern",
     tempo: "40",
     song: [
-      "Gun dos gos Dun Pa Dun Gun Ta",
-      "Gun dos Gun Dun gos Dun Gun Ta",
+      "Gun dos gos Dun Pa Dun Gun Ta Gun dos Gun Dun gos Dun Gun Ta",
     ]
     ,
   },
@@ -262,8 +238,7 @@ export const SongsData = [
     style: "Rock",
     tempo: "40",
     song: [
-      "Gun dos gos dos Pa Dun Gun Dun",
-      "Gun dos Gun dos Pa Dun gos dos"
+      "Gun dos gos dos Pa Dun Gun Dun Gun dos Gun dos Pa Dun gos dos"
     ]
     ,
   },
@@ -274,8 +249,7 @@ export const SongsData = [
     style: "Rock",
     tempo: "40",
     song: [
-      "Gun dos gos Dun Pa dos Gun dos",
-      "Gun dos Gun Dun Pa dos gos dos"
+      "Gun dos gos Dun Pa dos Gun dos Gun dos Gun Dun Pa dos gos dos"
     ]
     ,
   },
@@ -286,8 +260,7 @@ export const SongsData = [
     style: "Rock",
     tempo: "40",
     song: [
-      "Gun Dun gos dos Pa dos gos dos",
-      "gos dos gos dos Pa dos Gun Ta"
+      "Gun Dun gos dos Pa dos gos dos gos dos gos dos Pa dos Gun Ta"
     ]
     ,
   },
@@ -298,8 +271,7 @@ export const SongsData = [
     style: "Rock",
     tempo: "40",
     song: [
-      "Gun dos gos dos Pa dos gos Dun",
-      "gos dos Gun dos Pa dos gos Dun"
+      "Gun dos gos dos Pa dos gos Dunn gos dos Gun dos Pa dos gos Dun"
     ]
     ,
   },
@@ -310,8 +282,7 @@ export const SongsData = [
     style: "Rock",
     tempo: "40",
     song: [
-      "Gun dos gos dos Pa dos gos dos",
-      "gos dos Gun dos Pa dos gos dos"
+      "Gun dos gos dos Pa dos gos dos gos dos Gun dos Pa dos gos dos"
     ]
     ,
   },
@@ -322,8 +293,7 @@ export const SongsData = [
     timeSignature: "4/4",
     style: "Rock",
     song: [
-      "Gun dos Gun dos Pa dos gos Ta",
-      "dos Ta Gun Dun Pa dos gos dos"
+      "Gun dos Gun dos Pa dos gos Ta dos Ta Gun Dun Pa dos gos dos"
     ]
     ,
   },
@@ -334,8 +304,7 @@ export const SongsData = [
     timeSignature: "4/4",
     style: "Rock",
     song: [
-      "Gun dos Gun dos Pa Ta gos Ta",
-      "dos Ta Gun Ta Pa dos gos dos"
+      "Gun dos Gun dos Pa Ta gos Ta dos Ta Gun Ta Pa dos gos dos"
     ]
     ,
   },
@@ -346,8 +315,7 @@ export const SongsData = [
     timeSignature: "4/4",
     style: "",
     song: [
-      "Gun dos Pa dos Gun dos Pa dos",
-      "Gun dos Pa dos gos Dun Pa dos"
+      "Gun dos Pa dos Gun dos Pa dos Gun dos Pa dos gos Dun Pa dos"
     ]
     ,
   },
@@ -357,8 +325,7 @@ export const SongsData = [
     timeSignature: "4/4",
     style: "",
     song: [
-      "Pa Ta Pa Ta Gun Dun Gun Dun",
-      "Pa Ta xx xx Pa Ta Pa Ta"
+      "Pa Ta Pa Ta Gun Dun Gun Dun Pa Ta xx xx Pa Ta Pa Ta"
     ]
     ,
   },
@@ -368,8 +335,7 @@ export const SongsData = [
     timeSignature: "4/4",
     style: "",
     song: [
-      "Pa Gun Dun Ta Gun dos Pa Dun",
-      "Gun Ta Gun dos Pa Ta Pa Ta"
+      "Pa Gun Dun Ta Gun dos Pa Dun Gun Ta Gun dos Pa Ta Pa Ta"
     ]
     ,
   },
@@ -380,8 +346,7 @@ export const SongsData = [
     timeSignature: "4/4",
     style: "",
     song: [
-      "Gun dos Gun Pa Gun dos Gun Pa",
-      "Gun dos Gun Pa Gun Dun Gun Dun"
+      "Gun dos Gun Pa Gun dos Gun Pa Gun dos Gun Pa Gun Dun Gun Dun"
     ]
     ,
   },
@@ -392,8 +357,7 @@ export const SongsData = [
     timeSignature: "4/4",
     style: "",
     song: [
-      "Gun dos Gun dos Gun dos gos Ta",
-      "Pa dos gos Ta Pa dos Pa dos"
+      "Gun dos Gun dos Gun dos gos Ta Pa dos gos Ta Pa dos Pa dos"
     ]
     ,
   },
@@ -404,8 +368,7 @@ export const SongsData = [
     timeSignature: "4/4",
     style: "indian",
     song: [
-      "Gun xx xx do go xx go xx",
-      "xx do xx do Gun xx xx xx"
+      "Gun xx xx do go xx go xx xx do xx do Gun xx xx xx"
     ]
     ,
   },
@@ -415,8 +378,7 @@ export const SongsData = [
     src: "Pizeta --> https://open.spotify.com/track/3bUknCt3Ga7f1zH1ElCSJu?si=pan7-YJKTSi3Up7f9ttSKg",
     timeSignature: "4/4",
     song: [
-      "Gun xx xx Ta Pa xx xx xx",
-      "Gun do xx do Pa xx go Dun"
+      "Gun xx xx Ta Pa xx xx xx Gun do xx do Pa xx go Dun"
     ]
     ,
   },
@@ -425,8 +387,7 @@ export const SongsData = [
     src: "Pizeta --> https://open.spotify.com/track/3bUknCt3Ga7f1zH1ElCSJu?si=pan7-YJKTSi3Up7f9ttSKg",
     timeSignature: "4/4",
     song: [
-      "Gun xx xx Dun Pa xx xx xx",
-      "Gun do xx do Pa do go Ta"
+      "Gun xx xx Dun Pa xx xx xx Gun do xx do Pa do go Ta"
     ]
     ,
   },
@@ -435,8 +396,7 @@ export const SongsData = [
     src: "Pizeta --> https://open.spotify.com/track/6WK8Vu7iHPVA2fnEHjcL9T?si=VQz0pRqNR-eKahFpQl7VJQ",
     timeSignature: "4/4",
     song: [
-      "Gun xx Gun xx Pa Ta xx xx",
-      "Gun xx xx Ca xx xx xx xx"
+      "Gun xx Gun xx Pa Ta xx xx Gun xx xx Ca xx xx xx xx"
     ]
     ,
   },
@@ -445,8 +405,7 @@ export const SongsData = [
     src: "Pizeta --> https://open.spotify.com/track/6WK8Vu7iHPVA2fnEHjcL9T?si=VQz0pRqNR-eKahFpQl7VJQ",
     timeSignature: "4/4",
     song: [
-      "Gun dos Gun dos Pa Ta gos dos",
-      "Gun dos gos Ca gos dos gos dos"
+      "Gun dos Gun dos Pa Ta gos dos Gun dos gos Ca gos dos gos dos"
     ]
     ,
   },
@@ -455,8 +414,7 @@ export const SongsData = [
     src: "Pizeta --> https://open.spotify.com/track/6WK8Vu7iHPVA2fnEHjcL9T?si=VQz0pRqNR-eKahFpQl7VJQ",
     timeSignature: "4/4",
     song: [
-      "Gun dos gos Ta Pa Ta gos dos",
-      "Gun dos gos Pa gos dos gos dos"
+      "Gun dos gos Ta Pa Ta gos dos Gun dos gos Pa gos dos gos dos"
     ]
     ,
   },
@@ -468,8 +426,7 @@ export const SongsData = [
     timeSignature: "4/4",
     feel: "swing",
     song: [
-      "Gun dos gos Dun Pa Dun gos dos",
-      "Gun dos gos Dun Pa Dun Pa dos"
+      "Gun dos gos Dun Pa Dun gos dos Gun dos gos Dun Pa Dun Pa dos"
     ]
     ,
   },
@@ -479,8 +436,7 @@ export const SongsData = [
     src: "",
     timeSignature: "4/4",
     song: [
-      "Gun dos gos Dun gos dos Gun dos",
-      "gos dos Gun dos Gun dos gos dos"
+      "Gun dos gos Dun gos dos Gun dos gos dos Gun dos Gun dos gos dos"
     ]
     ,
   },
@@ -490,8 +446,7 @@ export const SongsData = [
     src: "https://youtu.be/Prg73ySVu6E?t=185",
     timeSignature: "4/4",
     song: [
-      "Gun Dun gos dos Pa dos gos Dun",
-      "gos dos gos Dun Pa Dun gos dos"
+      "Gun Dun gos dos Pa dos gos Dun gos dos gos Dun Pa Dun gos dos"
     ]
     ,
   },
@@ -501,8 +456,7 @@ export const SongsData = [
     src: "https://cajonmaster.com/groove-course-1/",
     timeSignature: "4/4",
     song: [
-      "Gun dos gos Dun Pa Ta gos Ta",
-      "gos Ta Gun Ta Pa Dun gos dos"
+      "Gun dos gos Dun Pa Ta gos Ta gos Ta Gun Ta Pa Dun gos dos"
     ]
     ,
   },
@@ -511,8 +465,7 @@ export const SongsData = [
     src: "https://cajonmaster.com/groove-course-1/",
     timeSignature: "4/4",
     song: [
-      "Gun dos gos dos Pa Ta dos Ta",
-      "gos Ta gos Ta Pa dos gos dos"
+      "Gun dos gos dos Pa Ta dos Ta gos Ta gos Ta Pa dos gos dos"
     ]
     ,
   },
@@ -521,8 +474,7 @@ export const SongsData = [
     src: "https://cajonmaster.com/groove-course-1/",
     timeSignature: "4/4",
     song: [
-      "Gun Ta gos dos Pa dos gos dos",
-      "Gun Ta gos dos Pa dos gos dos"
+      "Gun Ta gos dos Pa dos gos dos Gun Ta gos dos Pa dos gos dos"
     ]
     ,
   },
@@ -534,8 +486,7 @@ export const SongsData = [
     src: "https://youtu.be/04IXXJxNwtk?t=32",
     timeSignature: "4/4",
     song: [
-      "Gun dos gos dos Pa dos gos dos",
-      "Gun dos gos dos Pa dos gos dos"
+      "Gun dos gos dos Pa dos gos dos Gun dos gos dos Pa dos gos dos"
     ]
     ,
   },
@@ -544,8 +495,7 @@ export const SongsData = [
     src: "",
     timeSignature: "4/4",
     song: [
-      "Gun dos gos Dun gos dos Gun dos",
-      "gos dos gos dos gos dos gos dos"
+      "Gun dos gos Dun gos dos Gun dos gos dos gos dos gos dos gos dos"
     ]
     ,
   },
@@ -556,8 +506,7 @@ export const SongsData = [
     src: "https://www.youtube.com/watch?v=rhPL28kKS2Q",
     timeSignature: "4/4",
     song: [
-      "Pa dos gos Ta gos dos Pa dos",
-      "gos Ta gos dos Pa dos Pa Ta"
+      "Pa dos gos Ta gos dos Pa dos gos Ta gos dos Pa dos Pa Ta"
     ]
     ,
   },
@@ -567,8 +516,7 @@ export const SongsData = [
     src: "https://www.youtube.com/watch?v=rhPL28kKS2Q",
     timeSignature: "4/4",
     song: [
-      "Pa dos gos Ta gos dos Pa dos",
-      "gos dos Pa dos Pa Ta Pa Ta"
+      "Pa dos gos Ta gos dos Pa dos gos dos Pa dos Pa Ta Pa Ta"
     ]
     ,
   },
@@ -577,8 +525,7 @@ export const SongsData = [
     src: "https://www.youtube.com/watch?v=rhPL28kKS2Q",
     timeSignature: "4/4",
     song: [
-      "Gun dos gos Ta Pa dos Pa dos",
-      "gos Ta Pa dos Pa dos Pa Ta"
+      "Gun dos gos Ta Pa dos Pa dos gos Ta Pa dos Pa dos Pa Ta"
     ]
     ,
   },
@@ -587,8 +534,7 @@ export const SongsData = [
     src: "",
     timeSignature: "4/4",
     song: [
-      "Gun dos gos dos gos dos gos dos",
-      "gos dos gos dos gos Ta go do"
+      "Gun dos gos dos gos dos gos dos gos dos gos dos gos Ta go do"
     ]
     ,
   },
@@ -597,8 +543,7 @@ export const SongsData = [
     src: "",
     timeSignature: "4/4",
     song: [
-      "Gun do go do Gun do go do",
-      "Gun Ta Gun Ta Gun Ta go do"
+      "Gun do go do Gun do go do Gun Ta Gun Ta Gun Ta go do"
     ]
     ,
   },
@@ -607,8 +552,7 @@ export const SongsData = [
     src: "Marco Baldessari",
     timeSignature: "4/4",
     song: [
-      "Pa dos Pa dos gos dos gos Ta",
-      "gos Ta Pa dos gos dos gos dos"
+      "Pa dos Pa dos gos dos gos Ta gos Ta Pa dos gos dos gos dos"
     ]
     ,
   },
@@ -617,8 +561,7 @@ export const SongsData = [
     src: "Marco Baldessari",
     timeSignature: "4/4",
     song: [
-      "Gun dos Gun dos gos dos gos Dun",
-      "gos Dun Gun dos gos dos gos dos"
+      "Gun dos Gun dos gos dos gos Dun gos Dun Gun dos gos dos gos dos"
     ]
     ,
   },
@@ -627,8 +570,7 @@ export const SongsData = [
     src: "https://youtu.be/5HIAuK9RS6E?list=PL68l7-3lyYtPdVsAAru0cJQfYx9wHu5tB&t=218",
     timeSignature: "4/4",
     song: [
-      "Gun xx Gun xx go do xx Ta",
-      "xx do xx go do Ta Pa Ta"
+      "Gun xx Gun xx go do xx Ta xx do xx go do Ta Pa Ta"
     ]
     ,
   },
@@ -638,8 +580,7 @@ export const SongsData = [
     src: "https://youtu.be/5HIAuK9RS6E?list=PL68l7-3lyYtPdVsAAru0cJQfYx9wHu5tB&t=218",
     timeSignature: "4/4",
     song: [
-      "Gun dos Gun dos gos dos gos Pa",
-      "gos dos gos gos dos Ta Pa Ta"
+      "Gun dos Gun dos gos dos gos Pa gos dos gos gos dos Ta Pa Ta"
     ]
     ,
   },
@@ -660,8 +601,7 @@ export const SongsData = [
     src: "",
     timeSignature: "4/4",
     song: [
-      "Gun dos gos dos Ca xx dos Gun",
-      "xx Gun xx dos Ca xx xx xx"
+      "Gun dos gos dos Ca xx dos Gun xx Gun xx dos Ca xx xx xx"
     ]
     ,
   },
@@ -672,8 +612,7 @@ export const SongsData = [
     src: "https://youtu.be/WR_du_EPITw?list=PL68l7-3lyYtPdVsAAru0cJQfYx9wHu5tB",
     timeSignature: "4/4",
     song: [
-      "Gun dos gos Ta gos dos Gun dos",
-      "gos Ta gos dos Gun gos dos gos"
+      "Gun dos gos Ta gos dos Gun dos gos Ta gos dos Gun gos dos gos"
     ]
     ,
   },
@@ -683,8 +622,7 @@ export const SongsData = [
     src: "https://www.youtube.com/watch?v=YFNegZdsDpE",
     timeSignature: "7/4",
     song: [
-      "Gun xx gos dos gos dos Gun",
-      "xx xx Dun xx Pa xx xx"
+      "Gun xx gos dos gos dos Gun xx xx Dun xx Pa xx xx"
     ]
     ,
   },
@@ -694,8 +632,7 @@ export const SongsData = [
     src: "https://www.youtube.com/watch?v=xM83XVw83yk",
     timeSignature: "3/4",
     song: [
-      "xx xx Pa xx Gun xx",
-      "xx Ta xx xx Gun xx"
+      "xx xx Pa xx Gun xx xx Ta xx xx Gun xx"
     ]
     ,
   },
@@ -705,8 +642,7 @@ export const SongsData = [
     src: "https://www.youtube.com/watch?v=xM83XVw83yk",
     timeSignature: "3/4",
     song: [
-      "xx xx Pa dos Gun xx",
-      "xx Ta xx dos Gun xx"
+      "xx xx Pa dos Gun xx xx Ta xx dos Gun xx"
     ]
     ,
   },
@@ -716,8 +652,7 @@ export const SongsData = [
     src: "https://www.youtube.com/watch?v=5HIAuK9RS6E&t=8s",
     timeSignature: "4/4",
     song: [
-      "Gun do go do Gun xx Ta Pa",
-      "Gun do go do Gun xx Pa xx"
+      "Gun do go do Gun xx Ta Pa Gun do go do Gun xx Pa xx"
     ]
     ,
   },
@@ -726,8 +661,7 @@ export const SongsData = [
     src: "Marco Baldessari",
     timeSignature: "4/4",
     song: [
-      "Gun dos gos dos Gun xx Ta Pa",
-      "Gun dos gos dos Gun xx Pa xx"
+      "Gun dos gos dos Gun xx Ta Pa Gun dos gos dos Gun xx Pa xx"
     ]
     ,
   },
@@ -736,8 +670,7 @@ export const SongsData = [
     src: "https://www.youtube.com/watch?v=5HIAuK9RS6E&t=8s",
     timeSignature: "4/4",
     song: [
-      "Gun xx go do Gun Ta Pa xx",
-      "Gun xx go xx Gun Ta Pa xx"
+      "Gun xx go do Gun Ta Pa xx Gun xx go xx Gun Ta Pa xx"
     ]
     ,
   },
@@ -746,8 +679,7 @@ export const SongsData = [
     src: "https://www.youtube.com/watch?v=5HIAuK9RS6E&t=8s",
     timeSignature: "4/4",
     song: [
-      "Gun xx gos dos Gun Ta Pa xx",
-      "Gun xx gos xx Gun Ta Pa xx"
+      "Gun xx gos dos Gun Ta Pa xx Gun xx gos xx Gun Ta Pa xx"
     ]
     ,
   },
@@ -756,8 +688,7 @@ export const SongsData = [
     src: "https://www.youtube.com/watch?v=5HIAuK9RS6E&t=8s",
     timeSignature: "4/4",
     song: [
-      "Gun Dun go do Gun Dun Ca xx",
-      "Gun Dun go do Gun Gun Ca xx"
+      "Gun Dun go do Gun Dun Ca xx Gun Dun go do Gun Gun Ca xx"
     ]
     ,
   },
@@ -766,8 +697,7 @@ export const SongsData = [
     src: "Marco Baldessari",
     timeSignature: "3/4",
     song: [
-      "Gun do go do Gun xx",
-      "Gun do go do Gun Ta"
+      "Gun do go do Gun xx Gun do go do Gun Ta"
     ]
     ,
   },
@@ -785,8 +715,7 @@ export const SongsData = [
       songName: "Bala Kulandyan",
       timeSignature: "4/4",
       song: [
-        "Pa xx xx Ta Pa xx go do",
-        "Pa xx xx Ta Pa xx go do"
+        "Pa xx xx Ta Pa xx go do Pa xx xx Ta Pa xx go do"
       ]
       ,
     },
@@ -795,9 +724,7 @@ export const SongsData = [
       songName: "Djansa",
       timeSignature: "4/4",
       song: [
-        "Pa Ta xx Ta Pa xx do go",
-        "Ta xx Gun xx Ta Dun go do"
-        
+        "Pa Ta xx Ta Pa xx do go Ta xx Gun xx Ta Dun go do"
       ]
       ,
     },
@@ -805,9 +732,7 @@ export const SongsData = [
       songName: "Djansa variant",
       timeSignature: "4/4",
       song: [
-        "Pa Ta xx Ta Pa xx dos gos",
-        "Ta xx Gun xx Ta Dun gos dos"
-        
+        "Pa Ta xx Ta Pa xx dos gos Ta xx Gun xx Ta Dun gos dos"
       ]
       ,
     },
