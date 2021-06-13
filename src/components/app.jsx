@@ -115,6 +115,11 @@ class App extends React.PureComponent {
   animateInSongCards() {
     const allSongCards = document.getElementsByClassName("song-card");
     Array.prototype.forEach.call(allSongCards, function (e, index) {
+      if (index < 5) {
+        var delay = 0.15 * (index + 1);
+      } else {
+        var delay = 0.15 * ((index + 1) / 2);
+      }
       gsap.fromTo(
         e,
         { y: 40, opacity: 0 },
@@ -122,11 +127,12 @@ class App extends React.PureComponent {
           opacity: 1,
           duration: 0.5,
           y: 0,
-          delay: 0.15 * (index + 1),
+          delay: delay,
           ease: "power2.out",
         }
       );
     });
+
     // ---------------  AnimateIn individual notes  ---------------
     // let allNotes = document.getElementsByClassName("notation-note-circle");
     // Array.prototype.forEach.call(allNotes, function (e, index) {
@@ -152,6 +158,8 @@ class App extends React.PureComponent {
 
     document.querySelector(".song-list").classList.remove("preload");
   }
+
+  animateInSongCardsTimeCurve(inbdex) {}
 
   animateInTopBar() {
     const topbar = document.querySelector(".topbar");
