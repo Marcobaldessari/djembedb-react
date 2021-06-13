@@ -167,10 +167,12 @@ a {
   display: -ms-grid;
   display: grid;
   position: relative;
-  padding: 0 16px;
   margin-top: 10px;
   width: 100%;
   background: var(--notation-bg-color);
+}
+.notation-frame .MuiButton-label {
+  padding: 0 16px;
 }
 @media (min-width: 640px) {
   .notation-frame {

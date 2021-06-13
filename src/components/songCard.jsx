@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import NotationNote from "./notationNote";
 import gsap from "gsap";
+import Button from "@material-ui/core/Button";
 
 var uniqid = require("uniqid");
 var clickHasBeenAnimated = false;
@@ -58,32 +59,34 @@ class SongCard extends React.PureComponent {
             this.props.OnPlayPause(e, this.props.songId);
           }}
         >
-          {this.props.song.map((measure, indexMeasure) => (
-            <div
-              className={this.getMeasureClass()}
-              key={indexMeasure}
-              id={this.getMeasureId(indexMeasure)}
-            >
-              {measure.split(" ").map((n, indexNote) => (
-                <span key={indexNote} className="notation-number">
-                  {this.getNotationNumber(indexNote)}
-                </span>
-              ))}
+          <Button>
+            {this.props.song.map((measure, indexMeasure) => (
+              <div
+                className={this.getMeasureClass()}
+                key={indexMeasure}
+                id={this.getMeasureId(indexMeasure)}
+              >
+                {measure.split(" ").map((n, indexNote) => (
+                  <span key={indexNote} className="notation-number">
+                    {this.getNotationNumber(indexNote)}
+                  </span>
+                ))}
 
-              {measure.split(" ").map((n, indexNote) => (
-                <NotationNote
-                  key={indexNote}
-                  note={n}
-                  noteIndex={this.getNoteIndex(
-                    indexNote,
-                    indexMeasure,
-                    measure
-                  )}
-                  songId={this.props.songId}
-                />
-              ))}
-            </div>
-          ))}
+                {measure.split(" ").map((n, indexNote) => (
+                  <NotationNote
+                    key={indexNote}
+                    note={n}
+                    noteIndex={this.getNoteIndex(
+                      indexNote,
+                      indexMeasure,
+                      measure
+                    )}
+                    songId={this.props.songId}
+                  />
+                ))}
+              </div>
+            ))}
+          </Button>
         </div>
       </div>
     );
