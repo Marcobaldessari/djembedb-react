@@ -163,6 +163,22 @@ a {
   -ms-grid-columns: (1fr)[14];
   grid-template-columns: repeat(14, 1fr);
 }
+.one-bar {
+  -ms-grid-columns: (1fr)[1];
+  grid-template-columns: repeat(1, 1fr);
+}
+.two-bars {
+  -ms-grid-columns: (1fr)[1];
+  grid-template-columns: repeat(1, 1fr);
+}
+.three-bars {
+  -ms-grid-columns: (1fr)[1];
+  grid-template-columns: repeat(1, 1fr);
+}
+.four-bars {
+  -ms-grid-columns: (1fr)[8];
+  grid-template-columns: repeat(8, 1fr);
+}
 .notation-frame {
   display: -ms-grid;
   display: grid;
@@ -173,6 +189,10 @@ a {
 }
 .notation-frame .MuiButton-label {
   padding: 0 16px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[1];
+  grid-template-columns: repeat(1, 1fr);
 }
 @media (min-width: 640px) {
   .notation-frame {
