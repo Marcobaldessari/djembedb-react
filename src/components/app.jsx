@@ -118,7 +118,7 @@ class App extends React.PureComponent {
       if (index < 5) {
         var delay = 0.15 * (index + 1);
       } else {
-        var delay = 0.15 * ((index + 1) / 2);
+        var delay = 0.15 * ((index + 1) / 2) + 0.5;
       }
       gsap.fromTo(
         e,
