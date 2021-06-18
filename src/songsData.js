@@ -1,5 +1,16 @@
 export const SongsData = [
   {
+    songName: "Minestrone 8",
+    src: "Marco Baldessari",
+    timeSignature: "4/4",
+    feel: "pop",
+    bpm: "120",
+    song: [
+      "Gun dos gos Dun gos Ta Pa Ta Gun dos gos dos gos dos gos dos",
+    ]
+    ,
+  },
+  {
     songName: "Grandma's clothes",
     src: "Marco Baldessari",
     timeSignature: "4/4",
