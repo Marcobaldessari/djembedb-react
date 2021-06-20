@@ -39,6 +39,7 @@ class App extends React.PureComponent {
     SongsData: SongsData,
     playing: false,
     step: 0,
+    songPlaying: 999,
   };
 
   componentDidMount() {
@@ -72,6 +73,23 @@ class App extends React.PureComponent {
     if (e.key === "d") {
       alert("Debug mode enabled");
       document.body.classList.add("debug");
+    }
+
+    if (e.keyCode == 32) {
+      e.preventDefault();
+      // alert("Paused mode enabled");
+      clearInterval(this.interval);
+      if (this.state.playing) {
+        this.setState(() => ({
+          playing: false,
+          // songPlaying: songId,
+        }));
+      } else {
+        this.setState(() => ({
+          playing: true,
+        }));
+        this.startLoop(step, notes);
+      }
     }
   };
 
