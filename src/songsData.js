@@ -1,5 +1,13 @@
 export const SongsData = [
   {
+    songName: "Not an orange",
+    src: "Marco Baldessari",
+    timeSignature: "4/4",
+    feel: "jazz",
+    bpm: "60",
+    song: ["Gun dos gos Ta Gun dos gos Dun gos Dun Gun Ta Gun dos Gun dos"],
+  },
+  {
     songName: "Afternoon stroll",
     src: "Marco Baldessari",
     timeSignature: "4/4",
@@ -332,21 +340,27 @@ export const SongsData = [
   },
   {
     songName: "A-Velocity",
-    src: "Pizeta --> https://open.spotify.com/track/6WK8Vu7iHPVA2fnEHjcL9T?si=VQz0pRqNR-eKahFpQl7VJQ",
+    src: "",
     timeSignature: "4/4",
     song: ["Gun xx Gun xx Pa Ta xx xx Gun xx xx Ca xx xx xx xx"],
   },
   {
     songName: "A-Velocity variant 1",
-    src: "Pizeta --> https://open.spotify.com/track/6WK8Vu7iHPVA2fnEHjcL9T?si=VQz0pRqNR-eKahFpQl7VJQ",
+    src: "",
     timeSignature: "4/4",
     song: ["Gun dos Gun dos Pa Ta gos dos Gun dos gos Ca gos dos gos dos"],
   },
   {
     songName: "A-Velocity variant 2",
-    src: "Pizeta --> https://open.spotify.com/track/6WK8Vu7iHPVA2fnEHjcL9T?si=VQz0pRqNR-eKahFpQl7VJQ",
+    src: "",
     timeSignature: "4/4",
     song: ["Gun dos gos Ta Pa Ta gos dos Gun dos gos Pa gos dos gos dos"],
+  },
+  {
+    songName: "A-Velocity variant 3",
+    src: "",
+    timeSignature: "4/4",
+    song: ["Gun dos gos dos Pa Ta gos dos Gun dos gos Pa gos dos gos dos"],
   },
 
   {
