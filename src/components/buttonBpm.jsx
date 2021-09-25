@@ -73,7 +73,7 @@ class ButtonBpm extends React.PureComponent {
             orientation="vertical"
             step={5}
             min={40}
-            max={210}
+            max={160}
             valueLabelDisplay="auto"
             className={this.getSliderClasses()}
           />
