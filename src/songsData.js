@@ -1,5 +1,13 @@
 export const SongsData = [
   {
+    songName: "Side street",
+    src: "Marco Baldessari",
+    timeSignature: "4/4",
+    feel: "",
+    bpm: "60",
+    song: ["Gun dos gos Ta dos Ta Gun dos Pa dos Gun dos Pa dos gos dos"],
+  },
+  {
     songName: "Eitetsu Hayashi",
     src: "Marco Baldessari",
     timeSignature: "4/4",
