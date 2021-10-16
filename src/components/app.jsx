@@ -4,6 +4,7 @@ import SongCard from "./songCard";
 import Topbar from "./topbar";
 import Button from "@material-ui/core/Button";
 import { Howl, Howler } from "howler";
+import { hotjar } from "react-hotjar";
 
 //import Djembe Sounds
 import gunAudioDjembe from "../sounds/djembe/gun.mp3";
@@ -51,6 +52,8 @@ var uniqid = require("uniqid");
 var bpm = 90;
 var step;
 var notes;
+
+hotjar.initialize(2655002, 6);
 
 class App extends React.PureComponent {
   state = {
