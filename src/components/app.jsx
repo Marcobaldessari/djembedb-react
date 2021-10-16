@@ -5,6 +5,7 @@ import Topbar from "./topbar";
 import Button from "@material-ui/core/Button";
 import { Howl, Howler } from "howler";
 import { hotjar } from "react-hotjar";
+import FullStory from "react-fullstory";
 
 //import Djembe Sounds
 import gunAudioDjembe from "../sounds/djembe/gun.mp3";
@@ -54,6 +55,7 @@ var step;
 var notes;
 
 hotjar.initialize(2655002, 6);
+const ORG_ID = "GR09Q";
 
 class App extends React.PureComponent {
   state = {
@@ -361,6 +363,9 @@ class App extends React.PureComponent {
   render() {
     return (
       <React.Fragment>
+        <div className="app">
+          <FullStory org={ORG_ID} />
+        </div>
         <Topbar
           OnTempoChange={this.handleTempoChange}
           defaultTempo={bpm}
