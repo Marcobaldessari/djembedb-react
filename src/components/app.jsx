@@ -4,30 +4,48 @@ import SongCard from "./songCard";
 import Topbar from "./topbar";
 import Button from "@material-ui/core/Button";
 import { Howl, Howler } from "howler";
-import gunAudio from "../sounds/gun.mp3";
-import dunAudio from "../sounds/dun.mp3";
-import goAudio from "../sounds/go.mp3";
-import gosAudio from "../sounds/gos.mp3";
-import doAudio from "../sounds/do.mp3";
-import dosAudio from "../sounds/dos.mp3";
-import paAudio from "../sounds/pa.mp3";
-import taAudio from "../sounds/ta.mp3";
-import caAudio from "../sounds/ca.mp3";
+
+//import Djembe Sounds
+import gunAudioDjembe from "../sounds/djembe/gun.mp3";
+import dunAudioDjembe from "../sounds/djembe/dun.mp3";
+import goAudioDjembe from "../sounds/djembe/go.mp3";
+import gosAudioDjembe from "../sounds/djembe/gos.mp3";
+import doAudioDjembe from "../sounds/djembe/do.mp3";
+import dosAudioDjembe from "../sounds/djembe/dos.mp3";
+import paAudioDjembe from "../sounds/djembe/pa.mp3";
+import taAudioDjembe from "../sounds/djembe/ta.mp3";
+import caAudioDjembe from "../sounds/djembe/ca.mp3";
+
+//import Cajon Sounds
+import gunAudioCajon from "../sounds/cajon/gun.mp3";
+import dunAudioCajon from "../sounds/cajon/dun.mp3";
+import gosAudioCajon from "../sounds/cajon/gos.mp3";
+import dosAudioCajon from "../sounds/cajon/dos.mp3";
+import paAudioCajon from "../sounds/cajon/pa.mp3";
+import taAudioCajon from "../sounds/cajon/ta.mp3";
+
 import gsap from "gsap";
 import ReactGA from "react-ga";
 ReactGA.initialize("UA-30988885-14");
 ReactGA.pageview(window.location.pathname + window.location.search);
 
 var volume = 0.7;
-const howlerGun = new Howl({ src: [gunAudio], volume: volume });
-const howlerDun = new Howl({ src: [dunAudio], volume: volume });
-const howlerGo = new Howl({ src: [goAudio], volume: volume });
-const howlerGos = new Howl({ src: [gosAudio], volume: volume / 4 });
-const howlerDo = new Howl({ src: [doAudio], volume: volume });
-const howlerDos = new Howl({ src: [dosAudio], volume: volume / 4 });
-const howlerPa = new Howl({ src: [paAudio], volume: volume });
-const howlerTa = new Howl({ src: [taAudio], volume: volume });
-const howlerCa = new Howl({ src: [caAudio], volume: volume });
+const howlerGunDjembe = new Howl({ src: [gunAudioDjembe], volume: volume });
+const howlerDunDjembe = new Howl({ src: [dunAudioDjembe], volume: volume });
+const howlerGoDjembe = new Howl({ src: [goAudioDjembe], volume: volume });
+const howlerGosDjembe = new Howl({ src: [gosAudioDjembe], volume: volume / 4 });
+const howlerDoDjembe = new Howl({ src: [doAudioDjembe], volume: volume });
+const howlerDosDjembe = new Howl({ src: [dosAudioDjembe], volume: volume / 4 });
+const howlerPaDjembe = new Howl({ src: [paAudioDjembe], volume: volume });
+const howlerTaDjembe = new Howl({ src: [taAudioDjembe], volume: volume });
+const howlerCaDjembe = new Howl({ src: [caAudioDjembe], volume: volume });
+
+const howlerGunCajon = new Howl({ src: [gunAudioCajon], volume: volume });
+const howlerDunCajon = new Howl({ src: [dunAudioCajon], volume: volume });
+const howlerGosCajon = new Howl({ src: [gosAudioCajon], volume: volume / 4 });
+const howlerDosCajon = new Howl({ src: [dosAudioCajon], volume: volume / 4 });
+const howlerPaCajon = new Howl({ src: [paAudioCajon], volume: volume });
+const howlerTaCajon = new Howl({ src: [taAudioCajon], volume: volume });
 
 var uniqid = require("uniqid");
 var bpm = 90;
@@ -40,6 +58,7 @@ class App extends React.PureComponent {
     playing: false,
     step: 0,
     songPlaying: 999,
+    instrument: "djembe",
   };
 
   componentDidMount() {
@@ -66,6 +85,18 @@ class App extends React.PureComponent {
   handleVolumeChange = (e, v) => {
     volume = v / 100;
     Howler.volume(volume);
+  };
+
+  handleInstrumentChange = () => {
+    if (this.state.instrument == "cajon") {
+      this.setState(() => ({
+        instrument: "djembe",
+      }));
+    } else {
+      this.setState(() => ({
+        instrument: "cajon",
+      }));
+    }
   };
 
   _handleKeyDown = (e) => {
@@ -221,32 +252,104 @@ class App extends React.PureComponent {
   playNoteSound(note) {
     switch (note) {
       case "Gun":
-        howlerGun.play();
+        switch (this.state.instrument) {
+          case "djembe":
+            howlerGunDjembe.play();
+            break;
+          case "cajon":
+            howlerGunCajon.play();
+            break;
+        }
         break;
+
       case "Dun":
-        howlerDun.play();
+        switch (this.state.instrument) {
+          case "djembe":
+            howlerDunDjembe.play();
+            break;
+          case "cajon":
+            howlerDunCajon.play();
+            break;
+        }
         break;
-      case "go":
-        howlerGo.play();
+
+      case "Go":
+        switch (this.state.instrument) {
+          case "djembe":
+            howlerGoDjembe.play();
+            break;
+          case "cajon":
+            howlerPaCajon.play();
+            break;
+        }
         break;
-      case "do":
-        howlerDo.play();
+
+      case "Do":
+        switch (this.state.instrument) {
+          case "djembe":
+            howlerDoDjembe.play();
+            break;
+          case "cajon":
+            howlerTaCajon.play();
+            break;
+        }
         break;
+
       case "gos":
-        howlerGos.play();
+        switch (this.state.instrument) {
+          case "djembe":
+            howlerGosDjembe.play();
+            break;
+          case "cajon":
+            howlerGosCajon.play();
+            break;
+        }
         break;
+
       case "dos":
-        howlerDos.play();
+        switch (this.state.instrument) {
+          case "djembe":
+            howlerDosDjembe.play();
+            break;
+          case "cajon":
+            howlerDosCajon.play();
+            break;
+        }
         break;
+
       case "Pa":
-        howlerPa.play();
+        switch (this.state.instrument) {
+          case "djembe":
+            howlerPaDjembe.play();
+            break;
+          case "cajon":
+            howlerPaCajon.play();
+            break;
+        }
         break;
+
       case "Ta":
-        howlerTa.play();
+        switch (this.state.instrument) {
+          case "djembe":
+            howlerTaDjembe.play();
+            break;
+          case "cajon":
+            howlerTaCajon.play();
+            break;
+        }
         break;
+
       case "Ca":
-        howlerCa.play();
+        switch (this.state.instrument) {
+          case "djembe":
+            howlerCaDjembe.play();
+            break;
+          case "cajon":
+            howlerPaCajon.play();
+            break;
+        }
         break;
+
       default:
         break;
     }
@@ -260,6 +363,8 @@ class App extends React.PureComponent {
           defaultTempo={bpm}
           OnVolumeChange={this.handleVolumeChange}
           defaultVolume={volume * 100}
+          OnInstrumentChange={this.handleInstrumentChange}
+          instrument={this.state.instrument}
         ></Topbar>
         <div className="container">
           <div className={"song-list preload"}>

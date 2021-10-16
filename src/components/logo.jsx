@@ -1,15 +1,15 @@
 import React, { Component } from "react";
 import { Howl, Howler } from "howler";
 import UIfx from "uifx";
-import gunAudio from "../sounds/gun.mp3";
-import dunAudio from "../sounds/dun.mp3";
-import goAudio from "../sounds/go.mp3";
-import gosAudio from "../sounds/gos.mp3";
-import doAudio from "../sounds/do.mp3";
-import dosAudio from "../sounds/dos.mp3";
-import paAudio from "../sounds/pa.mp3";
-import taAudio from "../sounds/ta.mp3";
-import caAudio from "../sounds/ca.mp3";
+import gunAudio from "../sounds/djembe/gun.mp3";
+import dunAudio from "../sounds/djembe/dun.mp3";
+import goAudio from "../sounds/djembe/go.mp3";
+import gosAudio from "../sounds/djembe/gos.mp3";
+import doAudio from "../sounds/djembe/do.mp3";
+import dosAudio from "../sounds/djembe/dos.mp3";
+import paAudio from "../sounds/djembe/pa.mp3";
+import taAudio from "../sounds/djembe/ta.mp3";
+import caAudio from "../sounds/djembe/ca.mp3";
 import gsap from "gsap";
 
 const volume = 1;
