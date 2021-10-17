@@ -88,6 +88,12 @@ class SongCard extends React.PureComponent {
             ))}
           </Button>
         </div>
+        {/* <div className="extra-info">
+          <div className="suggested-bpm">
+            Suggested BPM: {this.props.suggestedBpm}
+          </div>
+          <div className="song-feel">Feel: {this.props.feel}</div>
+        </div> */}
       </div>
     );
   }

@@ -360,6 +360,8 @@ class App extends React.PureComponent {
                 songName={song.songName}
                 song={song.song}
                 timeSignature={song.timeSignature}
+                suggestedBpm={song.bpm}
+                feel={song.feel}
                 OnPlayPause={this.handlePlayPause}
                 isPlaying={this.isPlaying(index)}
               />

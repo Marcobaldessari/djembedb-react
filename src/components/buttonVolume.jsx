@@ -41,11 +41,11 @@ class ButtonVolume extends React.PureComponent {
       <React.Fragment>
         <div
           ref={this.setWrapperRef}
-          class={"sliderButton btn-topbar btn-rounded"}
+          class={"sliderButton btn-topbar btn-rounded volume-wrapper"}
         >
           <Button
             aria-label="Change volume"
-            className="btn-bpm btn-topbar btn-rounded"
+            className="btn-volume btn-topbar btn-rounded"
             onClick={() => {
               this.toggleOpen();
             }}
