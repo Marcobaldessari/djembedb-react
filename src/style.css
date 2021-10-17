@@ -556,6 +556,7 @@ a {
 }
 @media (max-width: 479px) {
   .btn-bpm {
+    display: none;
     margin-right: 24px;
   }
 }

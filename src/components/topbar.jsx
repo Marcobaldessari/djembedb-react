@@ -38,7 +38,10 @@ class Topbar extends React.PureComponent {
       <div className="topbar preload">
         <div className="container">
           <Logo></Logo>
-
+          <ButtonInstrument
+            OnInstrumentChange={this.props.OnInstrumentChange}
+            instrument={this.props.instrument}
+          ></ButtonInstrument>
           <ButtonBpm
             defaultTempo={this.props.defaultTempo}
             OnTempoChange={this.props.OnTempoChange}
@@ -47,10 +50,6 @@ class Topbar extends React.PureComponent {
             defaultVolume={this.props.defaultVolume}
             OnVolumeChange={this.props.OnVolumeChange}
           ></ButtonVolume>
-          <ButtonInstrument
-            OnInstrumentChange={this.props.OnInstrumentChange}
-            instrument={this.props.instrument}
-          ></ButtonInstrument>
 
           <Button
             aria-label="Toggle Dark/Light Theme"

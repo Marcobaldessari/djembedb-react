@@ -31,7 +31,7 @@ import ReactGA from "react-ga";
 ReactGA.initialize("UA-30988885-14");
 ReactGA.pageview(window.location.pathname + window.location.search);
 
-var volume = 0.7;
+var volume = 1;
 const howlerGunDjembe = new Howl({ src: [gunAudioDjembe], volume: volume });
 const howlerDunDjembe = new Howl({ src: [dunAudioDjembe], volume: volume });
 const howlerGoDjembe = new Howl({ src: [goAudioDjembe], volume: volume });
