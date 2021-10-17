@@ -1,5 +1,13 @@
 export const SongsData = [
   {
+    songName: "90",
+    src: "https://www.youtube.com/watch?v=aIzckuLjwik",
+    timeSignature: "4/4",
+    feel: "",
+    bpm: "90",
+    song: ["Gun dos Pa dos Gun Dun gos Dun Gun dos Pa dos Gun Dun gos Dun"],
+  },
+  {
     songName: "89",
     src: "Marco Baldessari",
     timeSignature: "3/4",
@@ -86,7 +94,7 @@ export const SongsData = [
     song: ["Gun Ta gos Dun gos Dun Gun Ta Gun dos gos dos gos dos gos dos"],
   },
   {
-    songName: "Side street",
+    songName: "79",
     src: "Marco Baldessari",
     timeSignature: "4/4",
     feel: "",
@@ -94,7 +102,7 @@ export const SongsData = [
     song: ["Gun dos gos Ta dos Ta Gun dos Pa dos Gun dos Pa dos gos dos"],
   },
   {
-    songName: "Eitetsu Hayashi",
+    songName: "78",
     src: "Marco Baldessari",
     timeSignature: "4/4",
     feel: "",
@@ -102,7 +110,7 @@ export const SongsData = [
     song: ["Gun dos Gun dos Pa Ta gos Ta gos Ta gos Ta Gun Dun Gun Ta"],
   },
   {
-    songName: "Not an orange",
+    songName: "Orange County",
     src: "Marco Baldessari",
     timeSignature: "4/4",
     feel: "jazz",
@@ -252,27 +260,7 @@ export const SongsData = [
   },
 
   {
-    songName: "Thunder McCallum",
-    src: "https://www.youtube.com/watch?v=Kb1S4w7DKeY",
-    timeSignature: "4/4",
-    feel: "pop/rock",
-    song: ["Gun xx xx Dun Pa xx Gun xx xx Ta Pa xx Pa xx xx xx"],
-  },
-
-  // {
-  //   songName: "Thunder Fill",
-  //   src: "https://www.youtube.com/watch?v=Kb1S4w7DKeY",
-  //   timeSignature: "4/4",
-  //   feel: "pop/rock",
-  //   song: [
-  //     "Gun dos gos Dun Pa dos Gun dos",
-  //     "Pa Ta Pa Ta Pa Ta Pa Ta"
-  //   ]
-  //   ,
-  // },
-
-  {
-    songName: "Thunder McCallum variant",
+    songName: "Thunder variant",
     src: "https://www.youtube.com/watch?v=Kb1S4w7DKeY",
     timeSignature: "4/4",
     feel: "pop/rock",
@@ -358,7 +346,7 @@ export const SongsData = [
     song: ["Gun dos gos dos Pa dos gos Dun gos dos Gun dos Pa dos gos Dun"],
   },
   {
-    songName: "Rock beeat alpha",
+    songName: "Rock groove alpha",
     src: "Marco://youtu.be/eJ09XJ14BM4?t=137",
     timeSignature: "4/4",
     style: "Rock",
@@ -488,13 +476,13 @@ export const SongsData = [
   },
 
   {
-    songName: "Stolen Groove 1",
+    songName: "28",
     src: "https://cajonmaster.com/groove-course-1/",
     timeSignature: "4/4",
     song: ["Gun dos gos Dun Pa Ta gos Ta gos Ta Gun Ta Pa Dun gos dos"],
   },
   {
-    songName: "Stolen Groove 1 variant",
+    songName: "27",
     src: "https://cajonmaster.com/groove-course-1/",
     timeSignature: "4/4",
     song: ["Gun dos gos dos Pa Ta dos Ta gos Ta gos Ta Pa dos gos dos"],
@@ -658,16 +646,12 @@ export const SongsData = [
     timeSignature: "3/4",
     song: ["Gun do go do Gun xx Gun do go do Gun Ta"],
   },
-  // {
-  //   songName: "Didadi",
-  //   src: "https://www.youtube.com/watch?v=5HIAuK9RS6E&t=8s",
-  // timeSignature: "4/4",
-  //   song: [
-  //     "Gun do Gun do Gun Gun xx go do Pa Ta xx",
-  //     ""
-  //   ]
-  //   ,
-  // },
+  {
+    songName: "Didadi",
+    src: "https://www.youtube.com/watch?v=5HIAuK9RS6E&t=8s",
+    timeSignature: "4/4",
+    song: ["Gun xx Pa Dun xx Ta Gun xx Gun xx xx Ta Pa xx go do"],
+  },
   {
     songName: "Bala Kulandyan",
     timeSignature: "4/4",

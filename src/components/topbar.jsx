@@ -35,8 +35,8 @@ class Topbar extends React.PureComponent {
 
   render() {
     return (
-      <div className="topbar preload">
-        <div className="container">
+      <div className="container">
+        <div className="topbar preload">
           <Logo></Logo>
           <ButtonInstrument
             OnInstrumentChange={this.props.OnInstrumentChange}

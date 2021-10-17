@@ -41,7 +41,7 @@ class ButtonVolume extends React.PureComponent {
       <React.Fragment>
         <div
           ref={this.setWrapperRef}
-          class={"sliderButton btn-topbar btn-rounded volume-wrapper"}
+          className={"sliderButton btn-topbar btn-rounded volume-wrapper"}
         >
           <Button
             aria-label="Change volume"

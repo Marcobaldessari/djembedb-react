@@ -255,7 +255,7 @@ class App extends React.PureComponent {
         }
         break;
 
-      case "Go":
+      case "go":
         switch (this.state.instrument) {
           case "djembe":
             howlerGoDjembe.play();
@@ -266,7 +266,7 @@ class App extends React.PureComponent {
         }
         break;
 
-      case "Do":
+      case "do":
         switch (this.state.instrument) {
           case "djembe":
             howlerDoDjembe.play();
