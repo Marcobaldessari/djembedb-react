@@ -187,29 +187,6 @@ class App extends React.PureComponent {
       );
     });
 
-    // ---------------  AnimateIn individual notes  ---------------
-    // let allNotes = document.getElementsByClassName("notation-note-circle");
-    // Array.prototype.forEach.call(allNotes, function (e, index) {
-    //   var tl = gsap.timeline();
-    //   tl.fromTo(
-    //     e,
-    //     {
-    //       scale: 0,
-    //     },
-    //     {
-    //       scale: 2,
-    //       opacity: 1,
-    //       duration: 0.2,
-    //       delay: 1 + 0.02 * (index + 1),
-    //       ease: "power2.out",
-    //     }
-    //   );
-    //   tl.to(e, {
-    //     scale: 1,
-    //     duration: 0.2,
-    //   });
-    // });
-
     document.querySelector(".song-list").classList.remove("preload");
   }
 
