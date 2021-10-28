@@ -44,8 +44,8 @@ const howlerCaDjembe = new Howl({ src: [caAudioDjembe], volume: volume });
 
 const howlerGunCajon = new Howl({ src: [gunAudioCajon], volume: volume });
 const howlerDunCajon = new Howl({ src: [dunAudioCajon], volume: volume });
-const howlerGosCajon = new Howl({ src: [gosAudioCajon], volume: volume / 4 });
-const howlerDosCajon = new Howl({ src: [dosAudioCajon], volume: volume / 8 });
+const howlerGosCajon = new Howl({ src: [gosAudioCajon], volume: volume / 8 });
+const howlerDosCajon = new Howl({ src: [dosAudioCajon], volume: volume / 12 });
 const howlerPaCajon = new Howl({ src: [paAudioCajon], volume: volume });
 const howlerTaCajon = new Howl({ src: [taAudioCajon], volume: volume });
 
