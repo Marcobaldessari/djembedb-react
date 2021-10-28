@@ -1,5 +1,31 @@
 export const SongsData = [
   {
+    songName: "91",
+    src: "",
+    timeSignature: "4/4",
+    feel: "",
+    bpm: "90",
+    song: [
+      "Gun dos Gun dos gos dos gos Ta gos Ta gos dos gos dos gos dos",
+      "Gun dos Gun dos gos dos gos Ta gos Ta gos dos Pa Ta gos dos",
+      "Gun dos Gun dos gos dos gos Ta gos Ta Pa dos Pa Ta gos Ta",
+      "Gun dos Gun dos gos dos gos Ta gos Ta Pa dos Pa dos gos dos",
+    ],
+  },
+  {
+    songName: "91b",
+    src: "",
+    timeSignature: "4/4",
+    feel: "",
+    bpm: "90",
+    song: [
+      "Gun xx Gun xx xx xx xx Ta xx Ta xx xx xx xx xx xx",
+      "Gun xx Gun xx xx xx xx Ta xx Ta xx xx Pa Ta xx xx",
+      "Gun xx Gun xx xx xx xx Ta xx Ta Pa xx Pa Ta xx Ta",
+      "Gun xx Gun xx xx xx xx Ta xx Ta Pa xx Pa xx xx xx",
+    ],
+  },
+  {
     songName: "90",
     src: "https://www.youtube.com/watch?v=aIzckuLjwik",
     timeSignature: "4/4",
