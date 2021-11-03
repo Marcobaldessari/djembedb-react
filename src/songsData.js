@@ -1,5 +1,18 @@
 export const SongsData = [
   {
+    songName: "93",
+    src: "Marco Baldessari",
+    timeSignature: "4/4",
+    feel: "",
+    bpm: "90",
+    song: [
+      "Gun dos gos dos Gun dos gos dos Gun dos gos Dun gos Ta Pa Ta",
+      "Gun dos gos dos Gun dos gos dos Gun dos gos Dun gos Ta gos Ta",
+      "Gun dos gos dos Gun dos gos dos Gun dos gos Dun gos Ta Pa Ta",
+      "Gun dos gos dos Gun dos gos dos Gun dos gos Dun gos dos gos dos",
+    ],
+  },
+  {
     songName: "92",
     src: "Marco Baldessari",
     timeSignature: "4/4",
