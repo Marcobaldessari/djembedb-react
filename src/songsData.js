@@ -1,5 +1,48 @@
 export const SongsData = [
   {
+    songName: "104",
+    src: "Marco Baldessari",
+    timeSignature: "4/4",
+    feel: "",
+    bpm: "90",
+    song: ["Gun Dun gos Dun gos Dun Gun Dun gos Dun Pa Dun Gun Ta Gun Ta"],
+  },
+  {
+    songName: "103",
+    src: "Marco Baldessari",
+    timeSignature: "2/4",
+    feel: "",
+    bpm: "90",
+    song: [
+      "Gun Dun gos Dun Gun Ta Pa Ta",
+      "Gun Dun gos Dun Gun Ta Pa Ta",
+      "Gun Dun gos Dun Gun Ta Pa Ta",
+      "Gun gos Gun Ta gos Ta Pa Ta",
+    ],
+  },
+  {
+    songName: "102",
+    src: "Marco Baldessari",
+    timeSignature: "4/4",
+    feel: "",
+    bpm: "90",
+    song: [
+      "Gun Dun gos dos gos Dun Gun Dun Pa Dun gos Dun gos Dun Pa Ta",
+      "Gun Dun gos dos gos Dun Gun Dun gos dos gos dos gos dos gos dos",
+    ],
+  },
+  {
+    songName: "101",
+    src: "Marco Baldessari",
+    timeSignature: "4/4",
+    feel: "",
+    bpm: "90",
+    song: [
+      "Gun dos gos Dun gos dos Gun Dun Pa dos gos Dun gos dos Gun Ta",
+      "Gun dos gos Dun gos dos Gun Dun Pa dos gos dos gos dos gos dos",
+    ],
+  },
+  {
     songName: "100",
     src: "Marco Baldessari",
     timeSignature: "4/4",
