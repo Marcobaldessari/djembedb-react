@@ -1,5 +1,25 @@
 export const SongsData = [
   {
+    songName: "Minestrone 10",
+    src: "Marco Baldessari",
+    timeSignature: "4/4",
+    feel: "",
+    bpm: "90",
+    song: ["Gun dos gos Dun gos Dun Gun Ta Pa dos gos dos gos dos gos dos"],
+  },
+
+  {
+    songName: "106",
+    src: "Marco Baldessari",
+    timeSignature: "4/4",
+    feel: "",
+    bpm: "90",
+    song: [
+      "Gun Dun gos Dun Gun Dun gos Dun Pa dos Pa Ta gos Ta Pa Ta",
+      "Gun Dun gos Dun Gun Dun gos Dun gos dos gos dos gos dos gos dos",
+    ],
+  },
+  {
     songName: "105",
     src: "Marco Baldessari",
     timeSignature: "4/4",
@@ -10,6 +30,7 @@ export const SongsData = [
       "Gun Ta Pa Dun gos Dun Gun dos Pa dos gos dos gos dos gos dos",
     ],
   },
+
   {
     songName: "104",
     src: "Marco Baldessari",
@@ -18,6 +39,7 @@ export const SongsData = [
     bpm: "90",
     song: ["Gun Dun gos Dun gos Dun Gun Dun gos Dun Pa Dun Gun Ta Gun Ta"],
   },
+
   {
     songName: "103",
     src: "Marco Baldessari",
@@ -186,6 +208,7 @@ export const SongsData = [
     bpm: "60",
     song: ["Gun dos gos Dun gos Dun Gun Ta Pa dos Gun dos gos dos Ta Pa"],
   },
+
   {
     songName: "86",
     src: "Marco Baldessari",
