@@ -51,6 +51,7 @@ const howlerTaCajon = new Howl({ src: [taAudioCajon], volume: volume });
 
 var uniqid = require("uniqid");
 var bpm = 90;
+var swing = 0;
 var step;
 var notes;
 
@@ -81,6 +82,14 @@ class App extends React.PureComponent {
 
   handleTempoChange = (e, t) => {
     bpm = t;
+    clearInterval(this.interval);
+    if (this.state.playing) {
+      this.startLoop(step, notes);
+    }
+  };
+
+  handleSwingChange = (e, s) => {
+    swing = s;
     clearInterval(this.interval);
     if (this.state.playing) {
       this.startLoop(step, notes);
@@ -344,6 +353,8 @@ class App extends React.PureComponent {
           <FullStory org={ORG_ID} />
         </div>
         <Topbar
+          OnSwingChange={this.handleSwingChange}
+          defaultSwing={0}
           OnTempoChange={this.handleTempoChange}
           defaultTempo={bpm}
           OnVolumeChange={this.handleVolumeChange}

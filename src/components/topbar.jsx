@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import Logo from "./logo";
 import Button from "@material-ui/core/Button";
-import Slider from "@material-ui/core/Slider";
 import ButtonBpm from "./buttonBpm";
+import ButtonSwing from "./buttonSwing";
 import ButtonVolume from "./buttonVolume";
 import ButtonInstrument from "./buttonInstrument";
 
@@ -38,10 +38,14 @@ class Topbar extends React.PureComponent {
       <div className="container">
         <div className="topbar preload">
           <Logo></Logo>
-          <ButtonInstrument
+          <ButtonSwing
+            defaultSwing={0}
+            OnSwingChange={this.props.OnSwingChange}
+          ></ButtonSwing>
+          {/* <ButtonInstrument
             OnInstrumentChange={this.props.OnInstrumentChange}
             instrument={this.props.instrument}
-          ></ButtonInstrument>
+          ></ButtonInstrument> */}
           <ButtonBpm
             defaultTempo={this.props.defaultTempo}
             OnTempoChange={this.props.OnTempoChange}
