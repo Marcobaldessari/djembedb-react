@@ -5,7 +5,10 @@ class NotationNote extends React.PureComponent {
     return (
       <div className="notation-note">
         <div className="notation-horizontal-line"></div>
-        <div className="notation-vertical-line"></div>
+        <div
+          className="notation-vertical-line"
+          // style={this.getSwingOffset()}
+        ></div>
         <div className={this.getNoteClasses()} id={this.getNoteId()}></div>
       </div>
     );
@@ -19,6 +22,18 @@ class NotationNote extends React.PureComponent {
   getNoteId() {
     let id = "note-" + this.props.songId + "-" + this.props.noteIndex;
     return id;
+  }
+
+  getSwingOffset() {
+    if (this.props.noteIndex & 1) {
+      // ODD
+      var style = "transform: translateX(-" + this.props.swing + "%)";
+      return style;
+    } else {
+      // EVEN
+      var style = "transform: translateX(" + this.props.swing + "%)";
+      return style;
+    }
   }
 }
 

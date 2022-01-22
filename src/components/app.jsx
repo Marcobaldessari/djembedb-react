@@ -52,6 +52,9 @@ const howlerTaCajon = new Howl({ src: [taAudioCajon], volume: volume });
 var uniqid = require("uniqid");
 var bpm = 90;
 var swing = 0;
+var noteTime;
+var baseNoteTime;
+var timeout;
 var step;
 var notes;
 
@@ -82,18 +85,18 @@ class App extends React.PureComponent {
 
   handleTempoChange = (e, t) => {
     bpm = t;
-    clearInterval(this.interval);
-    if (this.state.playing) {
-      this.startLoop(step, notes);
-    }
+    // clearTimeout(this.timeout);
+    // if (this.state.playing) {
+    //   this.playNote(step, notes);
+    // }
   };
 
   handleSwingChange = (e, s) => {
     swing = s;
-    clearInterval(this.interval);
-    if (this.state.playing) {
-      this.startLoop(step, notes);
-    }
+    // clearTimeout(this.timeout);
+    // if (this.state.playing) {
+    //   this.playNote(step, notes);
+    // }
   };
 
   handleVolumeChange = (e, v) => {
@@ -140,7 +143,7 @@ class App extends React.PureComponent {
 
   handlePlayPause = (e, songId) => {
     //stop the music and reset the step
-    clearInterval(this.interval);
+    clearTimeout(this.timeout);
     step = 0;
 
     if (this.state.playing && this.state.songPlaying == songId) {
@@ -157,7 +160,7 @@ class App extends React.PureComponent {
       (element) => (songString += element + " ")
     );
     notes = songString.split(" ");
-    this.startLoop(step, notes);
+    this.playNote(step, notes);
 
     // set the states
     this.setState(() => ({
@@ -216,12 +219,31 @@ class App extends React.PureComponent {
     topbar.classList.remove("preload");
   }
 
-  startLoop(s, notes) {
-    this.interval = setInterval(() => {
-      this.animateNote(this.state.songPlaying, step);
-      this.playNoteSound(notes[step]);
-      step = step < notes.length - 2 ? step + 1 : 0;
-    }, (60 * 1000) / bpm / 4);
+  // startLoop(s, notes) {
+  //   // this.playNote(s, notes);
+  //   this.interval = setInterval(() => {
+  //     this.animateNote(this.state.songPlaying, step);
+  //     this.playNoteSound(notes[step]);
+  //     step = step < notes.length - 2 ? step + 1 : 0;
+  //   }, (60 * 1000) / bpm / 4);
+  //   return step;
+  // }
+
+  playNote(s, notes) {
+    this.animateNote(this.state.songPlaying, step);
+    this.playNoteSound(notes[step]);
+    step = step < notes.length - 2 ? step + 1 : 0;
+    baseNoteTime = (60 * 1000) / bpm / 4;
+    if (step & 1) {
+      // ODD
+      noteTime = baseNoteTime - baseNoteTime * (swing / 100);
+    } else {
+      // EVEN
+      noteTime = baseNoteTime + baseNoteTime * (swing / 100);
+    }
+    this.timeout = setTimeout(() => {
+      this.playNote(step, notes);
+    }, noteTime);
     return step;
   }
 
@@ -370,6 +392,7 @@ class App extends React.PureComponent {
                 songId={index}
                 songName={song.songName}
                 song={song.song}
+                swing={this.swing}
                 timeSignature={song.timeSignature}
                 suggestedBpm={song.bpm}
                 feel={song.feel}

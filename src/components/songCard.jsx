@@ -75,6 +75,7 @@ class SongCard extends React.PureComponent {
                 {measure.split(" ").map((n, indexNote) => (
                   <NotationNote
                     key={indexNote}
+                    swing={this.props.swing}
                     note={n}
                     noteIndex={this.getNoteIndex(
                       indexNote,
