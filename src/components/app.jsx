@@ -392,7 +392,7 @@ class App extends React.PureComponent {
                 songId={index}
                 songName={song.songName}
                 song={song.song}
-                swing={this.swing}
+                swing={swing}
                 timeSignature={song.timeSignature}
                 suggestedBpm={song.bpm}
                 feel={song.feel}

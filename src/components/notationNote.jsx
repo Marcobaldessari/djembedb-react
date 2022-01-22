@@ -2,6 +2,7 @@ import React, { Component } from "react";
 
 class NotationNote extends React.PureComponent {
   render() {
+    // let swingOffset = this.getSwingOffset();
     return (
       <div className="notation-note">
         <div className="notation-horizontal-line"></div>
@@ -9,7 +10,11 @@ class NotationNote extends React.PureComponent {
           className="notation-vertical-line"
           // style={this.getSwingOffset()}
         ></div>
-        <div className={this.getNoteClasses()} id={this.getNoteId()}></div>
+        <div
+          // style={{ transform: ` translateX(${swingOffset}%)` }}
+          className={this.getNoteClasses()}
+          id={this.getNoteId()}
+        ></div>
       </div>
     );
   }
@@ -27,11 +32,11 @@ class NotationNote extends React.PureComponent {
   getSwingOffset() {
     if (this.props.noteIndex & 1) {
       // ODD
-      var style = "transform: translateX(-" + this.props.swing + "%)";
-      return style;
+      // var style = -this.props.swing;
+      // return style;
     } else {
       // EVEN
-      var style = "transform: translateX(" + this.props.swing + "%)";
+      var style = this.props.swing * 2;
       return style;
     }
   }
