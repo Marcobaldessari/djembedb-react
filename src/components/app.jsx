@@ -70,6 +70,11 @@ class App extends React.PureComponent {
   componentDidMount() {
     window.addEventListener("load", this.handleWindowLoad);
     document.addEventListener("keydown", this._handleKeyDown);
+
+    // --- debug switch
+
+    document.body.classList.add("debug");
+    // ---
   }
 
   handleWindowLoad = () => {
@@ -349,7 +354,7 @@ class App extends React.PureComponent {
   render() {
     return (
       <React.Fragment>
-        <div className="app">
+        <div className="app debug">
           <FullStory org={ORG_ID} />
         </div>
         <Topbar
