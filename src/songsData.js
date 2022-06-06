@@ -1,5 +1,81 @@
 export const SongsData = [
   {
+    songName: "lofi 3",
+    src: "Marco Baldessari",
+    timeSignature: "4/4",
+    feel: "lofi",
+    bpm: "60",
+    song: [
+      "Gun xx Gun xx gos xx xx xx xx xx xx xx gos xx xx xx",
+      "Gun xx Gun xx gos xx xx xx xx xx xx xx gos xx xx Dun",
+      "Gun xx xx xx gos xx xx xx xx xx xx xx gos xx xx xx",
+      "Gun xx Gun xx gos xx xx xx Gun xx xx xx xx xx xx xx",
+    ],
+  },
+
+  {
+    songName: "lofi 2",
+    src: "Marco Baldessari",
+    timeSignature: "4/4",
+    feel: "",
+    bpm: "60",
+    song: [
+      "Gun dos Gun dos Pa dos gos dos gos dos gos dos Pa dos gos dos",
+      "Gun dos gos dos Pa dos gos dos gos dos gos dos Pa dos gos Dun",
+      "Gun dos Gun dos Pa dos gos dos gos dos gos dos Pa dos gos Dun",
+      "Gun dos gos dos Pa dos gos dos gos Dun gos dos gos Dun gos dos",
+    ],
+  },
+
+  {
+    songName: "lofi 1",
+    src: "Marco Baldessari",
+    timeSignature: "4/4",
+    feel: "",
+    bpm: "60",
+    song: [
+      "Gun dos gos Gun Pa dos gos dos gos dos gos dos Pa dos gos dos",
+      "Gun dos gos Gun Pa dos gos dos gos Dun Gun dos Pa dos gos dos",
+    ],
+  },
+
+  {
+    songName: "crbn",
+    src: "Marco Baldessari",
+    timeSignature: "4/4",
+    feel: "",
+    bpm: "90",
+    song: ["Gun dos Pa Ta gos Ta Pa dos Gun dos Pa Ta gos Ta Pa dos"],
+  },
+
+  {
+    songName: "Mozambique",
+    src: "Marco Baldessari",
+    timeSignature: "4/4",
+    feel: "",
+    bpm: "90",
+    song: ["Gun dos gos dos Pa Ta gos Dun gos Ta gos Ta gos Ta Pa Ta"],
+  },
+
+  {
+    songName: "113",
+    src: "Marco Baldessari",
+    timeSignature: "4/4",
+    feel: "",
+    bpm: "90",
+    song: ["Gun dos Gun Dun Pa dos Gun Dun Gun dos Gun dos Pa dos gos dos"],
+  },
+
+  {
+    songName: "112",
+    src: "Marco Baldessari",
+    timeSignature: "4/4",
+    feel: "",
+    bpm: "90",
+    song: ["Gun dos gos dos gos dos gos dos Gun dos gos Dun gos Dun Gun Dun"],
+  },
+
+  {
     songName: "111",
     src: "Marco Baldessari",
     timeSignature: "4/4",
