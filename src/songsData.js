@@ -1,5 +1,23 @@
 export const SongsData = [
   {
+    songName: "115",
+    src: "Marco Baldessari",
+    timeSignature: "4/4",
+    feel: "",
+    bpm: "90",
+    song: ["Gun Dun xx Dun Pa Dun xx Dun xx Dun Gun Ta Gun Dun Pa Dun"],
+  },
+
+  {
+    songName: "114",
+    src: "Marco Baldessari",
+    timeSignature: "4/4",
+    feel: "",
+    bpm: "90",
+    song: ["Gun xx Pa xx Gun xx Pa xx Gun xx Pa Ta xx Ta Pa xx"],
+  },
+
+  {
     songName: "lofi 3",
     src: "Marco Baldessari",
     timeSignature: "4/4",
