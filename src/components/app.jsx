@@ -6,6 +6,7 @@ import Button from "@material-ui/core/Button";
 import { Howl, Howler } from "howler";
 import { hotjar } from "react-hotjar";
 import FullStory from "react-fullstory";
+import { FixedSizeList as List } from "react-window";
 
 //import Djembe Sounds
 import gunAudioDjembe from "../sounds/djembe/gun.mp3";
@@ -48,6 +49,8 @@ const howlerGosCajon = new Howl({ src: [gosAudioCajon], volume: volume / 8 });
 const howlerDosCajon = new Howl({ src: [dosAudioCajon], volume: volume / 12 });
 const howlerPaCajon = new Howl({ src: [paAudioCajon], volume: volume });
 const howlerTaCajon = new Howl({ src: [taAudioCajon], volume: volume });
+
+const Row = ({ index, style }) => <div style={style}>Row {index}</div>;
 
 var uniqid = require("uniqid");
 var bpm = 90;
