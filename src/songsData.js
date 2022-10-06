@@ -1,7 +1,8 @@
 export const SongsData = [
   {
     songName: "117",
-    src: "Marco Baldessari",
+    src: "",
+    author: "Marco Baldessari",
     timeSignature: "4/4",
     feel: "drum-n-bass",
     bpm: "160",
@@ -10,7 +11,8 @@ export const SongsData = [
 
   {
     songName: "116",
-    src: "Marco Baldessari",
+    src: "https://open.spotify.com/track/3VWWqRer3hLUgKI1H6QKwq?si=48d3fea37a5c4ac6",
+    author: "Marco Baldessari",
     timeSignature: "4/4",
     feel: "lofi",
     bpm: "60",
@@ -22,7 +24,8 @@ export const SongsData = [
 
   {
     songName: "115",
-    src: "Marco Baldessari",
+    src: "",
+    author: "Marco Baldessari",
     timeSignature: "4/4",
     feel: "",
     bpm: "90",
@@ -31,7 +34,8 @@ export const SongsData = [
 
   {
     songName: "114",
-    src: "Marco Baldessari",
+    src: "",
+    author: "Marco Baldessari",
     timeSignature: "4/4",
     feel: "",
     bpm: "90",
@@ -40,7 +44,8 @@ export const SongsData = [
 
   {
     songName: "lofi 3",
-    src: "Marco Baldessari",
+    src: "",
+    author: "Marco Baldessari",
     timeSignature: "4/4",
     feel: "lofi",
     bpm: "60",
@@ -54,7 +59,8 @@ export const SongsData = [
 
   {
     songName: "lofi 2",
-    src: "Marco Baldessari",
+    src: "",
+    author: "Marco Baldessari",
     timeSignature: "4/4",
     feel: "",
     bpm: "60",
@@ -68,7 +74,8 @@ export const SongsData = [
 
   {
     songName: "lofi 1",
-    src: "Marco Baldessari",
+    src: "",
+    author: "Marco Baldessari",
     timeSignature: "4/4",
     feel: "",
     bpm: "60",
@@ -80,7 +87,8 @@ export const SongsData = [
 
   {
     songName: "crbn",
-    src: "Marco Baldessari",
+    src: "",
+    author: "Marco Baldessari",
     timeSignature: "4/4",
     feel: "",
     bpm: "90",
@@ -89,7 +97,8 @@ export const SongsData = [
 
   {
     songName: "Mozambique",
-    src: "Marco Baldessari",
+    src: "",
+    author: "Marco Baldessari",
     timeSignature: "4/4",
     feel: "",
     bpm: "90",
@@ -98,7 +107,8 @@ export const SongsData = [
 
   {
     songName: "113",
-    src: "Marco Baldessari",
+    src: "",
+    author: "Marco Baldessari",
     timeSignature: "4/4",
     feel: "",
     bpm: "90",
@@ -107,7 +117,8 @@ export const SongsData = [
 
   {
     songName: "112",
-    src: "Marco Baldessari",
+    src: "",
+    author: "Marco Baldessari",
     timeSignature: "4/4",
     feel: "",
     bpm: "90",
@@ -116,7 +127,8 @@ export const SongsData = [
 
   {
     songName: "111",
-    src: "Marco Baldessari",
+    src: "",
+    author: "Marco Baldessari",
     timeSignature: "4/4",
     feel: "",
     bpm: "90",
@@ -125,7 +137,8 @@ export const SongsData = [
 
   {
     songName: "110",
-    src: "Marco Baldessari",
+    src: "",
+    author: "Marco Baldessari",
     timeSignature: "4/4",
     feel: "",
     bpm: "90",
@@ -137,7 +150,8 @@ export const SongsData = [
 
   {
     songName: "109 fill",
-    src: "Marco Baldessari",
+    src: "",
+    author: "Marco Baldessari",
     timeSignature: "2/4",
     feel: "",
     bpm: "90",
@@ -146,7 +160,8 @@ export const SongsData = [
 
   {
     songName: "109",
-    src: "Marco Baldessari",
+    src: "",
+    author: "Marco Baldessari",
     timeSignature: "2/4",
     feel: "",
     bpm: "90",
@@ -155,7 +170,8 @@ export const SongsData = [
 
   {
     songName: "108",
-    src: "Marco Baldessari",
+    src: "",
+    author: "Marco Baldessari",
     timeSignature: "3/4",
     feel: "",
     bpm: "90",
@@ -164,7 +180,8 @@ export const SongsData = [
 
   {
     songName: "107",
-    src: "Marco Baldessari",
+    src: "",
+    author: "Marco Baldessari",
     timeSignature: "4/4",
     feel: "",
     bpm: "135",
@@ -173,7 +190,8 @@ export const SongsData = [
 
   {
     songName: "Minestrone 10",
-    src: "Marco Baldessari",
+    src: "",
+    author: "Marco Baldessari",
     timeSignature: "4/4",
     feel: "",
     bpm: "90",
@@ -182,7 +200,8 @@ export const SongsData = [
 
   {
     songName: "106",
-    src: "Marco Baldessari",
+    src: "",
+    author: "Marco Baldessari",
     timeSignature: "4/4",
     feel: "",
     bpm: "90",
@@ -193,7 +212,8 @@ export const SongsData = [
   },
   {
     songName: "105",
-    src: "Marco Baldessari",
+    src: "",
+    author: "Marco Baldessari",
     timeSignature: "4/4",
     feel: "",
     bpm: "90",
@@ -205,7 +225,8 @@ export const SongsData = [
 
   {
     songName: "104",
-    src: "Marco Baldessari",
+    src: "",
+    author: "Marco Baldessari",
     timeSignature: "4/4",
     feel: "",
     bpm: "90",
@@ -214,7 +235,8 @@ export const SongsData = [
 
   {
     songName: "103",
-    src: "Marco Baldessari",
+    src: "",
+    author: "Marco Baldessari",
     timeSignature: "2/4",
     feel: "",
     bpm: "90",
@@ -227,7 +249,8 @@ export const SongsData = [
   },
   {
     songName: "102",
-    src: "Marco Baldessari",
+    src: "",
+    author: "Marco Baldessari",
     timeSignature: "4/4",
     feel: "",
     bpm: "90",
@@ -238,7 +261,8 @@ export const SongsData = [
   },
   {
     songName: "101",
-    src: "Marco Baldessari",
+    src: "",
+    author: "Marco Baldessari",
     timeSignature: "4/4",
     feel: "",
     bpm: "90",
@@ -249,7 +273,8 @@ export const SongsData = [
   },
   {
     songName: "100",
-    src: "Marco Baldessari",
+    src: "",
+    author: "Marco Baldessari",
     timeSignature: "4/4",
     feel: "",
     bpm: "90",
@@ -257,7 +282,8 @@ export const SongsData = [
   },
   {
     songName: "99",
-    src: "Marco Baldessari",
+    src: "",
+    author: "Marco Baldessari",
     timeSignature: "4/4",
     feel: "",
     bpm: "90",
@@ -265,7 +291,8 @@ export const SongsData = [
   },
   {
     songName: "98",
-    src: "Marco Baldessari",
+    src: "",
+    author: "Marco Baldessari",
     timeSignature: "2/4",
     feel: "",
     bpm: "90",
@@ -278,7 +305,8 @@ export const SongsData = [
   },
   {
     songName: "97",
-    src: "Marco Baldessari",
+    src: "",
+    author: "Marco Baldessari",
     timeSignature: "4/4",
     feel: "",
     bpm: "90",
@@ -286,7 +314,8 @@ export const SongsData = [
   },
   {
     songName: "96",
-    src: "Marco Baldessari",
+    src: "",
+    author: "Marco Baldessari",
     timeSignature: "4/4",
     feel: "",
     bpm: "90",
@@ -294,7 +323,8 @@ export const SongsData = [
   },
   {
     songName: "95",
-    src: "Marco Baldessari",
+    src: "",
+    author: "Marco Baldessari",
     timeSignature: "4/4",
     feel: "",
     bpm: "90",
@@ -305,7 +335,8 @@ export const SongsData = [
   },
   {
     songName: "94",
-    src: "Marco Baldessari",
+    src: "",
+    author: "Marco Baldessari",
     timeSignature: "4/4",
     feel: "",
     bpm: "90",
@@ -313,7 +344,8 @@ export const SongsData = [
   },
   {
     songName: "93",
-    src: "Marco Baldessari",
+    src: "",
+    author: "Marco Baldessari",
     timeSignature: "4/4",
     feel: "",
     bpm: "90",
@@ -326,7 +358,8 @@ export const SongsData = [
   },
   {
     songName: "92",
-    src: "Marco Baldessari",
+    src: "",
+    author: "Marco Baldessari",
     timeSignature: "4/4",
     feel: "",
     bpm: "90",
@@ -334,7 +367,8 @@ export const SongsData = [
   },
   {
     songName: "91",
-    src: "Marco Baldessari",
+    src: "",
+    author: "Marco Baldessari",
     timeSignature: "4/4",
     feel: "",
     bpm: "90",
@@ -355,7 +389,8 @@ export const SongsData = [
   },
   {
     songName: "89",
-    src: "Marco Baldessari",
+    src: "",
+    author: "Marco Baldessari",
     timeSignature: "3/4",
     feel: "",
     bpm: "60",
@@ -363,7 +398,8 @@ export const SongsData = [
   },
   {
     songName: "88",
-    src: "Marco Baldessari",
+    src: "",
+    author: "Marco Baldessari",
     timeSignature: "4/4",
     feel: "",
     bpm: "60",
@@ -374,7 +410,8 @@ export const SongsData = [
   },
   {
     songName: "87",
-    src: "Marco Baldessari",
+    src: "",
+    author: "Marco Baldessari",
     timeSignature: "4/4",
     feel: "",
     bpm: "60",
@@ -383,7 +420,8 @@ export const SongsData = [
 
   {
     songName: "86",
-    src: "Marco Baldessari",
+    src: "",
+    author: "Marco Baldessari",
     timeSignature: "4/4",
     feel: "",
     bpm: "60",
@@ -394,7 +432,8 @@ export const SongsData = [
   },
   {
     songName: "85",
-    src: "Marco Baldessari",
+    src: "",
+    author: "Marco Baldessari",
     timeSignature: "4/4",
     feel: "",
     bpm: "60",
@@ -402,7 +441,8 @@ export const SongsData = [
   },
   {
     songName: "84",
-    src: "Marco Baldessari",
+    src: "",
+    author: "Marco Baldessari",
     timeSignature: "4/4",
     feel: "",
     bpm: "60",
@@ -410,7 +450,8 @@ export const SongsData = [
   },
   {
     songName: "83",
-    src: "Marco Baldessari",
+    src: "",
+    author: "Marco Baldessari",
     timeSignature: "4/4",
     feel: "",
     bpm: "60",
@@ -418,7 +459,8 @@ export const SongsData = [
   },
   {
     songName: "82",
-    src: "Marco Baldessari",
+    src: "",
+    author: "Marco Baldessari",
     timeSignature: "4/4",
     feel: "",
     bpm: "60",
@@ -426,7 +468,8 @@ export const SongsData = [
   },
   {
     songName: "81",
-    src: "Marco Baldessari",
+    src: "",
+    author: "Marco Baldessari",
     timeSignature: "4/4",
     feel: "",
     bpm: "60",
@@ -434,7 +477,8 @@ export const SongsData = [
   },
   {
     songName: "80",
-    src: "Marco Baldessari",
+    src: "",
+    author: "Marco Baldessari",
     timeSignature: "4/4",
     feel: "",
     bpm: "60",
@@ -442,7 +486,8 @@ export const SongsData = [
   },
   {
     songName: "79",
-    src: "Marco Baldessari",
+    src: "",
+    author: "Marco Baldessari",
     timeSignature: "4/4",
     feel: "",
     bpm: "60",
@@ -450,7 +495,8 @@ export const SongsData = [
   },
   {
     songName: "78",
-    src: "Marco Baldessari",
+    src: "",
+    author: "Marco Baldessari",
     timeSignature: "4/4",
     feel: "",
     bpm: "60",
@@ -458,7 +504,8 @@ export const SongsData = [
   },
   {
     songName: "Orange County",
-    src: "Marco Baldessari",
+    src: "",
+    author: "Marco Baldessari",
     timeSignature: "4/4",
     feel: "jazz",
     bpm: "60",
@@ -466,7 +513,8 @@ export const SongsData = [
   },
   {
     songName: "Afternoon stroll",
-    src: "Marco Baldessari",
+    src: "",
+    author: "Marco Baldessari",
     timeSignature: "4/4",
     feel: "jazz",
     bpm: "60",
@@ -474,7 +522,8 @@ export const SongsData = [
   },
   {
     songName: "Say hi",
-    src: "Marco Baldessari",
+    src: "",
+    author: "Marco Baldessari",
     timeSignature: "4/4",
     feel: "pop",
     bpm: "60",
@@ -482,7 +531,8 @@ export const SongsData = [
   },
   {
     songName: "Minestrone 9",
-    src: "Marco Baldessari",
+    src: "",
+    author: "Marco Baldessari",
     timeSignature: "4/4",
     feel: "pop",
     bpm: "60",
@@ -490,7 +540,8 @@ export const SongsData = [
   },
   {
     songName: "Minestrone 8",
-    src: "Marco Baldessari",
+    src: "",
+    author: "Marco Baldessari",
     timeSignature: "4/4",
     feel: "pop",
     bpm: "120",
@@ -498,7 +549,8 @@ export const SongsData = [
   },
   {
     songName: "Grandma's clothes",
-    src: "Marco Baldessari",
+    src: "",
+    author: "Marco Baldessari",
     timeSignature: "4/4",
     feel: "pop",
     bpm: "120",
@@ -506,7 +558,8 @@ export const SongsData = [
   },
   {
     songName: "Shake the floor",
-    src: "Marco Baldessari",
+    src: "",
+    author: "Marco Baldessari",
     timeSignature: "4/4",
     feel: "pop",
     bpm: "120",
@@ -514,7 +567,8 @@ export const SongsData = [
   },
   {
     songName: "Another fill",
-    src: "Marco Baldessari",
+    src: "",
+    author: "Marco Baldessari",
     timeSignature: "4/4",
     feel: "tribal",
     bpm: "120",
@@ -522,7 +576,8 @@ export const SongsData = [
   },
   {
     songName: "01 am",
-    src: "Marco Baldessari",
+    src: "",
+    author: "Marco Baldessari",
     timeSignature: "4/4",
     feel: "tribal",
     bpm: "120",
@@ -533,7 +588,8 @@ export const SongsData = [
   },
   {
     songName: "Dum dum dim dum",
-    src: "Marco Baldessari",
+    src: "",
+    author: "Marco Baldessari",
     timeSignature: "4/4",
     feel: "tribal",
     bpm: "90",
@@ -562,21 +618,24 @@ export const SongsData = [
   },
   {
     songName: "Minestrone 7",
-    src: "Marco Baldessari",
+    src: "",
+    author: "Marco Baldessari",
     timeSignature: "4/4",
     feel: "pop/rock",
     song: ["Gun dos Pa Ta gos Ta Pa Ta Gun dos gos dos gos dos gos dos"],
   },
   {
     songName: "Minestrone 7 fill",
-    src: "Marco Baldessari",
+    src: "",
+    author: "Marco Baldessari",
     timeSignature: "4/4",
     feel: "pop/rock",
     song: ["Gun dos Pa Ta gos Ta Pa Ta Gun dos Pa Ta gos Ta Pa Ta"],
   },
   {
     songName: "Minestrone 6",
-    src: "Marco Baldessari",
+    src: "",
+    author: "Marco Baldessari",
     timeSignature: "4/4",
     feel: "pop/rock",
     song: [
@@ -589,7 +648,8 @@ export const SongsData = [
 
   {
     songName: "3:00pm",
-    src: "Marco Baldessari",
+    src: "",
+    author: "Marco Baldessari",
     timeSignature: "4/4",
     feel: "pop/rock",
     song: [
@@ -616,7 +676,8 @@ export const SongsData = [
 
   {
     songName: "Minestrone quattro",
-    src: "Marco Baldessari",
+    src: "",
+    author: "Marco Baldessari",
     timeSignature: "4/4",
     feel: "funk",
     song: ["Gun dos gos Dun Pa Dun gos dos gos dos gos dos gos dos gos dos"],
@@ -624,7 +685,8 @@ export const SongsData = [
 
   {
     songName: "Minestrone quattro break",
-    src: "Marco Baldessari",
+    src: "",
+    author: "Marco Baldessari",
     timeSignature: "4/4",
     feel: "funk",
     song: ["Gun dos gos Dun Pa Dun gos Ta gos Ta Gun Dun Pa Dun Pa Ta"],
@@ -632,7 +694,8 @@ export const SongsData = [
 
   {
     songName: "Minestrone tre",
-    src: "Marco Baldessari",
+    src: "",
+    author: "Marco Baldessari",
     timeSignature: "4/4",
     style: "Modern",
     tempo: "40",
@@ -711,7 +774,8 @@ export const SongsData = [
 
   {
     songName: "Amen break variant",
-    src: "Marco Baldessari",
+    src: "",
+    author: "Marco Baldessari",
     timeSignature: "4/4",
     style: "Rock",
     song: ["Gun dos Gun dos Pa Ta gos Ta dos Ta Gun Ta Pa dos gos dos"],
@@ -887,13 +951,15 @@ export const SongsData = [
   },
   {
     songName: "Lato",
-    src: "Marco Baldessari",
+    src: "",
+    author: "Marco Baldessari",
     timeSignature: "4/4",
     song: ["Pa dos Pa dos gos dos gos Ta gos Ta Pa dos gos dos gos dos"],
   },
   {
     songName: "Otal",
-    src: "Marco Baldessari",
+    src: "",
+    author: "Marco Baldessari",
     timeSignature: "4/4",
     song: ["Gun dos Gun dos gos dos gos Dun gos Dun Gun dos gos dos gos dos"],
   },
@@ -965,7 +1031,8 @@ export const SongsData = [
   },
   {
     songName: "Kono variant",
-    src: "Marco Baldessari",
+    src: "",
+    author: "Marco Baldessari",
     timeSignature: "4/4",
     song: ["Gun dos gos dos Gun xx Ta Pa Gun dos gos dos Gun xx Pa xx"],
   },
@@ -989,7 +1056,8 @@ export const SongsData = [
   },
   {
     songName: "3/4 hello world",
-    src: "Marco Baldessari",
+    src: "",
+    author: "Marco Baldessari",
     timeSignature: "3/4",
     song: ["Gun do go do Gun xx Gun do go do Gun Ta"],
   },
