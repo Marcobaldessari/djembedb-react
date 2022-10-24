@@ -1,5 +1,18 @@
 export const SongsData = [
   {
+    songName: "Advanced rock",
+    author: "Marco Baldessari",
+    src: "https://www.youtube.com/watch?v=MvzRvF5wGfY",
+    timeSignature: "4/4",
+    feel: "Rock",
+    bpm: "110",
+    song: [
+      "Gun dos Gun Dun gos Dun Pa dos gos dos Gun Dun Pa Dun gos dos",
+      "Gun dos Gun Dun gos Dun Pa dos gos dos Gun Dun Pa Ta gos dos",
+    ],
+  },
+
+  {
     songName: "Cool one",
     author: "Marco Baldessari",
     src: "https://youtu.be/bJkNqzoxBhE?t=408",
@@ -60,15 +73,7 @@ export const SongsData = [
       "Gun xx gos Ta xx dos Gun Ta gos Ta xx dos",
     ],
   },
-  {
-    songName: "Blues basic",
-    author: "Marco Baldessari",
-    src: "Marco Baldessari",
-    timeSignature: "3/4",
-    feel: "blues",
-    bpm: "60",
-    song: ["Gun xx gos Ta xx dos Gun xx gos Ta xx dos"],
-  },
+
   {
     songName: "117",
     src: "",
