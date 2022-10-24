@@ -1,5 +1,75 @@
 export const SongsData = [
   {
+    songName: "Cool one",
+    author: "Marco Baldessari",
+    src: "https://youtu.be/bJkNqzoxBhE?t=408",
+    timeSignature: "3/4",
+    feel: "Blues",
+    bpm: "90",
+    song: ["Gun dos Gun Ta gos Dun gos dos Gun Ta gos dos"],
+  },
+
+  {
+    songName: "More bass",
+    author: "Marco Baldessari",
+    src: "https://youtu.be/bJkNqzoxBhE?t=339",
+    timeSignature: "3/4",
+    feel: "Blues",
+    bpm: "90",
+    song: ["Gun dos Gun Ta gos Dun Gun dos Gun Ta gos dos"],
+  },
+
+  {
+    songName: "Double snare",
+    author: "Marco Baldessari",
+    src: "https://youtu.be/bJkNqzoxBhE?t=271",
+    timeSignature: "3/4",
+    feel: "Blues",
+    bpm: "90",
+    song: ["Gun dos Gun Ta gos Ta Gun dos Gun Ta gos dos"],
+  },
+  {
+    songName: "Adding bass",
+    author: "Marco Baldessari",
+    src: "www.https://youtu.be/bJkNqzoxBhE?t=203",
+    timeSignature: "3/4",
+    feel: "Blues",
+    bpm: "90",
+    song: ["Gun dos Gun Ta gos dos Gun dos Gun Ta gos dos"],
+  },
+  {
+    songName: "Basic shuffle",
+    author: "Marco Baldessari",
+    src: "https://youtu.be/bJkNqzoxBhE?t=141",
+    timeSignature: "3/4",
+    feel: "Blues",
+    bpm: "90",
+    song: ["Gun dos gos Ta gos dos Gun dos gos Ta gos dos"],
+  },
+  {
+    songName: "Blues 1",
+    author: "Marco Baldessari",
+    src: "Marco Baldessari",
+    timeSignature: "3/4",
+    feel: "blues",
+    bpm: "60",
+    song: [
+      "Gun xx gos Ta xx dos Gun xx gos Ta xx dos",
+      "gos xx gos Ta xx dos Gun xx gos Dun xx Dun",
+      "Gun xx gos Ta xx dos Gun xx gos Ta xx Ta",
+      "Gun xx gos Ta xx dos Gun Ta gos Ta xx dos",
+    ],
+  },
+  {
+    songName: "Blues basic",
+    author: "Marco Baldessari",
+    src: "Marco Baldessari",
+    timeSignature: "3/4",
+    feel: "blues",
+    bpm: "60",
+    song: ["Gun xx gos Ta xx dos Gun xx gos Ta xx dos"],
+  },
+  {
     songName: "117",
     src: "",
     author: "Marco Baldessari",
@@ -21,7 +91,6 @@ export const SongsData = [
       "gos dos gos dos Pa dos Gun dos gos dos gos dos Pa dos Gun dos",
     ],
   },
-
   {
     songName: "115",
     src: "",
@@ -31,7 +100,6 @@ export const SongsData = [
     bpm: "90",
     song: ["Gun Dun xx Dun Pa Dun xx Dun xx Dun Gun Ta Gun Dun Pa Dun"],
   },
-
   {
     songName: "114",
     src: "",
@@ -41,7 +109,6 @@ export const SongsData = [
     bpm: "90",
     song: ["Gun xx Pa xx Gun xx Pa xx Gun xx Pa Ta xx Ta Pa xx"],
   },
-
   {
     songName: "lofi 3",
     src: "",
@@ -56,7 +123,6 @@ export const SongsData = [
       "Gun xx Gun xx gos xx xx xx Gun xx xx xx xx xx xx xx",
     ],
   },
-
   {
     songName: "lofi 2",
     src: "",
@@ -71,7 +137,6 @@ export const SongsData = [
       "Gun dos gos dos Pa dos gos dos gos Dun gos dos gos Dun gos dos",
     ],
   },
-
   {
     songName: "lofi 1",
     src: "",
@@ -94,7 +159,6 @@ export const SongsData = [
     bpm: "90",
     song: ["Gun dos Pa Ta gos Ta Pa dos Gun dos Pa Ta gos Ta Pa dos"],
   },
-
   {
     songName: "Mozambique",
     src: "",
@@ -124,7 +188,6 @@ export const SongsData = [
     bpm: "90",
     song: ["Gun dos gos dos gos dos gos dos Gun dos gos Dun gos Dun Gun Dun"],
   },
-
   {
     songName: "111",
     src: "",
@@ -147,7 +210,6 @@ export const SongsData = [
       "Gun dos gos dos Pa dos gos Dun gos dos gos dos gos dos gos dos",
     ],
   },
-
   {
     songName: "109 fill",
     src: "",
@@ -157,7 +219,6 @@ export const SongsData = [
     bpm: "90",
     song: ["go Ta Pa Dun gos dos Gun Ta"],
   },
-
   {
     songName: "109",
     src: "",
@@ -167,7 +228,6 @@ export const SongsData = [
     bpm: "90",
     song: ["go Ta Pa Ta gos Dun gos dos"],
   },
-
   {
     songName: "108",
     src: "",
@@ -222,7 +282,6 @@ export const SongsData = [
       "Gun Ta Pa Dun gos Dun Gun dos Pa dos gos dos gos dos gos dos",
     ],
   },
-
   {
     songName: "104",
     src: "",
@@ -232,7 +291,6 @@ export const SongsData = [
     bpm: "90",
     song: ["Gun Dun gos Dun gos Dun Gun Dun gos Dun Pa Dun Gun Ta Gun Ta"],
   },
-
   {
     songName: "103",
     src: "",
