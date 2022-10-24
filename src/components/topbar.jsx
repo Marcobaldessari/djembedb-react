@@ -38,10 +38,14 @@ class Topbar extends React.PureComponent {
       <div className="container">
         <div className="topbar preload">
           <Logo></Logo>
-          <ButtonSwing
+          <ButtonInstrument
+            OnInstrumentChange={this.props.OnInstrumentChange}
+            instrument={this.props.instrument}
+          ></ButtonInstrument>
+          {/* <ButtonSwing
             defaultSwing={0}
             OnSwingChange={this.props.OnSwingChange}
-          ></ButtonSwing>
+          ></ButtonSwing> */}
           {/* <ButtonInstrument
             OnInstrumentChange={this.props.OnInstrumentChange}
             instrument={this.props.instrument}
