@@ -870,7 +870,7 @@ export const SongsData = [
     song: ["Gun Dun gos dos Pa dos gos dos gos dos gos dos Pa dos Gun Ta"],
   },
   {
-    songName: "Rock beeat 2",
+    songName: "Rock groove 2",
     src: "https://youtu.be/eJ09XJ14BM4?t=137",
     timeSignature: "4/4",
     style: "Rock",
