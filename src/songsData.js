@@ -1,5 +1,59 @@
 export const SongsData = [
   {
+    songName: "Ballad 6/8", // Needs swing!
+    author: "Marco Baldessari",
+    src: "https://youtu.be/eMHVExQTi7U?t=239",
+    related: [
+      "https://www.youtube.com/watch?v=Ju8Hr50Ckwk",
+      "https://www.youtube.com/watch?v=8jCFzreP1ng",
+    ],
+    timeSignature: "6/8",
+    feel: "Ballad",
+    bpm: "60",
+    song: [
+      "Gun dos gos dos gos Dun Pa dos gos dos Gun dos Gun dos gos dos gos Dun Pa dos gos dos gos dos",
+    ],
+  },
+
+  {
+    songName: "Dem bow",
+    author: "Marco Baldessari",
+    src: "https://youtu.be/eMHVExQTi7U?t=187",
+    timeSignature: "4/4",
+    feel: "Reggaeton",
+    bpm: "90",
+    song: [
+      "Gun dos gos Ta Gun dos Pa dos Gun dos gos Ta Gun dos Pa dos",
+      "Gun dos gos Ta Gun dos Pa dos Gun dos gos Ta Gun Ta Pa Ta",
+    ],
+  },
+
+  {
+    songName: "Bo Diddley Beat",
+    author: "Marco Baldessari",
+    src: "https://youtu.be/eMHVExQTi7U?t=79",
+    related: "https://www.youtube.com/watch?v=bixuI_GV5I0",
+    timeSignature: "4/4",
+    feel: "Rock",
+    bpm: "90",
+    song: ["Gun dos Gun Dun gos Dun Pa dos gos Dun Gun dos Gun dos Pa dos"],
+  },
+
+  {
+    songName: "Train beat",
+    author: "Marco Baldessari",
+    src: "https://youtu.be/eMHVExQTi7U?t=38",
+    related: "I got a woman",
+    timeSignature: "4/4",
+    feel: "Country",
+    bpm: "130",
+    song: [
+      "Gun dos Pa dos Gun Ta Pa dos Gun dos Pa dos Gun Ta Pa dos",
+      "Gun dos Pa dos Gun Ta Pa dos Gun dos Pa dos Gun Ta Pa Ta",
+    ],
+  },
+
+  {
     songName: "Advanced rock",
     author: "Marco Baldessari",
     src: "https://www.youtube.com/watch?v=MvzRvF5wGfY",
@@ -37,6 +91,11 @@ export const SongsData = [
     author: "Marco Baldessari",
     src: "https://youtu.be/bJkNqzoxBhE?t=271",
     timeSignature: "3/4",
+    related: [
+      "https://www.youtube.com/watch?v=O8hqGu-leFc",
+      "https://www.youtube.com/watch?v=6yCIDkFI7ew",
+      "https://www.youtube.com/watch?v=0vo23H9J8o8",
+    ],
     feel: "Blues",
     bpm: "90",
     song: ["Gun dos Gun Ta gos Ta Gun dos Gun Ta gos dos"],
