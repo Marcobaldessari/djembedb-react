@@ -88,12 +88,20 @@ class SongCard extends React.PureComponent {
             ))}
           </Button>
         </div>
-        {/* <div className="extra-info">
-          <div className="suggested-bpm">
-            Suggested BPM: {this.props.suggestedBpm}
+        <div className="extra-info">
+          <div className="suggested-bpm">BPM: {this.props.suggestedBpm}</div>
+          <div className={this.hasFeel(this.props.feel)}>
+            Feel: {this.props.feel}
           </div>
-          <div className="song-feel">Feel: {this.props.feel}</div>
-        </div> */}
+          <a
+            className={this.hasSource(this.props.src)}
+            href={this.props.src}
+            target="_blank"
+          >
+            {" "}
+            Source{" "}
+          </a>
+        </div>
       </div>
     );
   }
@@ -210,6 +218,18 @@ class SongCard extends React.PureComponent {
 
   getNoteIndex(indexNote, indexMeasure, measure) {
     return indexNote + indexMeasure * measure.split(" ").length;
+  }
+
+  hasSource(source) {
+    let classes = "src";
+    classes += source ? "" : " hidden";
+    return classes;
+  }
+
+  hasFeel(feel) {
+    let classes = "song-feel";
+    classes += feel ? "" : " hidden";
+    return classes;
   }
 }
 
