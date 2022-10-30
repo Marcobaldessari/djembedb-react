@@ -43,7 +43,7 @@ export const SongsData = [
     songName: "Train beat",
     author: "Marco Baldessari",
     src: "https://youtu.be/eMHVExQTi7U?t=38",
-    related: "I got a woman",
+    related: "https://www.youtube.com/watch?v=CnI_LuCJ4Ek",
     timeSignature: "4/4",
     feel: "Country",
     bpm: "130",
