@@ -97,9 +97,7 @@ class SongCard extends React.PureComponent {
           >
             BPM: {this.props.suggestedBpm}
           </div>
-          <div className={this.hasFeel(this.props.feel)}>
-            Feel: {this.props.feel}
-          </div>
+          <div className={this.hasFeel(this.props.feel)}>{this.props.feel}</div>
           <a
             className={this.hasSource(this.props.src)}
             href={this.props.src}

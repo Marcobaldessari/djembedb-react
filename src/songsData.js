@@ -123,7 +123,7 @@ export const SongsData = [
     author: "Marco Baldessari",
     src: "Marco Baldessari",
     timeSignature: "3/4",
-    feel: "blues",
+    feel: "Blues",
     bpm: "60",
     song: [
       "Gun xx gos Ta xx dos Gun xx gos Ta xx dos",
@@ -138,7 +138,7 @@ export const SongsData = [
     src: "",
     author: "Marco Baldessari",
     timeSignature: "4/4",
-    feel: "drum-n-bass",
+    feel: "Drum-n-bass",
     bpm: "160",
     song: ["Gun dos gos dos Pa dos gos Dun gos Dun Gun Dun Pa dos gos dos"],
   },
@@ -148,7 +148,7 @@ export const SongsData = [
     src: "https://open.spotify.com/track/3VWWqRer3hLUgKI1H6QKwq?si=48d3fea37a5c4ac6",
     author: "Marco Baldessari",
     timeSignature: "4/4",
-    feel: "lofi",
+    feel: "Lo-fi",
     bpm: "60",
     song: [
       "Gun dos gos dos Pa dos gos dos gos dos Gun dos Pa dos gos dos",
@@ -174,11 +174,11 @@ export const SongsData = [
     song: ["Gun xx Pa xx Gun xx Pa xx Gun xx Pa Ta xx Ta Pa xx"],
   },
   {
-    songName: "lofi 3",
+    songName: "lo-fi 3",
     src: "",
     author: "Marco Baldessari",
     timeSignature: "4/4",
-    feel: "lofi",
+    feel: "Lo-fi",
     bpm: "60",
     song: [
       "Gun xx Gun xx gos xx xx xx xx xx xx xx gos xx xx xx",
@@ -188,11 +188,11 @@ export const SongsData = [
     ],
   },
   {
-    songName: "lofi 2",
+    songName: "lo-fi 2",
     src: "",
     author: "Marco Baldessari",
     timeSignature: "4/4",
-    feel: "",
+    feel: "Lo-fi",
     bpm: "60",
     song: [
       "Gun dos Gun dos Pa dos gos dos gos dos gos dos Pa dos gos dos",
@@ -202,7 +202,7 @@ export const SongsData = [
     ],
   },
   {
-    songName: "lofi 1",
+    songName: "lo-fi 1",
     src: "",
     author: "Marco Baldessari",
     timeSignature: "4/4",
@@ -722,7 +722,7 @@ export const SongsData = [
     songName: "Blues Shuffle",
     src: "https://www.youtube.com/watch?v=ldD1LeIx4hU",
     timeSignature: "3/4",
-    feel: "blues",
+    feel: "Blues",
     bpm: "90",
     song: ["Gun dos Gun Ta gos dos Gun dos gos Ta gos dos"],
   },
@@ -731,7 +731,7 @@ export const SongsData = [
     songName: "R&B Groove",
     src: "https://www.youtube.com/watch?v=BlBeHS0kj9I",
     timeSignature: "4/4",
-    feel: "pop/rock",
+    feel: "Pop/rock",
     bpm: "90",
     song: [
       "Gun dos gos Dun gos dos gos dos Pa dos gos dos gos dos gos dos",
@@ -743,7 +743,7 @@ export const SongsData = [
     src: "",
     author: "Marco Baldessari",
     timeSignature: "4/4",
-    feel: "pop/rock",
+    feel: "Pop/rock",
     song: ["Gun dos Pa Ta gos Ta Pa Ta Gun dos gos dos gos dos gos dos"],
   },
   {
@@ -751,7 +751,7 @@ export const SongsData = [
     src: "",
     author: "Marco Baldessari",
     timeSignature: "4/4",
-    feel: "pop/rock",
+    feel: "Pop/rock",
     song: ["Gun dos Pa Ta gos Ta Pa Ta Gun dos Pa Ta gos Ta Pa Ta"],
   },
   {
@@ -759,7 +759,7 @@ export const SongsData = [
     src: "",
     author: "Marco Baldessari",
     timeSignature: "4/4",
-    feel: "pop/rock",
+    feel: "Pop/rock",
     song: [
       "Gun dos gos Ta Gun Ta gos Dun gos dos gos dos gos dos gos dos",
       "Gun dos gos Ta Gun Ta gos Dun gos Dun gos dos Gun dos gos dos",
@@ -773,7 +773,7 @@ export const SongsData = [
     src: "",
     author: "Marco Baldessari",
     timeSignature: "4/4",
-    feel: "pop/rock",
+    feel: "Pop/rock",
     song: [
       "Gun dos gos Dun gos dos Pa dos Gun dos gos Dun gos dos Pa dos",
       "Gun dos gos Dun gos dos Pa dos Pa dos gos Ta gos dos Pa Ta",
@@ -784,7 +784,7 @@ export const SongsData = [
     songName: "Thunder",
     src: "https://www.youtube.com/watch?v=fKopy74weus",
     timeSignature: "4/4",
-    feel: "pop/rock",
+    feel: "Pop/rock",
     song: ["Gun xx gos Dun Ca xx Gun xx xx dos Gun xx Ca xx xx xx"],
   },
 
@@ -792,7 +792,7 @@ export const SongsData = [
     songName: "Thunder variant",
     src: "https://www.youtube.com/watch?v=Kb1S4w7DKeY",
     timeSignature: "4/4",
-    feel: "pop/rock",
+    feel: "Pop/rock",
     song: ["Gun dos gos Dun Pa dos Gun dos gos Dun Gun dos Pa dos gos dos"],
   },
 
