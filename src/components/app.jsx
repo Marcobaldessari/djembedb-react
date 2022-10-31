@@ -380,6 +380,7 @@ class App extends React.PureComponent {
                 song={song.song}
                 timeSignature={song.timeSignature}
                 suggestedBpm={song.bpm}
+                OnTempoChange={this.handleTempoChange}
                 feel={song.feel}
                 src={song.src}
                 OnPlayPause={this.handlePlayPause}
