@@ -48,8 +48,8 @@ export const SongsData = [
     feel: "Country",
     bpm: "130",
     song: [
-      "Gun dos Pa dos Gun Ta Pa dos Gun dos Pa dos Gun Ta Pa dos",
-      "Gun dos Pa dos Gun Ta Pa dos Gun dos Pa dos Gun Ta Pa Ta",
+      "Gun xx Pa xx Gun Ta Pa xx Gun xx Pa xx Gun Ta Pa xx",
+      "Gun xx Pa xx Gun Ta Pa xx Gun xx Pa xx Gun Ta Pa Ta",
     ],
   },
 
