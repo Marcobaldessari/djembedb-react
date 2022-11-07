@@ -88,12 +88,16 @@ class App extends React.PureComponent {
     }, 200);
   };
 
-  handleTempoChange = (e, t) => {
-    bpm = t;
-    clearInterval(this.interval);
-    if (this.state.playing) {
-      this.startLoop(step, notes);
+  handleBpmChange = (e, t) => {
+    if (t > 10) {
+      bpm = t;
+    } else {
+      bpm = 90;
     }
+    // clearInterval(this.interval);
+    // if (this.state.playing) {
+    //   this.startLoop(step, notes);
+    // }
   };
 
   handleSwingChange = (e, s) => {
@@ -363,8 +367,8 @@ class App extends React.PureComponent {
         <Topbar
           OnSwingChange={this.handleSwingChange}
           defaultSwing={0}
-          OnTempoChange={this.handleTempoChange}
-          defaultTempo={bpm}
+          OnBpmChange={this.handleBpmChange}
+          defaultBpm={bpm}
           OnVolumeChange={this.handleVolumeChange}
           defaultVolume={volume * 100}
           OnInstrumentChange={this.handleInstrumentChange}
@@ -380,7 +384,7 @@ class App extends React.PureComponent {
                 song={song.song}
                 timeSignature={song.timeSignature}
                 suggestedBpm={song.bpm}
-                OnTempoChange={this.handleTempoChange}
+                OnBpmChange={this.handleBpmChange}
                 feel={song.feel}
                 src={song.src}
                 OnPlayPause={this.handlePlayPause}
