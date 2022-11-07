@@ -56,6 +56,7 @@ class SongCard extends React.PureComponent {
           className={this.getNotationFrameClass()}
           ref={(e) => (this.notationFrame = e)}
           onClick={(e) => {
+            this.props.OnBpmChange(e, this.props.suggestedBpm);
             this.props.OnPlayPause(e, this.props.songId);
           }}
         >
@@ -92,7 +93,7 @@ class SongCard extends React.PureComponent {
           <div
             className="suggested-bpm"
             onClick={(e) => {
-              this.props.OnTempoChange(e, this.props.suggestedBpm);
+              this.props.OnBpmChange(e, this.props.suggestedBpm);
             }}
           >
             BPM: {this.props.suggestedBpm}
