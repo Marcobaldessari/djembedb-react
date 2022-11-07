@@ -1,11 +1,84 @@
 export const SongsData = [
   {
-    songName: "Ballad 6/8", // Needs swing!
+    songName: "Stand by me",
+    author: "Marco Baldessari",
+    src: "https://youtu.be/4X30VFrflD8?t=79",
+    related: [
+      {
+        artist: "Ben E. King",
+        song: "Stand By Me",
+        link: "https://youtu.be/z5i9vT8wGY8?t=8",
+      },
+    ],
+    timeSignature: "4/4",
+    feel: "Pop/rock",
+    bpm: "118",
+    song: ["Gun dos gos dos Pa dos Gun dos gos dos Gun dos Pa dos gos Dun"],
+  },
+  {
+    songName: "Il Pescatore",
+    author: "Marco Baldessari",
+    src: "https://youtu.be/4X30VFrflD8?t=79",
+    related: [
+      {
+        artist: "Fabrizio De André",
+        song: "Il Pescatore",
+        link: "https://www.youtube.com/watch?v=X_kuqsezS24",
+      },
+    ],
+    timeSignature: "4/4",
+    feel: "Pop/rock",
+    bpm: "120",
+    song: ["Gun dos Gun dos Pa dos Gun Ta gos Ta Gun dos Pa dos gos Ta"],
+  },
+
+  {
+    songName: "Knocking on heaven's door",
+    author: "Marco Baldessari",
+    src: "https://youtu.be/4X30VFrflD8?t=1",
+    related: [
+      {
+        artist: "Guns N' Roses",
+        song: "Knocking on heaven's door",
+        link: "https://www.youtube.com/watch?v=f8OHybVhQwc",
+      },
+    ],
+    timeSignature: "4/4",
+    feel: "Rock",
+    bpm: "66",
+    song: ["Gun dos gos dos Pa dos gos Dun Gun dos Gun dos Pa dos gos Ta"],
+  },
+
+  {
+    songName: "Space jazz",
+    author: "Marco Baldessari",
+    src: "https://open.spotify.com/track/5JngOFWX3RuNDAhxbofBht?si=72751f72ef2843b8",
+    timeSignature: "4/4",
+    feel: "Lo-fi",
+    bpm: "60",
+    song: [
+      "Gun xx xx xx Pa xx xx xx xx Dun Gun xx Pa xx xx xx",
+      "Gun xx xx xx Pa xx xx Dun xx xx xx xx Pa xx xx Dun",
+      "Gun xx xx xx Pa xx xx xx xx Dun Gun xx Pa xx xx xx",
+      "Gun xx xx xx Pa xx xx Dun xx xx xx xx Pa xx Gun xx",
+    ],
+  },
+
+  {
+    songName: "Ballad 6/8 (needs swing)", // Needs swing!
     author: "Marco Baldessari",
     src: "https://youtu.be/eMHVExQTi7U?t=239",
     related: [
-      "https://www.youtube.com/watch?v=Ju8Hr50Ckwk",
-      "https://www.youtube.com/watch?v=8jCFzreP1ng",
+      {
+        artist: "Alicia Keys",
+        song: "If I Ain't Got You",
+        link: "https://www.youtube.com/watch?v=Ju8Hr50Ckwk",
+      },
+      {
+        artist: "Aretha Franklin",
+        song: "A Natural Woman",
+        link: "https://www.youtube.com/watch?v=8jCFzreP1ng",
+      },
     ],
     timeSignature: "6/8",
     feel: "Ballad",
@@ -19,6 +92,13 @@ export const SongsData = [
     songName: "Dem bow",
     author: "Marco Baldessari",
     src: "https://youtu.be/eMHVExQTi7U?t=187",
+    related: [
+      {
+        artist: "Shabba Ranks",
+        song: "Dem Bow",
+        link: "https://www.youtube.com/watch?v=VQqwea8ZSbk",
+      },
+    ],
     timeSignature: "4/4",
     feel: "Reggaeton",
     bpm: "90",
