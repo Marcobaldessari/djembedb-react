@@ -1,5 +1,27 @@
 export const SongsData = [
   {
+    songName: "Don't Go",
+    author: "Marco Baldessari",
+    src: "https://open.spotify.com/track/6IMizBxvWe908mqf9rJlW0?si=b36718f24071433a",
+    related: [
+      {
+        artist: "sloh rou, ron quixote",
+        song: "Don't Go",
+        link: "https://open.spotify.com/track/6IMizBxvWe908mqf9rJlW0?si=b36718f24071433a",
+      },
+    ],
+    timeSignature: "4/4",
+    feel: "Lo-fi",
+    bpm: "90",
+    song: [
+      "Gun xx Gun xx Pa xx xx xx xx xx Gun xx Pa xx xx xx",
+      "Gun xx Gun xx Pa xx xx xx xx xx Gun xx Pa xx xx xx",
+      "Gun xx xx xx Pa xx Gun xx xx xx Gun xx Pa xx xx xx",
+      "Gun xx Gun xx Pa xx xx xx xx xx xx xx Pa xx xx xx",
+    ],
+  },
+
+  {
     songName: "Stand by me",
     author: "Marco Baldessari",
     src: "https://youtu.be/4X30VFrflD8?t=79",
@@ -84,7 +106,7 @@ export const SongsData = [
     feel: "Ballad",
     bpm: "60",
     song: [
-      "Gun dos gos dos gos Dun Pa dos gos dos Gun dos Gun dos gos dos gos Dun Pa dos gos dos gos dos",
+      "Gun xx xx xx xx Dun Pa xx xx xx Gun xx Gun xx xx xx xx Dun Pa xx xx xx xx xx",
     ],
   },
 
