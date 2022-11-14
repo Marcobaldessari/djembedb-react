@@ -1,5 +1,18 @@
 export const SongsData = [
   {
+    songName: "118",
+    author: "Marco Baldessari",
+    src: "",
+    related: [],
+    timeSignature: "4/4",
+    feel: "Reggaeton",
+    bpm: "90",
+    song: [
+      "Gun dos gos Ta Gun dos Pa dos Gun dos gos Dun Gun dos Pa Ta",
+      "Gun Ta gos dos Gun dos Pa dos Gun dos gos Ta Gun dos gos Dun",
+    ],
+  },
+  {
     songName: "Don't Go",
     author: "Marco Baldessari",
     src: "https://open.spotify.com/track/6IMizBxvWe908mqf9rJlW0?si=b36718f24071433a",
