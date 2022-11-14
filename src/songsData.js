@@ -259,9 +259,16 @@ export const SongsData = [
   },
 
   {
-    songName: "116",
-    src: "https://open.spotify.com/track/3VWWqRer3hLUgKI1H6QKwq?si=48d3fea37a5c4ac6",
+    songName: "Late Thoughts",
+    src: "https://open.spotify.com/track/3VWWqRer3hLUgKI1H6QKwq?si=5d23fe477c104d23",
     author: "Marco Baldessari",
+    related: [
+      {
+        artist: "Midnight Sleep",
+        song: "Late Thoughts",
+        link: "https://open.spotify.com/track/3VWWqRer3hLUgKI1H6QKwq?si=5d23fe477c104d23",
+      },
+    ],
     timeSignature: "4/4",
     feel: "Lo-fi",
     bpm: "60",
