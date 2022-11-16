@@ -42,14 +42,11 @@ class Topbar extends React.PureComponent {
             OnInstrumentChange={this.props.OnInstrumentChange}
             instrument={this.props.instrument}
           ></ButtonInstrument>
-          {/* <ButtonSwing
+          <ButtonSwing
             defaultSwing={0}
             OnSwingChange={this.props.OnSwingChange}
-          ></ButtonSwing> */}
-          {/* <ButtonInstrument
-            OnInstrumentChange={this.props.OnInstrumentChange}
-            instrument={this.props.instrument}
-          ></ButtonInstrument> */}
+          ></ButtonSwing>
+
           <ButtonBpm
             defaultTempo={this.props.defaultTempo}
             OnTempoChange={this.props.OnTempoChange}

@@ -102,10 +102,10 @@ class App extends React.PureComponent {
 
   handleSwingChange = (e, s) => {
     swing = s;
-    clearTimeout(this.timeout);
-    if (this.state.playing) {
-      this.playNote(step, notes);
-    }
+    // clearTimeout(this.timeout);
+    // if (this.state.playing) {
+    //   this.playNote(step, notes);
+    // }
   };
 
   handleVolumeChange = (e, v) => {
@@ -233,7 +233,7 @@ class App extends React.PureComponent {
     this.playNoteSound(notes[step]);
     step = step < notes.length - 2 ? step + 1 : 0;
     var baseNoteTime = (60 * 1000) / bpm / 4;
-    if (step & 1) {
+    if (step % 2 == 0) {
       // ODD
       var noteTime = baseNoteTime - baseNoteTime * (swing / 100);
     } else {
