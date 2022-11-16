@@ -1,5 +1,25 @@
 export const SongsData = [
   {
+    songName: "Pillow Thoughts",
+    author: "Marco Baldessari",
+    src: "https://open.spotify.com/track/2Hp3OqegIMtyAMH9UXlG6U?si=fd0c03a0682c474f",
+    related: [
+      {
+        artist: "Prigida",
+        song: "Pillow Thoughts",
+        link: "https://open.spotify.com/track/2Hp3OqegIMtyAMH9UXlG6U?si=fd0c03a0682c474f",
+      },
+    ],
+    timeSignature: "4/4",
+    feel: "",
+    bpm: "60",
+    song: [
+      "Gun xx xx xx xx xx xx Gun xx Gun xx xx xx xx xx xx",
+      "Gun xx xx xx xx xx xx Dun xx Dun Gun xx xx xx xx Dun",
+    ],
+  },
+
+  {
     songName: "118",
     author: "Marco Baldessari",
     src: "",
