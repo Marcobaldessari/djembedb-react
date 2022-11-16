@@ -94,17 +94,17 @@ class App extends React.PureComponent {
     } else {
       bpm = 90;
     }
-    // clearInterval(this.interval);
+    // clearTimeout(this.timeout);
     // if (this.state.playing) {
-    //   this.startLoop(step, notes);
+    //   this.playNote(step, notes);
     // }
   };
 
   handleSwingChange = (e, s) => {
     swing = s;
-    clearInterval(this.interval);
+    clearTimeout(this.timeout);
     if (this.state.playing) {
-      this.startLoop(step, notes);
+      this.playNote(step, notes);
     }
   };
 
@@ -135,7 +135,7 @@ class App extends React.PureComponent {
     // if (e.keyCode == 32) {
     //   e.preventDefault();
     //   // alert("Paused mode enabled");
-    //   clearInterval(this.interval);
+    //   clearTimeout(this.timeout);
     //   if (this.state.playing) {
     //     this.setState(() => ({
     //       playing: false,
@@ -152,7 +152,7 @@ class App extends React.PureComponent {
 
   handlePlayPause = (e, songId) => {
     //stop the music and reset the step
-    clearInterval(this.interval);
+    clearTimeout(this.timeout);
     step = 0;
 
     if (this.state.playing && this.state.songPlaying == songId) {
@@ -169,7 +169,7 @@ class App extends React.PureComponent {
       (element) => (songString += element + " ")
     );
     notes = songString.split(" ");
-    this.startLoop(step, notes);
+    this.playNote(step, notes);
 
     // set the states
     this.setState(() => ({
@@ -228,14 +228,32 @@ class App extends React.PureComponent {
     topbar.classList.remove("preload");
   }
 
-  startLoop(s, notes) {
-    this.interval = setInterval(() => {
-      this.animateNote(this.state.songPlaying, step);
-      this.playNoteSound(notes[step]);
-      step = step < notes.length - 2 ? step + 1 : 0;
-    }, (60 * 1000) / bpm / 4);
+  playNote(s, notes) {
+    this.animateNote(this.state.songPlaying, step);
+    this.playNoteSound(notes[step]);
+    step = step < notes.length - 2 ? step + 1 : 0;
+    var baseNoteTime = (60 * 1000) / bpm / 4;
+    if (step & 1) {
+      // ODD
+      var noteTime = baseNoteTime - baseNoteTime * (swing / 100);
+    } else {
+      // EVEN
+      var noteTime = baseNoteTime + baseNoteTime * (swing / 100);
+    }
+    this.timeout = setTimeout(() => {
+      this.playNote(step, notes);
+    }, noteTime);
     return step;
   }
+
+  // startLoop(s, notes) {
+  //   this.interval = setInterval(() => {
+  //     this.animateNote(this.state.songPlaying, step);
+  //     this.playNoteSound(notes[step]);
+  //     step = step < notes.length - 2 ? step + 1 : 0;
+  //   }, (60 * 1000) / bpm / 4);
+  //   return step;
+  // }
 
   animateNote(songPlaying, step) {
     let animatedNoteId = "note-" + songPlaying + "-" + step;
