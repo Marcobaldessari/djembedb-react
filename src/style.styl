@@ -354,14 +354,25 @@ a
     max-width 900px
     width 100%
     height 56px
-    top 0
     z-index 10
     background var(--topbar-color)
     backdrop-filter blur(10px)
-
+    
+    +desktop()
+        top 0
+    +mobile()
+        bottom 0
+        box-shadow: 0px -15px 35px rgba(52, 58, 67, 0.08), 0px -5px 15px rgba(0, 0, 0, 0.08), 0px 0px 2px rgba(0, 0, 0, 0.1);
+        display grid
+        grid-template-columns repeat(6, 1fr)
+        grid-template-rows: 1fr;
+    
     .btn-topbar
-        float right
-        right 0
+        +desktop()
+            float right
+            right 0
+        +mobile()
+            height 64px
         padding 0
         border 0
         border-radius 100%
@@ -372,6 +383,10 @@ a
 
 
     .logo
+        +mobile()
+                display none
+
+
         display inline-block
         position relative
         &:hover
@@ -418,6 +433,61 @@ a
             border none 
             &::after
                 content: none
+
+.slider
+    +mobile()
+        left 15px
+        top -260px
+        padding 0 !important
+    
+// .volume-wrapper
+//     +mobile()
+//         display none !important
+
+.btn-volume
+    float right
+    right 0
+    margin-top 8px 
+    border 0
+    border-radius 100%
+    background transparent
+    +mobile()
+        margin-right 24px
+    svg
+        fill var(--note-color)
+
+    
+.btn-bpm
+    +desktop()
+        float right
+        right 0
+    margin-top 8px 
+    border 0
+    border-radius 100%
+    background transparent
+    +mobile()
+        display none
+        margin-right 24px
+    svg
+        fill var(--note-color)
+
+
+.sliderButton
+    +desktop()
+        float right
+        right 0
+    width 48px
+    height 200px
+    // border-radius 100%
+    margin-top 0 !important
+    margin-left 16px !important
+
+.btn-rounded
+    border-radius 100%
+    display: block;
+    padding: 0;
+
+
 .logo-big
     .logotype
         display block
@@ -507,15 +577,15 @@ a
     }
 
 
-// .slider
-//     width 70% !important
-//     position absolute !important
-//     right 0
-//     top 54px
-    
-.volume-wrapper
+.slider
     +mobile()
-        display none !important
+        left 15px
+        top -260px
+        padding 0 !important
+    
+// .volume-wrapper
+//     +mobile()
+//         display none !important
 
 .btn-volume
     float right
@@ -531,8 +601,9 @@ a
 
     
 .btn-bpm
-    float right
-    right 0
+    +desktop()
+        float right
+        right 0
     margin-top 8px 
     border 0
     border-radius 100%
@@ -545,10 +616,11 @@ a
 
 
 .sliderButton
+    +desktop()
+        float right
+        right 0
     width 48px
     height 200px
-    float right
-    right 0
     // border-radius 100%
     margin-top 0 !important
     margin-left 16px !important

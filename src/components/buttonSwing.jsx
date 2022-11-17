@@ -73,7 +73,7 @@ class ButtonSwing extends React.PureComponent {
             aria-labelledby="continuous-slider"
             // marks
             orientation="vertical"
-            step={5}
+            // step={5}
             min={0}
             max={50}
             valueLabelDisplay="auto"

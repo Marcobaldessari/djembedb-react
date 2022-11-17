@@ -75,7 +75,7 @@ class ButtonBpm extends React.PureComponent {
             aria-labelledby="continuous-slider"
             // marks
             orientation="vertical"
-            step={5}
+            // step={5}
             min={40}
             max={160}
             valueLabelDisplay="auto"
