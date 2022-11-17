@@ -42,20 +42,22 @@ class Topbar extends React.PureComponent {
             OnInstrumentChange={this.props.OnInstrumentChange}
             instrument={this.props.instrument}
           ></ButtonInstrument>
-          <ButtonSwing
-            defaultSwing={0}
-            OnSwingChange={this.props.OnSwingChange}
-          ></ButtonSwing>
-
-          <ButtonBpm
-            defaultTempo={this.props.defaultTempo}
-            OnTempoChange={this.props.OnTempoChange}
-          ></ButtonBpm>
-          <ButtonVolume
-            defaultVolume={this.props.defaultVolume}
-            OnVolumeChange={this.props.OnVolumeChange}
-          ></ButtonVolume>
-
+          <Button
+            aria-label="Toggle number notation"
+            className="btn-topbar"
+            onClick={() => {
+              this.toggleNotationDetails();
+            }}
+          >
+            <svg
+              width="48"
+              height="48"
+              viewBox="0 0 48 48"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path d="M26.675 21.7344H20.8918V20.7467C21.1754 20.4977 21.4611 20.253 21.7429 20.0117C23.4941 18.5119 25.0924 17.1433 25.0924 15.6774C25.0924 14.773 24.6997 14.1543 23.6882 14.1543C22.7362 14.1543 22.2245 14.8206 22.1888 15.7964H20.8799C20.9275 13.9163 22.1412 13 23.6763 13C25.4375 13 26.437 14.0591 26.437 15.6179C26.437 17.4687 24.7831 18.9336 23.4373 20.1256C23.2515 20.2902 23.0717 20.4495 22.9028 20.6039H26.675V21.7344ZM15.9721 28.6785H17.1741V21.0587H15V22.1458H15.9721V28.6785ZM27.4475 27.1034H29.0325C29.1325 26.3751 29.6608 25.6897 30.8032 25.6897C31.917 25.6897 32.5025 26.2894 32.5025 27.189C32.5025 28.3029 31.6028 28.7312 30.132 28.7455H29.7465V30.0878H30.1178C31.817 30.0878 32.7024 30.559 32.7024 31.9299C32.7024 32.9009 32.1026 33.6434 30.8889 33.6434C29.6608 33.6434 28.9468 32.9009 28.8754 31.9299H27.3047C27.4046 33.9719 28.9326 35 30.9031 35C33.0736 35 34.2446 33.7434 34.2446 32.0869C34.2446 30.6447 33.5449 29.7451 32.4596 29.4167V29.3595C33.2736 29.0882 34.0589 28.2457 34.0589 27.0034C34.0589 25.4898 32.9308 24.2903 30.8603 24.2903C28.9611 24.2903 27.5617 25.3041 27.4475 27.1034Z" />
+            </svg>
+          </Button>
           <Button
             aria-label="Toggle Dark/Light Theme"
             className="btn-topbar"
@@ -74,22 +76,18 @@ class Topbar extends React.PureComponent {
             </svg>
           </Button>
 
-          <Button
-            aria-label="Toggle number notation"
-            className="btn-topbar"
-            onClick={() => {
-              this.toggleNotationDetails();
-            }}
-          >
-            <svg
-              width="48"
-              height="48"
-              viewBox="0 0 48 48"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path d="M26.675 21.7344H20.8918V20.7467C21.1754 20.4977 21.4611 20.253 21.7429 20.0117C23.4941 18.5119 25.0924 17.1433 25.0924 15.6774C25.0924 14.773 24.6997 14.1543 23.6882 14.1543C22.7362 14.1543 22.2245 14.8206 22.1888 15.7964H20.8799C20.9275 13.9163 22.1412 13 23.6763 13C25.4375 13 26.437 14.0591 26.437 15.6179C26.437 17.4687 24.7831 18.9336 23.4373 20.1256C23.2515 20.2902 23.0717 20.4495 22.9028 20.6039H26.675V21.7344ZM15.9721 28.6785H17.1741V21.0587H15V22.1458H15.9721V28.6785ZM27.4475 27.1034H29.0325C29.1325 26.3751 29.6608 25.6897 30.8032 25.6897C31.917 25.6897 32.5025 26.2894 32.5025 27.189C32.5025 28.3029 31.6028 28.7312 30.132 28.7455H29.7465V30.0878H30.1178C31.817 30.0878 32.7024 30.559 32.7024 31.9299C32.7024 32.9009 32.1026 33.6434 30.8889 33.6434C29.6608 33.6434 28.9468 32.9009 28.8754 31.9299H27.3047C27.4046 33.9719 28.9326 35 30.9031 35C33.0736 35 34.2446 33.7434 34.2446 32.0869C34.2446 30.6447 33.5449 29.7451 32.4596 29.4167V29.3595C33.2736 29.0882 34.0589 28.2457 34.0589 27.0034C34.0589 25.4898 32.9308 24.2903 30.8603 24.2903C28.9611 24.2903 27.5617 25.3041 27.4475 27.1034Z" />
-            </svg>
-          </Button>
+          <ButtonBpm
+            defaultTempo={this.props.defaultTempo}
+            OnTempoChange={this.props.OnTempoChange}
+          ></ButtonBpm>
+          <ButtonSwing
+            defaultSwing={0}
+            OnSwingChange={this.props.OnSwingChange}
+          ></ButtonSwing>
+          <ButtonVolume
+            defaultVolume={this.props.defaultVolume}
+            OnVolumeChange={this.props.OnVolumeChange}
+          ></ButtonVolume>
         </div>
       </div>
     );
