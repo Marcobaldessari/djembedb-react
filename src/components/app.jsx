@@ -2,6 +2,7 @@ import React, { Component, Fragment, useState, useRef, useEffect } from "react";
 import { SongsData } from "../songsData";
 import SongCard from "./songCard";
 import Topbar from "./topbar";
+import LogoBig from "./logoBig";
 import Button from "@material-ui/core/Button";
 import { Howl, Howler } from "howler";
 import { hotjar } from "react-hotjar";
@@ -393,6 +394,8 @@ class App extends React.PureComponent {
           instrument={this.state.instrument}
         ></Topbar>
         <div className="container">
+          <LogoBig></LogoBig>
+
           <div className={"song-list preload"}>
             {SongsData.map((song, index) => (
               <SongCard

@@ -90,7 +90,7 @@ a {
   }
 }
 .song-list {
-  margin-top: 80px;
+  margin-top: 40px;
 }
 .preload .song-card {
   opacity: 0;
@@ -536,6 +536,14 @@ a {
   border-radius: 100%;
   display: block;
   padding: 0;
+}
+.logo-big {
+  margin-top: 80px;
+}
+@media (min-width: 640px) {
+  .logo-big {
+    display: none;
+  }
 }
 .logo-big .logotype {
   display: block;
