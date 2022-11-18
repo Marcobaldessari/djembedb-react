@@ -620,6 +620,10 @@ a {
   -ms-grid-row-align: start;
   align-self: start;
   background: var(--logo-note-color);
+  border: none;
+}
+.logomark-note.Ca::after {
+  display: none;
 }
 @media (min-width: 640px) {
   ::-webkit-scrollbar {
