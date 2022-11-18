@@ -523,8 +523,6 @@ a {
 .sliderButton {
   width: 48px;
   height: 200px;
-  margin-top: 0 !important;
-  margin-left: 16px !important;
 }
 @media (min-width: 640px) {
   .sliderButton {
@@ -638,13 +636,6 @@ a {
     background: #555;
   }
 }
-@media (max-width: 479px) {
-  .slider {
-    left: 15px;
-    top: -260px;
-    padding: 0 !important;
-  }
-}
 .btn-volume {
   float: right;
   right: 0;
@@ -681,23 +672,6 @@ a {
 }
 .btn-bpm svg {
   fill: var(--note-color);
-}
-.sliderButton {
-  width: 48px;
-  height: 200px;
-  margin-top: 0 !important;
-  margin-left: 16px !important;
-}
-@media (min-width: 640px) {
-  .sliderButton {
-    float: right;
-    right: 0;
-  }
-}
-.btn-rounded {
-  border-radius: 100%;
-  display: block;
-  padding: 0;
 }
 .extra-info {
   font-family: 'Poppins', sans-serif;
