@@ -82,11 +82,11 @@ class App extends React.PureComponent {
   }
 
   handleWindowLoad = () => {
-    this.checkIfSystemDarkTheme();
-    setTimeout(() => {
-      this.animateInTopBar();
-      this.animateInSongCards();
-    }, 200);
+    // this.checkIfSystemDarkTheme();
+    // setTimeout(() => {
+    //   this.animateInTopBar();
+    //   this.animateInSongCards();
+    // }, 200);
   };
 
   handleBpmChange = (e, t) => {
