@@ -7,7 +7,8 @@ import Button from "@material-ui/core/Button";
 import { Howl, Howler } from "howler";
 import { hotjar } from "react-hotjar";
 import FullStory from "react-fullstory";
-import { FixedSizeList as List } from "react-window";
+// import { FixedSizeList as List } from "react-window";
+import { VariableSizeList as List } from "react-window";
 
 //import Djembe Sounds
 import gunAudioDjembe from "../sounds/djembe/gun.mp3";
@@ -69,6 +70,16 @@ const Row = ({ index, style, data }) => (
   </div>
 );
 
+const getItemSize = (index) => {
+  // Calculate the height of the item based on the song data
+  // For example, you could use the number of lines in the song as an indicator of the height
+  const numberOfLines = SongsData[index].song.length;
+
+  const baseHeight = 126;
+  const lineHeight = 88;
+  return baseHeight + lineHeight * numberOfLines;
+};
+
 var uniqid = require("uniqid");
 var bpm = 90;
 var swing = 0;
@@ -98,11 +109,7 @@ class App extends React.PureComponent {
   }
 
   handleWindowLoad = () => {
-    // this.checkIfSystemDarkTheme();
-    // setTimeout(() => {
-    //   this.animateInTopBar();
-    //   this.animateInSongCards();
-    // }, 200);
+    this.checkIfSystemDarkTheme();
   };
 
   handleBpmChange = (e, t) => {
@@ -186,13 +193,13 @@ class App extends React.PureComponent {
       (element) => (songString += element + " ")
     );
     notes = songString.split(" ");
-    this.playNote(step, notes);
 
     // set the states
     this.setState(() => ({
       playing: true,
       songPlaying: songId,
     }));
+    this.playNote(step, notes);
   };
 
   checkIfSystemDarkTheme() {
@@ -202,47 +209,6 @@ class App extends React.PureComponent {
     ) {
       document.body.classList.toggle("dark-theme");
     }
-  }
-
-  animateInSongCards() {
-    const allSongCards = document.getElementsByClassName("song-card");
-    Array.prototype.forEach.call(allSongCards, function (e, index) {
-      if (index < 5) {
-        var delay = 0.15 * (index + 1);
-      } else {
-        var delay = 0.15 * ((index + 1) / 2) + 0.5;
-      }
-      gsap.fromTo(
-        e,
-        { y: 40, opacity: 0 },
-        {
-          opacity: 1,
-          duration: 0.5,
-          y: 0,
-          delay: delay,
-          ease: "power2.out",
-        }
-      );
-    });
-
-    document.querySelector(".song-list").classList.remove("preload");
-  }
-
-  animateInSongCardsTimeCurve(inbdex) {}
-
-  animateInTopBar() {
-    const topbar = document.querySelector(".topbar");
-    gsap.fromTo(
-      topbar,
-      { y: -40, opacity: 0 },
-      {
-        opacity: 1,
-        duration: 0.5,
-        y: 0,
-        ease: "power2.out",
-      }
-    );
-    topbar.classList.remove("preload");
   }
 
   playNote(s, notes) {
@@ -415,7 +381,7 @@ class App extends React.PureComponent {
             className={"song-list preload"}
             height={900} // Set an appropriate height for the list
             itemCount={SongsData.length}
-            itemSize={350} // Set an appropriate item size based on your SongCard component's height
+            itemSize={getItemSize}
             itemData={{
               ...SongsData,
               OnBpmChange: this.handleBpmChange,

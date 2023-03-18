@@ -108,7 +108,8 @@ a
         width 100%
 
 .song-list
-    margin-top 40px
+    +desktop()
+        margin-top 40px
 
 .preload
     .song-card
@@ -136,6 +137,7 @@ a
     position relative
     left 24px
     font-size 20px
+    width: 90%; // this is just a bug fix.
 
 .btn-play
     font-weight: 700

@@ -89,8 +89,10 @@ a {
     width: 100%;
   }
 }
-.song-list {
-  margin-top: 40px;
+@media (min-width: 640px) {
+  .song-list {
+    margin-top: 40px;
+  }
 }
 .preload .song-card {
   opacity: 0;
@@ -109,6 +111,7 @@ a {
   position: relative;
   left: 24px;
   font-size: 20px;
+  width: 90%;
 }
 .btn-play {
   font-weight: 700;

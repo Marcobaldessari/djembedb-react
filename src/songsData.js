@@ -1,6 +1,6 @@
 export const SongsData = [
   {
-    songName: "Pillow Thoughts",
+    songName: "Prigida - Pillow Thoughts",
     author: "Marco Baldessari",
     src: "https://open.spotify.com/track/2Hp3OqegIMtyAMH9UXlG6U?si=fd0c03a0682c474f",
     related: [
