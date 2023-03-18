@@ -112,6 +112,14 @@ class App extends React.PureComponent {
     this.checkIfSystemDarkTheme();
   };
 
+  checkIfSystemDarkTheme() {
+    if (
+      window.matchMedia &&
+      window.matchMedia("(prefers-color-scheme: dark)").matches
+    ) {
+      document.body.classList.toggle("dark-theme");
+    }
+  }
   handleBpmChange = (e, t) => {
     if (t > 10) {
       bpm = t;
@@ -187,6 +195,11 @@ class App extends React.PureComponent {
       return;
     }
 
+    this.setState(() => ({
+      playing: true,
+      songPlaying: songId,
+    }));
+
     // get the song data and play
     let songString = "";
     this.state.SongsData[songId].song.forEach(
@@ -194,26 +207,12 @@ class App extends React.PureComponent {
     );
     notes = songString.split(" ");
 
-    // set the states
-    this.setState(() => ({
-      playing: true,
-      songPlaying: songId,
-    }));
-    this.playNote(step, notes);
+    this.playNote(songId, step, notes);
   };
 
-  checkIfSystemDarkTheme() {
-    if (
-      window.matchMedia &&
-      window.matchMedia("(prefers-color-scheme: dark)").matches
-    ) {
-      document.body.classList.toggle("dark-theme");
-    }
-  }
-
-  playNote(s, notes) {
-    this.animateNote(this.state.songPlaying, step);
+  playNote(song, step, notes) {
     this.playNoteSound(notes[step]);
+    this.animateNote(song, step);
     step = step < notes.length - 2 ? step + 1 : 0;
     var baseNoteTime = (60 * 1000) / bpm / 4;
     if (step % 2 == 0) {
@@ -224,19 +223,10 @@ class App extends React.PureComponent {
       var noteTime = baseNoteTime + baseNoteTime * (swing / 100);
     }
     this.timeout = setTimeout(() => {
-      this.playNote(step, notes);
+      this.playNote(song, step, notes);
     }, noteTime);
     return step;
   }
-
-  // startLoop(s, notes) {
-  //   this.interval = setInterval(() => {
-  //     this.animateNote(this.state.songPlaying, step);
-  //     this.playNoteSound(notes[step]);
-  //     step = step < notes.length - 2 ? step + 1 : 0;
-  //   }, (60 * 1000) / bpm / 4);
-  //   return step;
-  // }
 
   animateNote(songPlaying, step) {
     let animatedNoteId = "note-" + songPlaying + "-" + step;
