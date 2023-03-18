@@ -51,7 +51,23 @@ const howlerDosCajon = new Howl({ src: [dosAudioCajon], volume: volume / 12 });
 const howlerPaCajon = new Howl({ src: [paAudioCajon], volume: volume });
 const howlerTaCajon = new Howl({ src: [taAudioCajon], volume: volume });
 
-const Row = ({ index, style }) => <div style={style}>Row {index}</div>;
+const Row = ({ index, style, data }) => (
+  <div style={style}>
+    <SongCard
+      key={index}
+      songId={index}
+      songName={data[index].songName}
+      song={data[index].song}
+      timeSignature={data[index].timeSignature}
+      suggestedBpm={data[index].bpm}
+      OnBpmChange={data.OnBpmChange}
+      feel={data[index].feel}
+      src={data[index].src}
+      OnPlayPause={data.OnPlayPause}
+      isPlaying={data.isPlaying(index)}
+    />
+  </div>
+);
 
 var uniqid = require("uniqid");
 var bpm = 90;
@@ -394,25 +410,22 @@ class App extends React.PureComponent {
           instrument={this.state.instrument}
         ></Topbar>
         <div className="container">
-          <LogoBig></LogoBig>
-
-          <div className={"song-list preload"}>
-            {SongsData.map((song, index) => (
-              <SongCard
-                key={index}
-                songId={index}
-                songName={song.songName}
-                song={song.song}
-                timeSignature={song.timeSignature}
-                suggestedBpm={song.bpm}
-                OnBpmChange={this.handleBpmChange}
-                feel={song.feel}
-                src={song.src}
-                OnPlayPause={this.handlePlayPause}
-                isPlaying={this.isPlaying(index)}
-              />
-            ))}
-          </div>
+          {/* <LogoBig></LogoBig> */}
+          <List
+            className={"song-list preload"}
+            height={900} // Set an appropriate height for the list
+            itemCount={SongsData.length}
+            itemSize={350} // Set an appropriate item size based on your SongCard component's height
+            itemData={{
+              ...SongsData,
+              OnBpmChange: this.handleBpmChange,
+              OnPlayPause: this.handlePlayPause,
+              isPlaying: this.isPlaying.bind(this),
+            }}
+            width={"100%"}
+          >
+            {Row}
+          </List>
         </div>
       </React.Fragment>
     );
