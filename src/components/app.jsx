@@ -52,6 +52,8 @@ const howlerDosCajon = new Howl({ src: [dosAudioCajon], volume: volume / 12 });
 const howlerPaCajon = new Howl({ src: [paAudioCajon], volume: volume });
 const howlerTaCajon = new Howl({ src: [taAudioCajon], volume: volume });
 
+var domainName;
+
 const Row = ({ index, style, data }) => (
   <div style={style}>
     <SongCard
@@ -110,6 +112,7 @@ class App extends React.PureComponent {
 
   handleWindowLoad = () => {
     this.checkIfSystemDarkTheme();
+    domainName = window.location.hostname;
   };
 
   checkIfSystemDarkTheme() {
@@ -365,24 +368,24 @@ class App extends React.PureComponent {
           OnInstrumentChange={this.handleInstrumentChange}
           instrument={this.state.instrument}
         ></Topbar>
-        <div className="container">
-          {/* <LogoBig></LogoBig> */}
-          <List
-            className={"song-list preload"}
-            height={900} // Set an appropriate height for the list
-            itemCount={SongsData.length}
-            itemSize={getItemSize}
-            itemData={{
-              ...SongsData,
-              OnBpmChange: this.handleBpmChange,
-              OnPlayPause: this.handlePlayPause,
-              isPlaying: this.isPlaying.bind(this),
-            }}
-            width={"100%"}
-          >
-            {Row}
-          </List>
-        </div>
+        {/* <div className="container"> */}
+        {/* <LogoBig></LogoBig> */}
+        <List
+          className={"song-list preload"}
+          height={900} // Set an appropriate height for the list
+          itemCount={SongsData.length}
+          itemSize={getItemSize}
+          itemData={{
+            ...SongsData,
+            OnBpmChange: this.handleBpmChange,
+            OnPlayPause: this.handlePlayPause,
+            isPlaying: this.isPlaying.bind(this),
+          }}
+          width={"100%"}
+        >
+          {Row}
+        </List>
+        {/* </div> */}
       </React.Fragment>
     );
   }
