@@ -97,6 +97,7 @@ class App extends React.PureComponent {
     playing: false,
     step: 0,
     songPlaying: 999,
+    // instrument: "cajon",
     instrument: "djembe",
   };
 
@@ -112,7 +113,7 @@ class App extends React.PureComponent {
 
   handleWindowLoad = () => {
     this.checkIfSystemDarkTheme();
-    domainName = window.location.hostname;
+    this.domainSpecificChanges();
   };
 
   checkIfSystemDarkTheme() {
@@ -123,6 +124,22 @@ class App extends React.PureComponent {
       document.body.classList.toggle("dark-theme");
     }
   }
+
+  domainSpecificChanges() {
+    domainName = window.location.hostname;
+    // console.log(domainName);
+    if (domainName == "www.djembedb.com" || "djembedb.com") {
+      console.log("website is djembedb");
+      this.setState(() => ({
+        instrument: "djembe",
+      }));
+    } else {
+      this.setState(() => ({
+        instrument: "cajon",
+      }));
+    }
+  }
+
   handleBpmChange = (e, t) => {
     if (t > 10) {
       bpm = t;
