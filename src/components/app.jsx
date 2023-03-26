@@ -150,23 +150,6 @@ class App extends React.PureComponent {
       alert("Debug mode enabled");
       document.body.classList.add("debug");
     }
-
-    // if (e.keyCode == 32) {
-    //   e.preventDefault();
-    //   // alert("Paused mode enabled");
-    //   clearTimeout(this.timeout);
-    //   if (this.state.playing) {
-    //     this.setState(() => ({
-    //       playing: false,
-    //       // songPlaying: songId,
-    //     }));
-    //   } else {
-    //     this.setState(() => ({
-    //       playing: true,
-    //     }));
-    //     this.startLoop(step, notes);
-    //   }
-    // }
   };
 
   handlePlayPause = (e, songId) => {
