@@ -9,48 +9,12 @@ import { hotjar } from "react-hotjar";
 import FullStory from "react-fullstory";
 // import { FixedSizeList as List } from "react-window";
 import { VariableSizeList as List } from "react-window";
-
-//import Djembe Sounds
-import gunAudioDjembe from "../sounds/djembe/gun.mp3";
-import dunAudioDjembe from "../sounds/djembe/dun.mp3";
-import goAudioDjembe from "../sounds/djembe/go.mp3";
-import gosAudioDjembe from "../sounds/djembe/gos.mp3";
-import doAudioDjembe from "../sounds/djembe/do.mp3";
-import dosAudioDjembe from "../sounds/djembe/dos.mp3";
-import paAudioDjembe from "../sounds/djembe/pa.mp3";
-import taAudioDjembe from "../sounds/djembe/ta.mp3";
-import caAudioDjembe from "../sounds/djembe/ca.mp3";
-
-//import Cajon Sounds
-import gunAudioCajon from "../sounds/cajon/gun.mp3";
-import dunAudioCajon from "../sounds/cajon/dun.mp3";
-import gosAudioCajon from "../sounds/cajon/gos.mp3";
-import dosAudioCajon from "../sounds/cajon/dos.mp3";
-import paAudioCajon from "../sounds/cajon/pa.mp3";
-import taAudioCajon from "../sounds/cajon/ta.mp3";
+import { playNoteSound } from "./playNoteSound"; // Import the playNoteSound function
 
 import gsap from "gsap";
 import ReactGA from "react-ga";
 ReactGA.initialize("UA-30988885-14");
 ReactGA.pageview(window.location.pathname + window.location.search);
-
-var volume = 1;
-const howlerGunDjembe = new Howl({ src: [gunAudioDjembe], volume: volume });
-const howlerDunDjembe = new Howl({ src: [dunAudioDjembe], volume: volume });
-const howlerGoDjembe = new Howl({ src: [goAudioDjembe], volume: volume });
-const howlerGosDjembe = new Howl({ src: [gosAudioDjembe], volume: volume / 4 });
-const howlerDoDjembe = new Howl({ src: [doAudioDjembe], volume: volume });
-const howlerDosDjembe = new Howl({ src: [dosAudioDjembe], volume: volume / 4 });
-const howlerPaDjembe = new Howl({ src: [paAudioDjembe], volume: volume });
-const howlerTaDjembe = new Howl({ src: [taAudioDjembe], volume: volume });
-const howlerCaDjembe = new Howl({ src: [caAudioDjembe], volume: volume });
-
-const howlerGunCajon = new Howl({ src: [gunAudioCajon], volume: volume });
-const howlerDunCajon = new Howl({ src: [dunAudioCajon], volume: volume });
-const howlerGosCajon = new Howl({ src: [gosAudioCajon], volume: volume / 8 });
-const howlerDosCajon = new Howl({ src: [dosAudioCajon], volume: volume / 12 });
-const howlerPaCajon = new Howl({ src: [paAudioCajon], volume: volume });
-const howlerTaCajon = new Howl({ src: [taAudioCajon], volume: volume });
 
 var domainName;
 
@@ -99,6 +63,7 @@ class App extends React.PureComponent {
     songPlaying: 999,
     // instrument: "cajon",
     instrument: "djembe",
+    volume: 100,
   };
 
   componentDidMount() {
@@ -161,8 +126,10 @@ class App extends React.PureComponent {
   };
 
   handleVolumeChange = (e, v) => {
-    volume = v / 100;
-    Howler.volume(volume);
+    this.setState(() => ({
+      volume: v / 100,
+    }));
+    Howler.volume(this.state.volume);
   };
 
   handleInstrumentChange = () => {
@@ -231,7 +198,7 @@ class App extends React.PureComponent {
   };
 
   playNote(song, step, notes) {
-    this.playNoteSound(notes[step]);
+    playNoteSound(notes[step], this.state.instrument);
     this.animateNote(song, step);
     step = step < notes.length - 2 ? step + 1 : 0;
     var baseNoteTime = (60 * 1000) / bpm / 4;
@@ -263,112 +230,6 @@ class App extends React.PureComponent {
     });
   }
 
-  playNoteSound(note) {
-    switch (note) {
-      case "Gun":
-        switch (this.state.instrument) {
-          case "djembe":
-            howlerGunDjembe.play();
-            break;
-          case "cajon":
-            howlerGunCajon.play();
-            break;
-        }
-        break;
-
-      case "Dun":
-        switch (this.state.instrument) {
-          case "djembe":
-            howlerDunDjembe.play();
-            break;
-          case "cajon":
-            howlerDunCajon.play();
-            break;
-        }
-        break;
-
-      case "go":
-        switch (this.state.instrument) {
-          case "djembe":
-            howlerGoDjembe.play();
-            break;
-          case "cajon":
-            howlerPaCajon.play();
-            break;
-        }
-        break;
-
-      case "do":
-        switch (this.state.instrument) {
-          case "djembe":
-            howlerDoDjembe.play();
-            break;
-          case "cajon":
-            howlerTaCajon.play();
-            break;
-        }
-        break;
-
-      case "gos":
-        switch (this.state.instrument) {
-          case "djembe":
-            howlerGosDjembe.play();
-            break;
-          case "cajon":
-            howlerGosCajon.play();
-            break;
-        }
-        break;
-
-      case "dos":
-        switch (this.state.instrument) {
-          case "djembe":
-            howlerDosDjembe.play();
-            break;
-          case "cajon":
-            howlerDosCajon.play();
-            break;
-        }
-        break;
-
-      case "Pa":
-        switch (this.state.instrument) {
-          case "djembe":
-            howlerPaDjembe.play();
-            break;
-          case "cajon":
-            howlerPaCajon.play();
-            break;
-        }
-        break;
-
-      case "Ta":
-        switch (this.state.instrument) {
-          case "djembe":
-            howlerTaDjembe.play();
-            break;
-          case "cajon":
-            howlerTaCajon.play();
-            break;
-        }
-        break;
-
-      case "Ca":
-        switch (this.state.instrument) {
-          case "djembe":
-            howlerCaDjembe.play();
-            break;
-          case "cajon":
-            howlerPaCajon.play();
-            break;
-        }
-        break;
-
-      default:
-        break;
-    }
-  }
-
   render() {
     return (
       <React.Fragment>
@@ -381,7 +242,7 @@ class App extends React.PureComponent {
           OnBpmChange={this.handleBpmChange}
           defaultBpm={bpm}
           OnVolumeChange={this.handleVolumeChange}
-          defaultVolume={volume * 100}
+          defaultVolume={this.state.volume * 100}
           OnInstrumentChange={this.handleInstrumentChange}
           instrument={this.state.instrument}
         ></Topbar>
