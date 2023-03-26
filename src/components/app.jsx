@@ -1,7 +1,11 @@
 import React, { Component, Fragment, useState, useRef, useEffect } from "react";
+import { BottomSheet } from "react-spring-bottom-sheet";
+import "react-spring-bottom-sheet/dist/style.css";
+
 import { SongsData } from "../songsData";
 import SongCard from "./songCard";
 import Topbar from "./topbar";
+import SettingsSheet from "./settingsSheet";
 import LogoBig from "./logoBig";
 import Button from "@material-ui/core/Button";
 import { Howl, Howler } from "howler";
@@ -99,6 +103,7 @@ class App extends React.PureComponent {
     songPlaying: 999,
     // instrument: "cajon",
     instrument: "djembe",
+    isBottomSheetOpen: false,
   };
 
   componentDidMount() {
@@ -368,14 +373,29 @@ class App extends React.PureComponent {
         break;
     }
   }
+  setOpen = (isOpen) => {
+    this.setState({ open: isOpen });
+  };
+
+  toggleBottomSheet = () => {
+    this.setState((prevState) => ({
+      isBottomSheetOpen: !prevState.isBottomSheetOpen,
+    }));
+  };
+
+  onDismiss = () => {
+    this.setOpen(false);
+  };
 
   render() {
+    const { open } = this.state;
+    const { isBottomSheetOpen } = this.state;
     return (
       <React.Fragment>
         <div className="app debug">
           <FullStory org={ORG_ID} />
         </div>
-        <Topbar
+        {/* <Topbar
           OnSwingChange={this.handleSwingChange}
           defaultSwing={0}
           OnBpmChange={this.handleBpmChange}
@@ -384,9 +404,33 @@ class App extends React.PureComponent {
           defaultVolume={volume * 100}
           OnInstrumentChange={this.handleInstrumentChange}
           instrument={this.state.instrument}
-        ></Topbar>
-        {/* <div className="container"> */}
+        ></Topbar> */}
         {/* <LogoBig></LogoBig> */}
+        <button
+          className="button-open-settings"
+          onClick={() => this.setOpen(true)}
+        >
+          Open
+        </button>
+        <BottomSheet open={open} className={"settings-card"}>
+          <SettingsSheet
+            // onDismiss={this.onDismiss}
+            onDismiss={() => this.setOpen(false)}
+            ToggleBottomSheet={() => this.setOpen(false)}
+            // open={isBottomSheetOpen}
+            // snapPoints={({ maxHeight }) => [maxHeight - 200, maxHeight / 2]}
+            snapPoints={({ maxHeight }) => [
+              maxHeight - maxHeight / 10,
+              maxHeight / 4,
+              maxHeight * 0.6,
+            ]}
+            // header={(style) => this.bottomSheetHeader(style)}
+            // footer={(style) => this.bottomSheetFooter(style)}
+            blocking={false}
+            defaultTempo={this.props.defaultTempo}
+            OnTempoChange={this.props.OnTempoChange}
+          ></SettingsSheet>
+        </BottomSheet>
         <List
           className={"song-list preload"}
           height={900} // Set an appropriate height for the list

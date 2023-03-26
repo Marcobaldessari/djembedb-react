@@ -69,7 +69,8 @@ h4,
 h5,
 h6,
 p,
-a {
+a,
+label {
   font-family: 'Poppins', sans-serif;
   color: var(--text-color);
   font-weight: 400;
@@ -704,4 +705,26 @@ a {
 .MuiButton-root:hover,
 .MuiTouchRipple-root {
   color: var(--primary-color-regular) !important;
+}
+.button-open-settings {
+  text-size: 30px;
+  background: var(--primary-color-regular);
+  color: #fff;
+  border: none;
+  padding: 24px;
+  position: absolute;
+  right: 24px;
+  bottom: 24px;
+  z-index: 2;
+  border-radius: 100px;
+}
+[data-rsbs-overlay] {
+  background: var(--bg-color);
+}
+[data-rsbs-overlay] .settings-row {
+  padding: 0 24px;
+  margin-bottom: 8px;
+}
+label {
+  color: var(--text-color);
 }
