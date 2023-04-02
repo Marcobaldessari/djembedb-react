@@ -3,8 +3,6 @@ import NotationNote from "./notationNote";
 import gsap from "gsap";
 import Button from "@material-ui/core/Button";
 
-var uniqid = require("uniqid");
-var clickHasBeenAnimated = false;
 const countingSystemAmerican = [
   "1",
   "e",
@@ -120,16 +118,6 @@ class SongCard extends React.PureComponent {
 
   animateNotationFrame(e) {
     var tl = gsap.timeline();
-    // tl.to(this.notationFrame, {
-    //   scale: 1.04,
-    //   duration: 0.1,
-    // });
-    // tl.to(this.notationFrame, {
-    //   scale: 1,
-    //   duration: 1,
-    //   ease: "elastic.out(1,0.3)",
-    // });
-    // console.log(this.notationFrame.style.backgroundColor);
     tl.to(this.notationFrame, {
       scale: 1.02,
       duration: 0.1,
