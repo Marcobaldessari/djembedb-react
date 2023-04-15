@@ -55,7 +55,6 @@ var bpm = 90;
 var swing = 0;
 var step;
 var notes;
-var volume = 100;
 hotjar.initialize(2655002, 6);
 const ORG_ID = "GR09Q";
 
@@ -280,7 +279,7 @@ class App extends React.PureComponent {
             OnTempoChange={this.handleBpmChange}
             defaultSwing={0}
             OnSwingChange={this.handleSwingChange}
-            defaultVolume={volume * 100}
+            defaultVolume={100}
             OnVolumeChange={this.handleVolumeChange}
             instrument={this.state.instrument}
             OnInstrumentChange={this.handleInstrumentChange}
