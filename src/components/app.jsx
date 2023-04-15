@@ -248,7 +248,7 @@ class App extends React.PureComponent {
           defaultVolume={this.state.volume * 100}
           OnInstrumentChange={this.handleInstrumentChange}
           instrument={this.state.instrument}
-        ></Topbar> */}
+        ></Topbar>{" "} */}
         {/* <LogoBig></LogoBig> */}
         <button
           className="button-open-settings"

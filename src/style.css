@@ -728,7 +728,7 @@ label {
   margin: 16px 0 24px 0;
 }
 .settings-row {
-  margin-bottom: 8px;
+  margin-bottom: 16px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1.2fr 2fr;
@@ -738,6 +738,16 @@ label {
   align-items: center;
   height: 32px;
 }
-label {
+.btn-settings {
+  background: var(--notation-bg-color);
+  padding: 0 !important;
+}
+.btn-settings svg {
+  fill: var(--note-color);
+}
+.btn-settings.active {
+  background: var --notation-bg-color;
+}
+.btn-settings.active label {
   color: var(--text-color);
 }

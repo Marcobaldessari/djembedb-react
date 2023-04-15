@@ -674,12 +674,22 @@ label
         margin 16px 0 24px 0
 
 .settings-row
-    margin-bottom 8px
+    margin-bottom 16px
     display grid
     grid-template-columns 1.2fr 2fr
     align-items center
     height 32px
 
+.btn-settings
+    background var(--notation-bg-color)
+    padding 0 !important
+    svg
+        fill var(--note-color)
+    &.active
+        background var (--notation-bg-color)
+
+        // .MuiButton-text 
+            // padding 0
 
 label
     color var(--text-color)
