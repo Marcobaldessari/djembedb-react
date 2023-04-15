@@ -410,25 +410,35 @@ class App extends React.PureComponent {
           className="button-open-settings"
           onClick={() => this.setOpen(true)}
         >
-          Open
+          Settings
         </button>
-        <BottomSheet open={open} className={"settings-card"}>
+        {/* <Button
+          aria-label="Open settings"
+          className="btn-volume btn-topbar btn-rounded "
+          onClick={() => this.setOpen(true)}
+        >
+          Open
+        </Button> */}
+        <BottomSheet
+          open={open}
+          className={"settings-card"}
+          onDismiss={() => this.setOpen(false)}
+          // snapPoints={({ maxHeight }) => [
+          //   maxHeight - maxHeight / 10,
+          //   maxHeight / 4,
+          //   maxHeight * 0.6,
+          // ]}
+        >
           <SettingsSheet
-            // onDismiss={this.onDismiss}
-            onDismiss={() => this.setOpen(false)}
             ToggleBottomSheet={() => this.setOpen(false)}
-            // open={isBottomSheetOpen}
-            // snapPoints={({ maxHeight }) => [maxHeight - 200, maxHeight / 2]}
-            snapPoints={({ maxHeight }) => [
-              maxHeight - maxHeight / 10,
-              maxHeight / 4,
-              maxHeight * 0.6,
-            ]}
-            // header={(style) => this.bottomSheetHeader(style)}
-            // footer={(style) => this.bottomSheetFooter(style)}
-            blocking={false}
-            defaultTempo={this.props.defaultTempo}
-            OnTempoChange={this.props.OnTempoChange}
+            defaultTempo={bpm}
+            OnTempoChange={this.handleBpmChange}
+            defaultSwing={0}
+            OnSwingChange={this.handleSwingChange}
+            defaultVolume={volume * 100}
+            OnVolumeChange={this.handleVolumeChange}
+            instrument={this.state.instrument}
+            OnInstrumentChange={this.handleInstrumentChange}
           ></SettingsSheet>
         </BottomSheet>
         <List
