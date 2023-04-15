@@ -1,7 +1,11 @@
 import React, { Component, Fragment, useState, useRef, useEffect } from "react";
+import { BottomSheet } from "react-spring-bottom-sheet";
+import "react-spring-bottom-sheet/dist/style.css";
+
 import { SongsData } from "../songsData";
 import SongCard from "./songCard";
 import Topbar from "./topbar";
+import SettingsSheet from "./settingsSheet";
 import LogoBig from "./logoBig";
 import Button from "@material-ui/core/Button";
 import { Howl, Howler } from "howler";
@@ -63,6 +67,7 @@ class App extends React.PureComponent {
     songPlaying: 999,
     // instrument: "cajon",
     instrument: "djembe",
+    isBottomSheetOpen: false,
     volume: 100,
   };
 
@@ -213,13 +218,134 @@ class App extends React.PureComponent {
     });
   }
 
+  playNoteSound(note) {
+    switch (note) {
+      case "Gun":
+        switch (this.state.instrument) {
+          case "djembe":
+            howlerGunDjembe.play();
+            break;
+          case "cajon":
+            howlerGunCajon.play();
+            break;
+        }
+        break;
+
+      case "Dun":
+        switch (this.state.instrument) {
+          case "djembe":
+            howlerDunDjembe.play();
+            break;
+          case "cajon":
+            howlerDunCajon.play();
+            break;
+        }
+        break;
+
+      case "go":
+        switch (this.state.instrument) {
+          case "djembe":
+            howlerGoDjembe.play();
+            break;
+          case "cajon":
+            howlerPaCajon.play();
+            break;
+        }
+        break;
+
+      case "do":
+        switch (this.state.instrument) {
+          case "djembe":
+            howlerDoDjembe.play();
+            break;
+          case "cajon":
+            howlerTaCajon.play();
+            break;
+        }
+        break;
+
+      case "gos":
+        switch (this.state.instrument) {
+          case "djembe":
+            howlerGosDjembe.play();
+            break;
+          case "cajon":
+            howlerGosCajon.play();
+            break;
+        }
+        break;
+
+      case "dos":
+        switch (this.state.instrument) {
+          case "djembe":
+            howlerDosDjembe.play();
+            break;
+          case "cajon":
+            howlerDosCajon.play();
+            break;
+        }
+        break;
+
+      case "Pa":
+        switch (this.state.instrument) {
+          case "djembe":
+            howlerPaDjembe.play();
+            break;
+          case "cajon":
+            howlerPaCajon.play();
+            break;
+        }
+        break;
+
+      case "Ta":
+        switch (this.state.instrument) {
+          case "djembe":
+            howlerTaDjembe.play();
+            break;
+          case "cajon":
+            howlerTaCajon.play();
+            break;
+        }
+        break;
+
+      case "Ca":
+        switch (this.state.instrument) {
+          case "djembe":
+            howlerCaDjembe.play();
+            break;
+          case "cajon":
+            howlerPaCajon.play();
+            break;
+        }
+        break;
+
+      default:
+        break;
+    }
+  }
+  setOpen = (isOpen) => {
+    this.setState({ open: isOpen });
+  };
+
+  toggleBottomSheet = () => {
+    this.setState((prevState) => ({
+      isBottomSheetOpen: !prevState.isBottomSheetOpen,
+    }));
+  };
+
+  onDismiss = () => {
+    this.setOpen(false);
+  };
+
   render() {
+    const { open } = this.state;
+    const { isBottomSheetOpen } = this.state;
     return (
       <React.Fragment>
         <div className="app debug">
           <FullStory org={ORG_ID} />
         </div>
-        <Topbar
+        {/* <Topbar
           OnSwingChange={this.handleSwingChange}
           defaultSwing={0}
           OnBpmChange={this.handleBpmChange}
@@ -228,9 +354,43 @@ class App extends React.PureComponent {
           defaultVolume={this.state.volume * 100}
           OnInstrumentChange={this.handleInstrumentChange}
           instrument={this.state.instrument}
-        ></Topbar>
-        {/* <div className="container"> */}
+        ></Topbar> */}
         {/* <LogoBig></LogoBig> */}
+        <button
+          className="button-open-settings"
+          onClick={() => this.setOpen(true)}
+        >
+          Settings
+        </button>
+        {/* <Button
+          aria-label="Open settings"
+          className="btn-volume btn-topbar btn-rounded "
+          onClick={() => this.setOpen(true)}
+        >
+          Open
+        </Button> */}
+        <BottomSheet
+          open={open}
+          className={"settings-card"}
+          onDismiss={() => this.setOpen(false)}
+          // snapPoints={({ maxHeight }) => [
+          //   maxHeight - maxHeight / 10,
+          //   maxHeight / 4,
+          //   maxHeight * 0.6,
+          // ]}
+        >
+          <SettingsSheet
+            ToggleBottomSheet={() => this.setOpen(false)}
+            defaultTempo={bpm}
+            OnTempoChange={this.handleBpmChange}
+            defaultSwing={0}
+            OnSwingChange={this.handleSwingChange}
+            defaultVolume={volume * 100}
+            OnVolumeChange={this.handleVolumeChange}
+            instrument={this.state.instrument}
+            OnInstrumentChange={this.handleInstrumentChange}
+          ></SettingsSheet>
+        </BottomSheet>
         <List
           className={"song-list preload"}
           height={900} // Set an appropriate height for the list
