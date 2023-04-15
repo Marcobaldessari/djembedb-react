@@ -55,7 +55,7 @@ var bpm = 90;
 var swing = 0;
 var step;
 var notes;
-
+var volume = 100;
 hotjar.initialize(2655002, 6);
 const ORG_ID = "GR09Q";
 
@@ -218,111 +218,6 @@ class App extends React.PureComponent {
     });
   }
 
-  playNoteSound(note) {
-    switch (note) {
-      case "Gun":
-        switch (this.state.instrument) {
-          case "djembe":
-            howlerGunDjembe.play();
-            break;
-          case "cajon":
-            howlerGunCajon.play();
-            break;
-        }
-        break;
-
-      case "Dun":
-        switch (this.state.instrument) {
-          case "djembe":
-            howlerDunDjembe.play();
-            break;
-          case "cajon":
-            howlerDunCajon.play();
-            break;
-        }
-        break;
-
-      case "go":
-        switch (this.state.instrument) {
-          case "djembe":
-            howlerGoDjembe.play();
-            break;
-          case "cajon":
-            howlerPaCajon.play();
-            break;
-        }
-        break;
-
-      case "do":
-        switch (this.state.instrument) {
-          case "djembe":
-            howlerDoDjembe.play();
-            break;
-          case "cajon":
-            howlerTaCajon.play();
-            break;
-        }
-        break;
-
-      case "gos":
-        switch (this.state.instrument) {
-          case "djembe":
-            howlerGosDjembe.play();
-            break;
-          case "cajon":
-            howlerGosCajon.play();
-            break;
-        }
-        break;
-
-      case "dos":
-        switch (this.state.instrument) {
-          case "djembe":
-            howlerDosDjembe.play();
-            break;
-          case "cajon":
-            howlerDosCajon.play();
-            break;
-        }
-        break;
-
-      case "Pa":
-        switch (this.state.instrument) {
-          case "djembe":
-            howlerPaDjembe.play();
-            break;
-          case "cajon":
-            howlerPaCajon.play();
-            break;
-        }
-        break;
-
-      case "Ta":
-        switch (this.state.instrument) {
-          case "djembe":
-            howlerTaDjembe.play();
-            break;
-          case "cajon":
-            howlerTaCajon.play();
-            break;
-        }
-        break;
-
-      case "Ca":
-        switch (this.state.instrument) {
-          case "djembe":
-            howlerCaDjembe.play();
-            break;
-          case "cajon":
-            howlerPaCajon.play();
-            break;
-        }
-        break;
-
-      default:
-        break;
-    }
-  }
   setOpen = (isOpen) => {
     this.setState({ open: isOpen });
   };
