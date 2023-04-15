@@ -81,7 +81,7 @@ class App extends React.PureComponent {
   }
 
   handleWindowLoad = () => {
-    this.checkIfSystemDarkTheme();
+    // this.checkIfSystemDarkTheme();
     this.domainSpecificChanges();
   };
 
