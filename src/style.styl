@@ -70,12 +70,16 @@ body
         --notation-number rgba(255, 255, 255, .5)
         --notation-number-active #ffbcd1
         --scrollbar-color #100D1B
-
+html {
+  
+}
 html, body
+    background var(--bg-color)
     height 100%
     width 100%
     overflow-x hidden
-    background var(--bg-color)
+    overflow-y: hidden;
+    overscroll-behavior: none;
     
 
 h1
