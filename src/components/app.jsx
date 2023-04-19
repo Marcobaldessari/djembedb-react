@@ -239,7 +239,7 @@ class App extends React.PureComponent {
         <div className="app debug">
           <FullStory org={ORG_ID} />
         </div>
-        {/* <Topbar
+        <Topbar
           OnSwingChange={this.handleSwingChange}
           defaultSwing={0}
           OnBpmChange={this.handleBpmChange}
@@ -248,7 +248,7 @@ class App extends React.PureComponent {
           defaultVolume={this.state.volume * 100}
           OnInstrumentChange={this.handleInstrumentChange}
           instrument={this.state.instrument}
-        ></Topbar>{" "} */}
+        ></Topbar>{" "}
         {/* <LogoBig></LogoBig> */}
         <button
           className="button-open-settings"

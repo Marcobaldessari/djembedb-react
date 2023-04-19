@@ -126,8 +126,6 @@ label
 //     .notation-note-circle
 //         transform scale(0)
 
-.preload.topbar
-    opacity 0
 
 .song-card
     position relative
@@ -370,11 +368,12 @@ label
     +desktop()
         top 0
     +mobile()
-        bottom 0
-        box-shadow: 0px -15px 35px rgba(52, 58, 67, 0.08), 0px -5px 15px rgba(0, 0, 0, 0.08), 0px 0px 2px rgba(0, 0, 0, 0.1);
-        display grid
-        grid-template-columns repeat(6, 1fr)
-        grid-template-rows: 1fr;
+        display: none
+        // bottom 0
+        // box-shadow: 0px -15px 35px rgba(52, 58, 67, 0.08), 0px -5px 15px rgba(0, 0, 0, 0.08), 0px 0px 2px rgba(0, 0, 0, 0.1);
+        // display grid
+        // grid-template-columns repeat(6, 1fr)
+        // grid-template-rows: 1fr;
     
     .btn-topbar
         +desktop()
@@ -655,8 +654,10 @@ label
 
 
 .button-open-settings
+    +desktop()
+        display none
+    
     font-size 16px
-
     background var(--primary-color-regular)
     color white
     border none
